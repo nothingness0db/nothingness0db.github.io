@@ -176,6 +176,12 @@ hasCJKLanguage = true
 [markup]
   [markup.highlight]
     noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# 忽略特定日志
+ignoreLogs = ['warning-goldmark-raw-html']
 
 # 输出文件设置
 [outputs]

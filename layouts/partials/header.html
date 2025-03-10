@@ -19,7 +19,7 @@
                     <span class="menu-item delimiter"></span>
                 {{- end -}}
                 <!-- 语言切换菜单 -->
-                {{ if .Site.IsMultiLingual }}
+                {{ if hugo.IsMultilingual }}
                 <div class="dropdown">
                     <a class="menu-item dropdown-toggle" href="javascript:void(0);" title="选择语言">
                         <i class="fas fa-language fa-fw"></i>
@@ -67,7 +67,7 @@
                 </a>
             {{- end -}}
             <!-- 移动端语言切换菜单 -->
-            {{ if .Site.IsMultiLingual }}
+            {{ if hugo.IsMultilingual }}
             <div class="dropdown mobile-dropdown">
                 <a class="menu-item dropdown-toggle" href="javascript:void(0);" title="选择语言">
                     <i class="fas fa-language fa-fw"></i> 语言
