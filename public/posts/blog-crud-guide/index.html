@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
   <meta property="og:title" content="Hugo博客日常文章管理指南">
   <meta property="og:description" content="Hugo博客日常文章管理指南 本文将详细介绍如何使用Hugo进行日常博客内容的创建、读取、更新和删除（CRUD）操作，帮助你高效管理博客内容。
 文章创建 (Create) 使用命令行创建文章 Hugo提供了便捷的命令行工具来创建新文章：">
-  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2025-03-11T00:15:00+08:00">
@@ -32,7 +32,7 @@
         "@context": "http://schema.org",
         "@type": "BlogPosting",
         "headline": "Hugo博客日常文章管理指南",
-        "inLanguage": "zh-CN",
+        "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/localhost:1313\/posts\/blog-crud-guide\/"
@@ -53,7 +53,7 @@
             <a href="/" title="Eira Hazel">Eira Hazel</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/music/"><i class='fas fa-music fa-fw'></i> 音乐 </a><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><a class="menu-item" href="/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i>  </a><span class="menu-item delimiter"></span>
+            <div class="menu-inner"><a class="menu-item" href="/music/"><i class='fas fa-music fa-fw'></i> Music </a><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><a class="menu-item" href="/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i>  </a><span class="menu-item delimiter"></span>
                 
                 <div class="dropdown">
                     <a class="menu-item dropdown-toggle" href="javascript:void(0);" title="选择语言">
@@ -62,17 +62,17 @@
                     <ul class="dropdown-menu">
                         
                         
-                        <li><a href="http://localhost:1313/">🇨🇳 简体中文</a></li>
+                        <li><a href="http://localhost:1313/">🇺🇸 English</a></li>
                         
                         
                         
-                        <li><a href="http://localhost:1313/en/">🇺🇸 English</a></li>
+                        <li><a href="http://localhost:1313/zh-cn/">🇨🇳 简体中文</a></li>
                         
                         
                     </ul>
                 </div>
                 
-                <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a>
             </div>
@@ -88,7 +88,7 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/music/" title=""><i class='fas fa-music fa-fw'></i>音乐</a><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a class="menu-item" href="/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i></a>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/music/" title=""><i class='fas fa-music fa-fw'></i>Music</a><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a class="menu-item" href="/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i></a>
             
             <div class="dropdown mobile-dropdown">
                 <a class="menu-item dropdown-toggle" href="javascript:void(0);" title="选择语言">
@@ -97,17 +97,17 @@
                 <div class="dropdown-content">
                     
                     
-                    <a href="http://localhost:1313/">🇨🇳 简体中文</a>
+                    <a href="http://localhost:1313/">🇺🇸 English</a>
                     
                     
                     
-                    <a href="http://localhost:1313/en/">🇺🇸 English</a>
+                    <a href="http://localhost:1313/zh-cn/">🇨🇳 简体中文</a>
                     
                     
                 </div>
             </div>
             
-            <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+            <a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a>
         </div>
@@ -173,15 +173,15 @@
 </style>
 <main class="main">
                 <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">目录</h2>
+            <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Hugo博客日常文章管理指南</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Eira Hazel</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>网站建设</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-03-11">2025-03-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1383 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Eira Hazel</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>网站建设</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-03-11">2025-03-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1383 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
-                    <span>目录</span>
+                    <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
@@ -232,7 +232,7 @@
     <div class="code-header language-bash">
         <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
         <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new posts/my-new-post.md</span></span></code></pre></div></div>
 <p>这将在<code>content/posts/</code>目录下创建一个名为<code>my-new-post.md</code>的新文件，并自动添加前置元数据（frontmatter）。</p>
 <h3 id="手动创建文章">手动创建文章</h3>
@@ -241,7 +241,7 @@
     <div class="code-header language-markdown">
         <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
         <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">---
 </span></span><span class="line"><span class="cl">title: &#34;文章标题&#34;
 </span></span><span class="line"><span class="cl">date: 2025-03-11T00:15:00+08:00
@@ -272,7 +272,7 @@
     <div class="code-header language-bash">
         <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
         <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 预览所有文章（包括草稿）</span>
 </span></span><span class="line"><span class="cl">hugo server -D
 </span></span><span class="line"><span class="cl">
@@ -303,7 +303,7 @@
     <div class="code-header language-markdown">
         <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
         <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">---
 </span></span><span class="line"><span class="cl">draft: true
 </span></span><span class="line"><span class="cl">---</span></span></code></pre></div></div>
@@ -322,7 +322,7 @@
     <div class="code-header language-markdown">
         <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
         <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><figure><img src="/images/example.jpg"><figcaption>
       <h4>示例图片</h4>
     </figcaption>
@@ -338,7 +338,7 @@
     <div class="code-header language-go">
         <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
         <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello, Hugo!&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
@@ -349,7 +349,7 @@
     <div class="code-header language-">
         <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
         <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
     </div><pre tabindex="0"><code>content/
 └── posts/
     └── my-post/           # 页面捆绑目录
@@ -361,7 +361,7 @@
     <div class="code-header language-markdown">
         <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
         <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![<span class="nt">图片描述</span>](<span class="na">image1.jpg</span>)</span></span></code></pre></div></div>
 <h2 id="内容备份与版本控制">内容备份与版本控制</h2>
 <p>强烈建议使用Git等版本控制系统来管理你的Hugo博客内容：</p>
@@ -369,7 +369,7 @@
     <div class="code-header language-bash">
         <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
         <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 初始化Git仓库</span>
 </span></span><span class="line"><span class="cl">git init
 </span></span><span class="line"><span class="cl">
@@ -389,12 +389,12 @@
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2025-03-11</span>
+                <span>Updated on 2025-03-11</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 X" data-sharer="x" data-url="http://localhost:1313/posts/blog-crud-guide/" data-title="Hugo博客日常文章管理指南" data-via="https://x.com/ADsdssd40847" data-hashtags="新手教程,操作指南"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Threads" data-sharer="threads" data-url="http://localhost:1313/posts/blog-crud-guide/" data-title="Hugo博客日常文章管理指南"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://localhost:1313/posts/blog-crud-guide/" data-hashtag="新手教程"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/posts/blog-crud-guide/" data-title="Hugo博客日常文章管理指南"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="http://localhost:1313/posts/blog-crud-guide/" data-title="Hugo博客日常文章管理指南"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://localhost:1313/posts/blog-crud-guide/" data-title="Hugo博客日常文章管理指南"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Diaspora" data-sharer="diaspora" data-url="http://localhost:1313/posts/blog-crud-guide/" data-title="Hugo博客日常文章管理指南" data-description=""><i class="fab fa-diaspora fa-fw" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fblog-crud-guide%2f&amp;text=Hugo%e5%8d%9a%e5%ae%a2%e6%97%a5%e5%b8%b8%e6%96%87%e7%ab%a0%e7%ae%a1%e7%90%86%e6%8c%87%e5%8d%97" target="_blank" title="分享到 Telegram"><i class="fab fa-telegram fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://localhost:1313/posts/blog-crud-guide/" data-title="Hugo博客日常文章管理指南" data-via="https://x.com/ADsdssd40847" data-hashtags="新手教程,操作指南"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://localhost:1313/posts/blog-crud-guide/" data-title="Hugo博客日常文章管理指南"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/posts/blog-crud-guide/" data-hashtag="新手教程"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/posts/blog-crud-guide/" data-title="Hugo博客日常文章管理指南"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/posts/blog-crud-guide/" data-title="Hugo博客日常文章管理指南"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/posts/blog-crud-guide/" data-title="Hugo博客日常文章管理指南"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="http://localhost:1313/posts/blog-crud-guide/" data-title="Hugo博客日常文章管理指南" data-description=""><i class="fab fa-diaspora fa-fw" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fblog-crud-guide%2f&amp;text=Hugo%e5%8d%9a%e5%ae%a2%e6%97%a5%e5%b8%b8%e6%96%87%e7%ab%a0%e7%ae%a1%e7%90%86%e6%8c%87%e5%8d%97" target="_blank" title="Share on Telegram"><i class="fab fa-telegram fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -402,7 +402,7 @@
     <div class="post-info-more">
         <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/">新手教程</a>,&nbsp;<a href="/tags/%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/">操作指南</a></section>
         <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
     </div>
 
@@ -411,17 +411,17 @@
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.145.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.3.0"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.145.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.3.0"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span></div>
         </div>
     </footer></div>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
                 <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
             </a>
         </div>
 
-        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
         </div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"comment":{},"lightgallery":true};</script><script src="/js/theme.min.js"></script></body>

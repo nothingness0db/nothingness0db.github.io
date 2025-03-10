@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>音乐 on Eira Hazel</title>
+    <title>Music on Eira Hazel</title>
     <link>http://localhost:1313/music/</link>
-    <description>Recent content in 音乐 on Eira Hazel</description>
+    <description>Recent content in Music on Eira Hazel</description>
     <generator>Hugo</generator>
-    <language>zh-CN</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="http://localhost:1313/music/index.xml" rel="self" type="application/rss+xml" />
   </channel>

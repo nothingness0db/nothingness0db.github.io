@@ -1,54 +1,46 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Tags - 标签 - Eira Hazel</title>
+        <title>Tags - Tag - Eira Hazel</title>
         <link>http://localhost:1313/tags/</link>
-        <description>Tags - 标签 - Eira Hazel</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>动态环境</title>
-    <link>http://localhost:1313/tags/%E5%8A%A8%E6%80%81%E7%8E%AF%E5%A2%83/</link>
+        <description>Tags - Tag - Eira Hazel</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Dynamic Environment</title>
+    <link>http://localhost:1313/tags/dynamic-environment/</link>
     <pubDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/tags/%E5%8A%A8%E6%80%81%E7%8E%AF%E5%A2%83/</guid>
+    <guid>http://localhost:1313/tags/dynamic-environment/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>机器学习</title>
-    <link>http://localhost:1313/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
+    <title>Machine Learning</title>
+    <link>http://localhost:1313/tags/machine-learning/</link>
     <pubDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
+    <guid>http://localhost:1313/tags/machine-learning/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>模型泛化</title>
-    <link>http://localhost:1313/tags/%E6%A8%A1%E5%9E%8B%E6%B3%9B%E5%8C%96/</link>
+    <title>Model Generalization</title>
+    <link>http://localhost:1313/tags/model-generalization/</link>
     <pubDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/tags/%E6%A8%A1%E5%9E%8B%E6%B3%9B%E5%8C%96/</guid>
+    <guid>http://localhost:1313/tags/model-generalization/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>工业数据</title>
-    <link>http://localhost:1313/tags/%E5%B7%A5%E4%B8%9A%E6%95%B0%E6%8D%AE/</link>
+    <title>Data Quality</title>
+    <link>http://localhost:1313/tags/data-quality/</link>
     <pubDate>Tue, 11 Mar 2025 02:06:20 &#43;0800</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/tags/%E5%B7%A5%E4%B8%9A%E6%95%B0%E6%8D%AE/</guid>
+    <guid>http://localhost:1313/tags/data-quality/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>数据质量</title>
-    <link>http://localhost:1313/tags/%E6%95%B0%E6%8D%AE%E8%B4%A8%E9%87%8F/</link>
+    <title>Industrial Data</title>
+    <link>http://localhost:1313/tags/industrial-data/</link>
     <pubDate>Tue, 11 Mar 2025 02:06:20 &#43;0800</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/tags/%E6%95%B0%E6%8D%AE%E8%B4%A8%E9%87%8F/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>配置指南</title>
-    <link>http://localhost:1313/tags/%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/</link>
-    <pubDate>Tue, 11 Mar 2025 00:20:00 &#43;0800</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:1313/tags/%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/</guid>
+    <guid>http://localhost:1313/tags/industrial-data/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
@@ -57,6 +49,14 @@
     <pubDate>Tue, 11 Mar 2025 00:20:00 &#43;0800</pubDate>
     <author>xxxx</author>
     <guid>http://localhost:1313/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>配置指南</title>
+    <link>http://localhost:1313/tags/%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/</link>
+    <pubDate>Tue, 11 Mar 2025 00:20:00 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>

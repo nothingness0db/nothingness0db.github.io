@@ -1,9 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>网站建设 - 标签 - Eira Hazel</title>
+        <title>网站建设 - Tag - Eira Hazel</title>
         <link>http://localhost:1313/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</link>
-        <description>网站建设 - 标签 - Eira Hazel</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 11 Mar 2025 00:20:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/" rel="self" type="application/rss+xml" /><item>
+        <description>网站建设 - Tag - Eira Hazel</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 00:20:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/" rel="self" type="application/rss+xml" /><item>
     <title>Hugo博客高级配置指南</title>
     <link>http://localhost:1313/posts/advanced-configuration/</link>
     <pubDate>Tue, 11 Mar 2025 00:20:00 &#43;0800</pubDate>

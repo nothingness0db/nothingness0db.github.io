@@ -1,9 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>操作指南 - 标签 - Eira Hazel</title>
+        <title>操作指南 - Tag - Eira Hazel</title>
         <link>http://localhost:1313/tags/%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/</link>
-        <description>操作指南 - 标签 - Eira Hazel</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 11 Mar 2025 00:15:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/" rel="self" type="application/rss+xml" /><item>
+        <description>操作指南 - Tag - Eira Hazel</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 00:15:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/" rel="self" type="application/rss+xml" /><item>
     <title>Hugo博客日常文章管理指南</title>
     <link>http://localhost:1313/posts/blog-crud-guide/</link>
     <pubDate>Tue, 11 Mar 2025 00:15:00 &#43;0800</pubDate>
