@@ -25,13 +25,13 @@
                         <i class="fas fa-language fa-fw"></i>
                     </a>
                     <ul class="dropdown-menu">
-                        {{ range .Site.Languages }}
-                        {{ if eq .LanguageName "简体中文" }}
-                        <li><a href="{{ "/zh-cn/" | relLangURL }}">🇨🇳 {{ .LanguageName }}</a></li>
-                        {{ else if eq .LanguageName "English" }}
-                        <li><a href="{{ "/en/" | relLangURL }}">🇺🇸 {{ .LanguageName }}</a></li>
+                        {{ range .Site.Home.AllTranslations }}
+                        {{ if eq .Language.LanguageName "简体中文" }}
+                        <li><a href="{{ .Permalink }}">🇨🇳 {{ .Language.LanguageName }}</a></li>
+                        {{ else if eq .Language.LanguageName "English" }}
+                        <li><a href="{{ .Permalink }}">🇺🇸 {{ .Language.LanguageName }}</a></li>
                         {{ else }}
-                        <li><a href="{{ (print "/" .Lang "/") | relLangURL }}">{{ .LanguageName }}</a></li>
+                        <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
                         {{ end }}
                         {{ end }}
                     </ul>
@@ -73,13 +73,13 @@
                     <i class="fas fa-language fa-fw"></i> 语言
                 </a>
                 <div class="dropdown-content">
-                    {{ range .Site.Languages }}
-                    {{ if eq .LanguageName "简体中文" }}
-                    <a href="{{ "/zh-cn/" | relLangURL }}">🇨🇳 {{ .LanguageName }}</a>
-                    {{ else if eq .LanguageName "English" }}
-                    <a href="{{ "/en/" | relLangURL }}">🇺🇸 {{ .LanguageName }}</a>
+                    {{ range .Site.Home.AllTranslations }}
+                    {{ if eq .Language.LanguageName "简体中文" }}
+                    <a href="{{ .Permalink }}">🇨🇳 {{ .Language.LanguageName }}</a>
+                    {{ else if eq .Language.LanguageName "English" }}
+                    <a href="{{ .Permalink }}">🇺🇸 {{ .Language.LanguageName }}</a>
                     {{ else }}
-                    <a href="{{ (print "/" .Lang "/") | relLangURL }}">{{ .LanguageName }}</a>
+                    <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
                     {{ end }}
                     {{ end }}
                 </div>
