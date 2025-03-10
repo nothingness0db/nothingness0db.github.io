@@ -2,13 +2,16 @@ baseURL = "https://nothingness0db.github.io/"
 theme = "LoveIt"
 defaultContentLanguage = "zh-cn"
 
+# 是否包括中日韩文字
+hasCJKLanguage = true
+
+# 多语言设置
 [languages]
   [languages.zh-cn]
     weight = 1
     title = "Eira Hazel"
     languageCode = "zh-CN"
     languageName = "简体中文"
-    hasCJKLanguage = true
     [[languages.zh-cn.menu.main]]
       weight = 1
       identifier = "posts"
@@ -33,6 +36,22 @@ defaultContentLanguage = "zh-cn"
       name = "分类"
       url = "/categories/"
       title = ""
+    [[languages.zh-cn.menu.main]]
+      weight = 4
+      identifier = "github"
+      pre = "<i class='fab fa-github fa-fw'></i>"
+      post = ""
+      name = ""
+      url = "https://github.com/nothingness0db"
+      title = "GitHub"
+    [[languages.zh-cn.menu.main]]
+      weight = 5
+      identifier = "rss"
+      pre = "<i class='fas fa-rss fa-fw'></i>"
+      post = ""
+      name = ""
+      url = "/index.xml"
+      title = "RSS"
 
   [languages.en]
     weight = 2
@@ -63,6 +82,22 @@ defaultContentLanguage = "zh-cn"
       name = "Categories"
       url = "/categories/"
       title = ""
+    [[languages.en.menu.main]]
+      weight = 4
+      identifier = "github"
+      pre = "<i class='fab fa-github fa-fw'></i>"
+      post = ""
+      name = ""
+      url = "https://github.com/nothingness0db"
+      title = "GitHub"
+    [[languages.en.menu.main]]
+      weight = 5
+      identifier = "rss"
+      pre = "<i class='fas fa-rss fa-fw'></i>"
+      post = ""
+      name = ""
+      url = "/index.xml"
+      title = "RSS"
 
 [params]
   # 网站副标题
@@ -116,25 +151,8 @@ defaultContentLanguage = "zh-cn"
     
   # 社交链接
   [params.social]
-    GitHub = "https://github.com/nothingness0db"
-    Twitter = "https://x.com/ADsdssd40847"
-    Bilibili = "https://space.bilibili.com/495335682"
-    RSS = true
-
-  # 搜索配置
-  [params.search]
-    enable = true
-    type = "lunr"
-    contentLength = 4000
-    placeholder = ""
-    maxResultLength = 10
-    snippetLength = 30
-    highlightTag = "em"
-    absoluteURL = false
-    [params.search.algolia]
-      index = ""
-      appID = ""
-      searchKey = ""
+    GitHub = "nothingness0db"
+    RSS = "/index.xml"
 
 # Hugo 解析文档的配置
 [markup]
@@ -144,3 +162,20 @@ defaultContentLanguage = "zh-cn"
 # 输出文件设置
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+# 多语言地图
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# 多语言菜单
+[menu]
+  [[menu.main]]
+    identifier = "language"
+    pre = "<i class='fas fa-language fa-fw'></i>"
+    post = ""
+    name = ""
+    url = "#"
+    title = "Language"
+    weight = 6
