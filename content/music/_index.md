@@ -8,12 +8,10 @@ draft: false
 
 欢迎来到我的音乐空间！这里收录了我喜欢的音乐作品。
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=450 src="https://music.163.com/outchain/player?type=0&id=8152976921&auto=1&height=430"></iframe>
+<!-- 使用网易云音乐 shortcode -->
+{{< music server="netease" type="playlist" id="8152976921" >}}
 
-<style>
-iframe {
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-</style>
+<!-- 添加几首单曲示例 -->
+{{< music server="netease" type="song" id="1901371647" >}}
+
+{{< music server="netease" type="song" id="2007985346" >}}
