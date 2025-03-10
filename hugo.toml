@@ -4,7 +4,7 @@ baseURL = "https://nothingness0db.github.io/"
 theme = "LoveIt"
 
 # 网站标题
-title = "Eira Haze"
+title = "Eira Hazel"
 
 # 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "zh-CN"
@@ -17,6 +17,21 @@ hasCJKLanguage = true
   # 网站副标题
   subtitle = "Welcome to Eira's Blog"
   
+  # 网站图标, 目录和图片资源
+  [params.app]
+    # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
+    title = "Eira Hazel"
+    # 是否使用 SVG 图标
+    noFavicon = false
+    # 更新前面的图标
+    svgFavicon = ""
+    # Android 浏览器主题色
+    themeColor = "#ffffff"
+    # Safari 图标颜色
+    iconColor = "#5bbad5"
+    # Windows v8-10 磁贴颜色
+    tileColor = "#da532c"
+  
   # 社交链接
   [params.social]
     Twitter = "https://x.com/ADsdssd40847"
@@ -24,6 +39,9 @@ hasCJKLanguage = true
 
 [params.home.profile]
   avatarURL = "images/OIP.jpg"
+  # 设置头像大小为原来的 120%
+  imageWidth = 360  # 默认值通常是 300px
+  imageHeight = 360 # 默认值通常是 300px
   subtitle = "Welcome to Eira's Blog"
   typeit = true
 
@@ -32,13 +50,10 @@ hasCJKLanguage = true
   [[menu.main]]
     weight = 1
     identifier = "posts"
-    # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
     pre = ""
-    # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
     post = ""
     name = "文章"
     url = "/posts/"
-    # 当你将鼠标悬停在此菜单链接上时, 将显示的标题
     title = ""
   [[menu.main]]
     weight = 2
@@ -59,7 +74,6 @@ hasCJKLanguage = true
 
 # Hugo 解析文档的配置
 [markup]
-  # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
+  # 语法高亮设置
   [markup.highlight]
-    # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
