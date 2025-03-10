@@ -19,24 +19,18 @@
                     <span class="menu-item delimiter"></span>
                 {{- end -}}
                 <!-- 语言切换菜单 -->
-                {{ if hugo.IsMultilingual }}
-                <div class="dropdown">
-                    <a class="menu-item dropdown-toggle" href="javascript:void(0);" title="选择语言">
-                        <i class="fas fa-language fa-fw"></i>
+                {{- if hugo.IsMultilingual -}}
+                    <a href="javascript:void(0);" class="menu-item language" title="{{ T `selectLanguage` }}">
+                        <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;">
+                            {{- range .Site.Home.AllTranslations -}}
+                                <option value="{{ .Permalink }}"{{ if eq .Language $.Site.Language }} selected{{ end }}>
+                                    {{- .Language.LanguageName -}}
+                                </option>
+                            {{- end -}}
+                        </select>
                     </a>
-                    <ul class="dropdown-menu">
-                        {{ range .Site.Home.AllTranslations }}
-                        {{ if eq .Language.LanguageName "简体中文" }}
-                        <li><a href="{{ .Permalink }}">🇨🇳 {{ .Language.LanguageName }}</a></li>
-                        {{ else if eq .Language.LanguageName "English" }}
-                        <li><a href="{{ .Permalink }}">🇺🇸 {{ .Language.LanguageName }}</a></li>
-                        {{ else }}
-                        <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
-                        {{ end }}
-                        {{ end }}
-                    </ul>
-                </div>
-                {{ end }}
+                {{- end -}}
                 <a href="javascript:void(0);" class="menu-item theme-switch" title="{{ T "switchTheme" }}">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a>
@@ -67,85 +61,21 @@
                 </a>
             {{- end -}}
             <!-- 移动端语言切换菜单 -->
-            {{ if hugo.IsMultilingual }}
-            <div class="dropdown mobile-dropdown">
-                <a class="menu-item dropdown-toggle" href="javascript:void(0);" title="选择语言">
-                    <i class="fas fa-language fa-fw"></i> 语言
+            {{- if hugo.IsMultilingual -}}
+                <a class="menu-item language" title="{{ T `selectLanguage` }}">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;">
+                        {{- range .Site.Home.AllTranslations -}}
+                            <option value="{{ .Permalink }}"{{ if eq .Language $.Site.Language }} selected{{ end }}>
+                                {{- .Language.LanguageName -}}
+                            </option>
+                        {{- end -}}
+                    </select>
                 </a>
-                <div class="dropdown-content">
-                    {{ range .Site.Home.AllTranslations }}
-                    {{ if eq .Language.LanguageName "简体中文" }}
-                    <a href="{{ .Permalink }}">🇨🇳 {{ .Language.LanguageName }}</a>
-                    {{ else if eq .Language.LanguageName "English" }}
-                    <a href="{{ .Permalink }}">🇺🇸 {{ .Language.LanguageName }}</a>
-                    {{ else }}
-                    <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-                    {{ end }}
-                    {{ end }}
-                </div>
-            </div>
-            {{ end }}
+            {{- end -}}
             <a href="javascript:void(0);" class="menu-item theme-switch" title="{{ T "switchTheme" }}">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a>
         </div>
     </div>
 </header>
-
-<style>
-/* 下拉菜单样式 */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    border-radius: 4px;
-    right: 0;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.dropdown-menu li {
-    list-style: none;
-    margin: 8px 0;
-}
-
-.dropdown-menu li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.dropdown-menu li a:hover {
-    color: #2d96bd;
-}
-
-/* 移动端下拉菜单 */
-.mobile-dropdown {
-    display: block;
-    width: 100%;
-}
-
-.dropdown-content {
-    display: none;
-    padding-left: 20px;
-}
-
-.mobile-dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a {
-    display: block;
-    padding: 8px 0;
-}
-</style>
