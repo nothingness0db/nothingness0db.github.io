@@ -116,10 +116,31 @@ defaultContentLanguage = "zh-cn"
     
   # 社交链接
   [params.social]
+    GitHub = "https://github.com/nothingness0db"
     Twitter = "https://x.com/ADsdssd40847"
     Bilibili = "https://space.bilibili.com/495335682"
+    RSS = true
+
+  # 搜索配置
+  [params.search]
+    enable = true
+    type = "lunr"
+    contentLength = 4000
+    placeholder = ""
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    absoluteURL = false
+    [params.search.algolia]
+      index = ""
+      appID = ""
+      searchKey = ""
 
 # Hugo 解析文档的配置
 [markup]
   [markup.highlight]
     noClasses = false
+
+# 输出文件设置
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
