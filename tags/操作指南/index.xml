@@ -1,0 +1,5 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>操作指南 - Tag - Eira Haze</title><link>http://example.org/tags/%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/</link><description>操作指南 - Tag - Eira Haze</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 11 Mar 2025 00:15:00 +0800</lastBuildDate><atom:link href="http://example.org/tags/%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/" rel="self" type="application/rss+xml"/><item><title>Hugo博客日常文章管理指南</title><link>http://example.org/posts/blog-crud-guide/</link><pubDate>Tue, 11 Mar 2025 00:15:00 +0800</pubDate><author>xxxx</author><guid>http://example.org/posts/blog-crud-guide/</guid><description><![CDATA[<h1 id="hugo博客日常文章管理指南">Hugo博客日常文章管理指南</h1>
+<p>本文将详细介绍如何使用Hugo进行日常博客内容的创建、读取、更新和删除（CRUD）操作，帮助你高效管理博客内容。</p>
+<h2 id="文章创建-create">文章创建 (Create)</h2>
+<h3 id="使用命令行创建文章">使用命令行创建文章</h3>
+<p>Hugo提供了便捷的命令行工具来创建新文章：</p>]]></description></item></channel></rss>

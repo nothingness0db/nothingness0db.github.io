@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>新手教程 - Tag - Eira Haze</title><link>http://example.org/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/</link><description>新手教程 - Tag - Eira Haze</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 11 Mar 2025 00:15:00 +0800</lastBuildDate><atom:link href="http://example.org/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/" rel="self" type="application/rss+xml"/><item><title>Hugo博客日常文章管理指南</title><link>http://example.org/posts/blog-crud-guide/</link><pubDate>Tue, 11 Mar 2025 00:15:00 +0800</pubDate><author>xxxx</author><guid>http://example.org/posts/blog-crud-guide/</guid><description><![CDATA[<h1 id="hugo博客日常文章管理指南">Hugo博客日常文章管理指南</h1>
+<p>本文将详细介绍如何使用Hugo进行日常博客内容的创建、读取、更新和删除（CRUD）操作，帮助你高效管理博客内容。</p>
+<h2 id="文章创建-create">文章创建 (Create)</h2>
+<h3 id="使用命令行创建文章">使用命令行创建文章</h3>
+<p>Hugo提供了便捷的命令行工具来创建新文章：</p>]]></description></item><item><title>我的第一篇博客文章</title><link>http://example.org/posts/first_post/</link><pubDate>Wed, 19 Jun 2024 15:00:00 +0800</pubDate><author>xxxx</author><guid>http://example.org/posts/first_post/</guid><description><![CDATA[<h2 id="欢迎使用hugo">欢迎使用Hugo</h2>
+<p>这是通过Hugo LoveIt主题创建的第一篇文章，支持以下功能：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-python">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 代码块演示</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello Hugo!&#34;</span><span class="p">)</span></span></span></code></pre></div></div>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>实用技巧<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">使用<code>hugo serve -D</code>命令可以预览草稿文章</div>
+        </div>
+    </div>
+<p></p>]]></description></item></channel></rss>
