@@ -27,11 +27,11 @@
                     <ul class="dropdown-menu">
                         {{ range .Site.Languages }}
                         {{ if eq .LanguageName "简体中文" }}
-                        <li><a href="{{ .Permalink }}">🇨🇳 {{ .LanguageName }}</a></li>
+                        <li><a href="{{ "/zh-cn/" | relLangURL }}">🇨🇳 {{ .LanguageName }}</a></li>
                         {{ else if eq .LanguageName "English" }}
-                        <li><a href="{{ .Permalink }}">🇺🇸 {{ .LanguageName }}</a></li>
+                        <li><a href="{{ "/en/" | relLangURL }}">🇺🇸 {{ .LanguageName }}</a></li>
                         {{ else }}
-                        <li><a href="{{ .Permalink }}">{{ .LanguageName }}</a></li>
+                        <li><a href="{{ (print "/" .Lang "/") | relLangURL }}">{{ .LanguageName }}</a></li>
                         {{ end }}
                         {{ end }}
                     </ul>
@@ -75,11 +75,11 @@
                 <div class="dropdown-content">
                     {{ range .Site.Languages }}
                     {{ if eq .LanguageName "简体中文" }}
-                    <a href="{{ .Permalink }}">🇨🇳 {{ .LanguageName }}</a>
+                    <a href="{{ "/zh-cn/" | relLangURL }}">🇨🇳 {{ .LanguageName }}</a>
                     {{ else if eq .LanguageName "English" }}
-                    <a href="{{ .Permalink }}">🇺🇸 {{ .LanguageName }}</a>
+                    <a href="{{ "/en/" | relLangURL }}">🇺🇸 {{ .LanguageName }}</a>
                     {{ else }}
-                    <a href="{{ .Permalink }}">{{ .LanguageName }}</a>
+                    <a href="{{ (print "/" .Lang "/") | relLangURL }}">{{ .LanguageName }}</a>
                     {{ end }}
                     {{ end }}
                 </div>
