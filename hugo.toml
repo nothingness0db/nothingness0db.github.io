@@ -1,6 +1,6 @@
 baseURL = "https://nothingness0db.github.io/"
 theme = "LoveIt"
-defaultContentLanguage = "en"
+defaultContentLanguage = "zh-cn"
 
 # 是否包括中日韩文字
 hasCJKLanguage = true
