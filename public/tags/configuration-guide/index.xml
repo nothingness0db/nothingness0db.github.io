@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Configuration Guide - Tag - Eira Hazel</title>
+        <link>http://localhost:1313/tags/configuration-guide/</link>
+        <description>Configuration Guide - Tag - Eira Hazel</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 00:20:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/configuration-guide/" rel="self" type="application/rss+xml" /><item>
+    <title>Advanced Hugo Blog Configuration Guide</title>
+    <link>http://localhost:1313/posts/advanced-configuration/</link>
+    <pubDate>Tue, 11 Mar 2025 00:20:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/posts/advanced-configuration/</guid>
+    <description><![CDATA[<h1 id="advanced-hugo-blog-configuration-guide">Advanced Hugo Blog Configuration Guide</h1>
+<p>This is an English version of the advanced configuration guide for Hugo blogs. The content helps users configure their Hugo blog with advanced settings.</p>
+<blockquote>
+<p>Note: This is a placeholder for translation. The complete translation will be added later.</p></blockquote>
+<h2 id="basic-configuration">Basic Configuration</h2>
+<p>If you want to configure your Hugo blog with advanced settings, you need to modify the <code>config.toml</code> or <code>hugo.toml</code> file.</p>
+<h2 id="theme-configuration">Theme Configuration</h2>
+<p>Hugo themes provide various customization options. You can modify them according to your needs.</p>]]></description>
+</item>
+</channel>
+</rss>

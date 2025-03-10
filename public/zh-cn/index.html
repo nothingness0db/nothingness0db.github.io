@@ -40,26 +40,10 @@
             <a href="/zh-cn/" title="Eira Hazel">Eira Hazel</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/zh-cn/music/"><i class='fas fa-music fa-fw'></i> 音乐 </a><a class="menu-item" href="/zh-cn/posts/"> 文章 </a><a class="menu-item" href="/zh-cn/tags/"> 标签 </a><a class="menu-item" href="/zh-cn/categories/"> 分类 </a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><a class="menu-item" href="/zh-cn/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i>  </a><span class="menu-item delimiter"></span>
-                
-                <div class="dropdown">
-                    <a class="menu-item dropdown-toggle" href="javascript:void(0);" title="选择语言">
-                        <i class="fas fa-language fa-fw"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="http://localhost:1313//zh-cnen/">🇺🇸 English</a></li>
-                        
-                        
-                        
-                        <li><a href="http://localhost:1313//zh-cn">🇨🇳 简体中文</a></li>
-                        
-                        
-                    </ul>
-                </div>
-                
-                <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+            <div class="menu-inner"><a class="menu-item" href="/zh-cn/music/"><i class='fas fa-music fa-fw'></i> 音乐 </a><a class="menu-item" href="/zh-cn/posts/"> 文章 </a><a class="menu-item" href="/zh-cn/tags/"> 标签 </a><a class="menu-item" href="/zh-cn/categories/"> 分类 </a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><a class="menu-item" href="/zh-cn/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                        <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="http://localhost:1313/">English</option><option value="http://localhost:1313/zh-cn/" selected>简体中文</option></select>
+                    </a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a>
             </div>
@@ -75,89 +59,15 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/zh-cn/music/" title=""><i class='fas fa-music fa-fw'></i>音乐</a><a class="menu-item" href="/zh-cn/posts/" title="">文章</a><a class="menu-item" href="/zh-cn/tags/" title="">标签</a><a class="menu-item" href="/zh-cn/categories/" title="">分类</a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a class="menu-item" href="/zh-cn/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i></a>
-            
-            <div class="dropdown mobile-dropdown">
-                <a class="menu-item dropdown-toggle" href="javascript:void(0);" title="选择语言">
-                    <i class="fas fa-language fa-fw"></i> 语言
-                </a>
-                <div class="dropdown-content">
-                    
-                    
-                    <a href="http://localhost:1313//zh-cnen/">🇺🇸 English</a>
-                    
-                    
-                    
-                    <a href="http://localhost:1313//zh-cn">🇨🇳 简体中文</a>
-                    
-                    
-                </div>
-            </div>
-            
-            <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/zh-cn/music/" title=""><i class='fas fa-music fa-fw'></i>音乐</a><a class="menu-item" href="/zh-cn/posts/" title="">文章</a><a class="menu-item" href="/zh-cn/tags/" title="">标签</a><a class="menu-item" href="/zh-cn/categories/" title="">分类</a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a class="menu-item" href="/zh-cn/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i></a><a class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="http://localhost:1313/">English</option><option value="http://localhost:1313/zh-cn/" selected>简体中文</option></select>
+                </a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a>
         </div>
     </div>
 </header>
-
-<style>
- 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    border-radius: 4px;
-    right: 0;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.dropdown-menu li {
-    list-style: none;
-    margin: 8px 0;
-}
-
-.dropdown-menu li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.dropdown-menu li a:hover {
-    color: #2d96bd;
-}
-
- 
-.mobile-dropdown {
-    display: block;
-    width: 100%;
-}
-
-.dropdown-content {
-    display: none;
-    padding-left: 20px;
-}
-
-.mobile-dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a {
-    display: block;
-    padding: 8px 0;
-}
-</style>
 <main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-avatar"><a href="/zh-cn/music/" title="音乐"><img
         class="lazyload"

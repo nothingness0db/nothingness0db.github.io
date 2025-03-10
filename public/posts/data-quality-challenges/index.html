@@ -28,7 +28,7 @@ Sensor measurement errors Environmental interference Equipment vibration Electri
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/data-quality-challenges/" /><link rel="prev" href="http://localhost:1313/posts/advanced-configuration/" /><link rel="next" href="http://localhost:1313/posts/model-generalization-challenges/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/data-quality-challenges/" /><link rel="prev" href="http://localhost:1313/posts/deploy-to-github-pages/" /><link rel="next" href="http://localhost:1313/posts/model-generalization-challenges/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -56,26 +56,10 @@ Sensor measurement errors Environmental interference Equipment vibration Electri
             <a href="/" title="Eira Hazel">Eira Hazel</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/music/"><i class='fas fa-music fa-fw'></i> Music </a><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><a class="menu-item" href="/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i>  </a><span class="menu-item delimiter"></span>
-                
-                <div class="dropdown">
-                    <a class="menu-item dropdown-toggle" href="javascript:void(0);" title="选择语言">
-                        <i class="fas fa-language fa-fw"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="http://localhost:1313/">🇺🇸 English</a></li>
-                        
-                        
-                        
-                        <li><a href="http://localhost:1313/zh-cn/">🇨🇳 简体中文</a></li>
-                        
-                        
-                    </ul>
-                </div>
-                
-                <a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/music/"><i class='fas fa-music fa-fw'></i> Music </a><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><a class="menu-item" href="/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">
+                        <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="http://localhost:1313/" selected>English</option><option value="http://localhost:1313/zh-cn/">简体中文</option></select>
+                    </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a>
             </div>
@@ -91,89 +75,15 @@ Sensor measurement errors Environmental interference Equipment vibration Electri
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/music/" title=""><i class='fas fa-music fa-fw'></i>Music</a><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a class="menu-item" href="/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i></a>
-            
-            <div class="dropdown mobile-dropdown">
-                <a class="menu-item dropdown-toggle" href="javascript:void(0);" title="选择语言">
-                    <i class="fas fa-language fa-fw"></i> 语言
-                </a>
-                <div class="dropdown-content">
-                    
-                    
-                    <a href="http://localhost:1313/">🇺🇸 English</a>
-                    
-                    
-                    
-                    <a href="http://localhost:1313/zh-cn/">🇨🇳 简体中文</a>
-                    
-                    
-                </div>
-            </div>
-            
-            <a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/music/" title=""><i class='fas fa-music fa-fw'></i>Music</a><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a class="menu-item" href="/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i></a><a class="menu-item language" title="Select Language">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="http://localhost:1313/" selected>English</option><option value="http://localhost:1313/zh-cn/">简体中文</option></select>
+                </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a>
         </div>
     </div>
 </header>
-
-<style>
- 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    border-radius: 4px;
-    right: 0;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.dropdown-menu li {
-    list-style: none;
-    margin: 8px 0;
-}
-
-.dropdown-menu li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.dropdown-menu li a:hover {
-    color: #2d96bd;
-}
-
- 
-.mobile-dropdown {
-    display: block;
-    width: 100%;
-}
-
-.dropdown-content {
-    display: none;
-    padding-left: 20px;
-}
-
-.mobile-dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a {
-    display: block;
-    padding: 8px 0;
-}
-</style>
 <main class="main">
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
@@ -339,7 +249,7 @@ Sensor measurement errors Environmental interference Equipment vibration Electri
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/advanced-configuration/" class="prev" rel="prev" title="Hugo博客高级配置指南"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Hugo博客高级配置指南</a>
+    <div class="post-nav"><a href="/posts/deploy-to-github-pages/" class="prev" rel="prev" title="Deploying Hugo Blog to GitHub Pages"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Deploying Hugo Blog to GitHub Pages</a>
             <a href="/posts/model-generalization-challenges/" class="next" rel="next" title="Model Generalization Challenges in Dynamic Environments">Model Generalization Challenges in Dynamic Environments<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
