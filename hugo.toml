@@ -15,6 +15,9 @@ hasCJKLanguage = true
     contentDir = "content"
     [languages.zh-cn.params]
       languageISO = "zh-CN"
+      [languages.zh-cn.params.home]
+        [languages.zh-cn.params.home.profile]
+          subtitle = "欢迎来到Eira的博客"
     [[languages.zh-cn.menu.main]]
       weight = 1
       identifier = "music"
@@ -72,6 +75,9 @@ hasCJKLanguage = true
     contentDir = "content"
     [languages.en.params]
       languageISO = "en"
+      [languages.en.params.home]
+        [languages.en.params.home.profile]
+          subtitle = "Welcome to Eira's Blog"
     [[languages.en.menu.main]]
       weight = 1
       identifier = "music"
@@ -148,7 +154,7 @@ hasCJKLanguage = true
     # 主页个人信息
     [params.home.profile]
       enable = true
-      avatarURL = "images/OIP.jpg"
+      avatarURL = "/images/OIP.jpg"
       imageWidth = 360
       imageHeight = 360
       subtitle = "Welcome to Eira's Blog"

@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://localhost:1313/</loc><lastmod>2025-03-11T02:38:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>http://localhost:1313/</loc><lastmod>2025-03-11T03:40:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="http://localhost:1313/zh-cn/"
@@ -51,11 +51,4 @@
             <loc>http://localhost:1313/tags/website-building/</loc><lastmod>2025-03-11T00:20:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://localhost:1313/categories/blog/</loc><lastmod>2025-03-10T23:50:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://localhost:1313/tags/first-post/</loc><lastmod>2025-03-10T23:50:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://localhost:1313/posts/first_post/</loc><lastmod>2025-03-10T23:50:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://localhost:1313/tags/github/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/tags/%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/tags/%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/tags/%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
+            <loc>http://localhost:1313/posts/first_post/</loc><lastmod>2025-03-10T23:50:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>

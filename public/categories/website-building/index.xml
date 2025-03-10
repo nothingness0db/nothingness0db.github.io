@@ -3,7 +3,41 @@
         <title>Website Building - Category - Eira Hazel</title>
         <link>http://localhost:1313/categories/website-building/</link>
         <description>Website Building - Category - Eira Hazel</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 00:20:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/categories/website-building/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 00:30:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/categories/website-building/" rel="self" type="application/rss+xml" /><item>
+    <title>Deploying Hugo Blog to GitHub Pages</title>
+    <link>http://localhost:1313/posts/deploy-to-github-pages/</link>
+    <pubDate>Tue, 11 Mar 2025 00:30:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/posts/deploy-to-github-pages/</guid>
+    <description><![CDATA[<h1 id="deploying-hugo-blog-to-github-pages">Deploying Hugo Blog to GitHub Pages</h1>
+<p>This guide explains how to deploy your Hugo blog to GitHub Pages for free hosting.</p>
+<blockquote>
+<p>Note: This is a placeholder for translation. The complete translation will be added later.</p></blockquote>
+<h2 id="setting-up-your-github-repository">Setting Up Your GitHub Repository</h2>
+<p>Create a repository named <code>yourusername.github.io</code> to host your blog.</p>
+<h2 id="configuring-github-actions">Configuring GitHub Actions</h2>
+<p>Use GitHub Actions to automate the build and deployment process of your Hugo site.</p>
+<h2 id="custom-domain-configuration">Custom Domain Configuration</h2>
+<p>Learn how to set up a custom domain for your GitHub Pages site.</p>]]></description>
+</item>
+<item>
+    <title>Hugo Blog CRUD Operations Guide</title>
+    <link>http://localhost:1313/posts/blog-crud-guide/</link>
+    <pubDate>Tue, 11 Mar 2025 00:25:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/posts/blog-crud-guide/</guid>
+    <description><![CDATA[<h1 id="hugo-blog-crud-operations-guide">Hugo Blog CRUD Operations Guide</h1>
+<p>This guide covers the basic Create, Read, Update, and Delete operations for managing content on your Hugo blog.</p>
+<blockquote>
+<p>Note: This is a placeholder for translation. The complete translation will be added later.</p></blockquote>
+<h2 id="creating-new-content">Creating New Content</h2>
+<p>Hugo provides simple commands to create new content for your blog.</p>
+<h2 id="reading-content">Reading Content</h2>
+<p>Learn how to properly structure and organize your content for easy navigation.</p>
+<h2 id="updating-content">Updating Content</h2>
+<p>Discover the best practices for updating existing content while maintaining SEO.</p>]]></description>
+</item>
+<item>
     <title>Advanced Hugo Blog Configuration Guide</title>
     <link>http://localhost:1313/posts/advanced-configuration/</link>
     <pubDate>Tue, 11 Mar 2025 00:20:00 &#43;0800</pubDate>
