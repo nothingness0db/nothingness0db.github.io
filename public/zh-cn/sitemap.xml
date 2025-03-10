@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://localhost:1313/categories/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><xhtml:link
+            <loc>http://localhost:1313/categories/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="http://localhost:1313/en/categories/"
@@ -11,7 +11,7 @@
                     hreflang="zh-cn"
                     href="http://localhost:1313/categories/"
                     /></url><url>
-            <loc>http://localhost:1313/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><xhtml:link
+            <loc>http://localhost:1313/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="http://localhost:1313/en/"
@@ -20,8 +20,16 @@
                     hreflang="zh-cn"
                     href="http://localhost:1313/"
                     /></url><url>
-            <loc>http://localhost:1313/posts/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><xhtml:link
+            <loc>http://localhost:1313/posts/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://localhost:1313/en/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="http://localhost:1313/posts/"
+                    /></url><url>
+            <loc>http://localhost:1313/tags/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="http://localhost:1313/en/tags/"
@@ -30,22 +38,38 @@
                     hreflang="zh-cn"
                     href="http://localhost:1313/tags/"
                     /></url><url>
-            <loc>http://localhost:1313/tags/%E5%8A%A8%E6%80%81%E7%8E%AF%E5%A2%83/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/model-generalization-challenges/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/%E6%8A%80%E6%9C%AF%E6%8E%A2%E8%AE%A8/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/%E6%A8%A1%E5%9E%8B%E6%B3%9B%E5%8C%96/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/%E5%B7%A5%E4%B8%9A%E6%95%B0%E6%8D%AE/</loc><lastmod>2025-03-11T02:06:20&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/%E6%95%B0%E6%8D%AE%E8%B4%A8%E9%87%8F/</loc><lastmod>2025-03-11T02:06:20&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/data-quality-challenges/</loc><lastmod>2025-03-11T02:06:20&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/advanced-configuration/</loc><lastmod>2025-03-11T00:20:00&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/</loc><lastmod>2025-03-11T00:20:00&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</loc><lastmod>2025-03-11T00:20:00&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</loc><lastmod>2025-03-11T00:20:00&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/blog-crud-guide/</loc><lastmod>2025-03-11T00:15:00&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/</loc><lastmod>2025-03-11T00:15:00&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/</loc><lastmod>2025-03-11T00:15:00&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/github/</loc><lastmod>2025-03-11T00:10:00&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97/</loc><lastmod>2025-03-11T00:10:00&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/deploy-to-github-pages/</loc><lastmod>2025-03-11T00:10:00&#43;08:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/first_post/</loc><lastmod>2024-06-19T15:00:00&#43;08:00</lastmod></url></urlset>
+            <loc>http://localhost:1313/tags/%E5%8A%A8%E6%80%81%E7%8E%AF%E5%A2%83/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/posts/model-generalization-challenges/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://localhost:1313/en/posts/model-generalization-challenges/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="http://localhost:1313/posts/model-generalization-challenges/"
+                    /></url><url>
+            <loc>http://localhost:1313/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/categories/%E6%8A%80%E6%9C%AF%E6%8E%A2%E8%AE%A8/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/tags/%E6%A8%A1%E5%9E%8B%E6%B3%9B%E5%8C%96/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/tags/%E5%B7%A5%E4%B8%9A%E6%95%B0%E6%8D%AE/</loc><lastmod>2025-03-11T02:06:20&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/tags/%E6%95%B0%E6%8D%AE%E8%B4%A8%E9%87%8F/</loc><lastmod>2025-03-11T02:06:20&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/posts/data-quality-challenges/</loc><lastmod>2025-03-11T02:06:20&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://localhost:1313/en/posts/data-quality-challenges/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="http://localhost:1313/posts/data-quality-challenges/"
+                    /></url><url>
+            <loc>http://localhost:1313/posts/advanced-configuration/</loc><lastmod>2025-03-11T00:20:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/tags/%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/</loc><lastmod>2025-03-11T00:20:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</loc><lastmod>2025-03-11T00:20:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</loc><lastmod>2025-03-11T00:20:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/posts/blog-crud-guide/</loc><lastmod>2025-03-11T00:15:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/tags/%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/</loc><lastmod>2025-03-11T00:15:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/</loc><lastmod>2025-03-11T00:15:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/tags/github/</loc><lastmod>2025-03-11T00:10:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/tags/%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97/</loc><lastmod>2025-03-11T00:10:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/posts/deploy-to-github-pages/</loc><lastmod>2025-03-11T00:10:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/posts/first_post/</loc><lastmod>2024-06-19T15:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>

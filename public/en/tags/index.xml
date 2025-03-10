@@ -3,5 +3,45 @@
         <title>Tags - Tag - Eira Hazel</title>
         <link>http://localhost:1313/en/tags/</link>
         <description>Tags - Tag - Eira Hazel</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="http://localhost:1313/en/tags/" rel="self" type="application/rss+xml" /></channel>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Dynamic Environment</title>
+    <link>http://localhost:1313/en/tags/dynamic-environment/</link>
+    <pubDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/en/tags/dynamic-environment/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Machine Learning</title>
+    <link>http://localhost:1313/en/tags/machine-learning/</link>
+    <pubDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/en/tags/machine-learning/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Model Generalization</title>
+    <link>http://localhost:1313/en/tags/model-generalization/</link>
+    <pubDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/en/tags/model-generalization/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Data Quality</title>
+    <link>http://localhost:1313/en/tags/data-quality/</link>
+    <pubDate>Tue, 11 Mar 2025 02:06:20 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/en/tags/data-quality/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Industrial Data</title>
+    <link>http://localhost:1313/en/tags/industrial-data/</link>
+    <pubDate>Tue, 11 Mar 2025 02:06:20 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/en/tags/industrial-data/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>

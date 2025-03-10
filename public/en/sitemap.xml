@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://localhost:1313/en/categories/</loc><xhtml:link
+            <loc>http://localhost:1313/en/categories/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="http://localhost:1313/categories/"
@@ -11,7 +11,8 @@
                     hreflang="en"
                     href="http://localhost:1313/en/categories/"
                     /></url><url>
-            <loc>http://localhost:1313/en/</loc><xhtml:link
+            <loc>http://localhost:1313/en/tags/dynamic-environment/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/en/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="http://localhost:1313/"
@@ -20,7 +21,27 @@
                     hreflang="en"
                     href="http://localhost:1313/en/"
                     /></url><url>
-            <loc>http://localhost:1313/en/tags/</loc><xhtml:link
+            <loc>http://localhost:1313/en/tags/machine-learning/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/en/tags/model-generalization/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/en/posts/model-generalization-challenges/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="http://localhost:1313/posts/model-generalization-challenges/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="http://localhost:1313/en/posts/model-generalization-challenges/"
+                    /></url><url>
+            <loc>http://localhost:1313/en/posts/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="http://localhost:1313/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="http://localhost:1313/en/posts/"
+                    /></url><url>
+            <loc>http://localhost:1313/en/tags/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="http://localhost:1313/tags/"
@@ -28,4 +49,16 @@
                     rel="alternate"
                     hreflang="en"
                     href="http://localhost:1313/en/tags/"
-                    /></url></urlset>
+                    /></url><url>
+            <loc>http://localhost:1313/en/categories/technical-discussion/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/en/tags/data-quality/</loc><lastmod>2025-03-11T02:06:20&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/en/posts/data-quality-challenges/</loc><lastmod>2025-03-11T02:06:20&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="http://localhost:1313/posts/data-quality-challenges/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="http://localhost:1313/en/posts/data-quality-challenges/"
+                    /></url><url>
+            <loc>http://localhost:1313/en/tags/industrial-data/</loc><lastmod>2025-03-11T02:06:20&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>
