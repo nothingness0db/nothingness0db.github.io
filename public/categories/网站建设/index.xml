@@ -1,0 +1,60 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>网站建设 - Category - Eira Haze</title>
+        <link>http://localhost:61395/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</link>
+        <description>网站建设 - Category - Eira Haze</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 11 Mar 2025 00:20:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:61395/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo博客高级配置指南</title>
+    <link>http://localhost:61395/posts/advanced-configuration/</link>
+    <pubDate>Tue, 11 Mar 2025 00:20:00 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:61395/posts/advanced-configuration/</guid>
+    <description><![CDATA[<h1 id="hugo博客高级配置指南">Hugo博客高级配置指南</h1>
+<p>本文将介绍Hugo博客的高级配置选项，帮助你充分利用Hugo的强大功能，打造一个独特而高效的个人博客。</p>
+<h2 id="主题自定义">主题自定义</h2>
+<h3 id="修改主题配置">修改主题配置</h3>
+<p>大多数Hugo主题都提供了丰富的配置选项，可以在<code>hugo.toml</code>（或<code>config.toml</code>）中进行设置：</p>]]></description>
+</item>
+<item>
+    <title>Hugo博客日常文章管理指南</title>
+    <link>http://localhost:61395/posts/blog-crud-guide/</link>
+    <pubDate>Tue, 11 Mar 2025 00:15:00 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:61395/posts/blog-crud-guide/</guid>
+    <description><![CDATA[<h1 id="hugo博客日常文章管理指南">Hugo博客日常文章管理指南</h1>
+<p>本文将详细介绍如何使用Hugo进行日常博客内容的创建、读取、更新和删除（CRUD）操作，帮助你高效管理博客内容。</p>
+<h2 id="文章创建-create">文章创建 (Create)</h2>
+<h3 id="使用命令行创建文章">使用命令行创建文章</h3>
+<p>Hugo提供了便捷的命令行工具来创建新文章：</p>]]></description>
+</item>
+<item>
+    <title>如何将Hugo博客部署到GitHub Pages</title>
+    <link>http://localhost:61395/posts/deploy-to-github-pages/</link>
+    <pubDate>Tue, 11 Mar 2025 00:10:00 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:61395/posts/deploy-to-github-pages/</guid>
+    <description><![CDATA[<h1 id="将hugo博客部署到github-pages">将Hugo博客部署到GitHub Pages</h1>
+<p>GitHub Pages是一个免费的静态网站托管服务，非常适合用来部署Hugo生成的静态博客。本文将指导你如何将Hugo博客部署到GitHub Pages上。</p>]]></description>
+</item>
+<item>
+    <title>我的第一篇博客文章</title>
+    <link>http://localhost:61395/posts/first_post/</link>
+    <pubDate>Wed, 19 Jun 2024 15:00:00 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:61395/posts/first_post/</guid>
+    <description><![CDATA[<h2 id="欢迎使用hugo">欢迎使用Hugo</h2>
+<p>这是通过Hugo LoveIt主题创建的第一篇文章，支持以下功能：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 代码块演示</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello Hugo!&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>实用技巧<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">使用<code>hugo serve -D</code>命令可以预览草稿文章</div>
+        </div>
+    </div>
+<p></p>]]></description>
+</item>
+</channel>
+</rss>

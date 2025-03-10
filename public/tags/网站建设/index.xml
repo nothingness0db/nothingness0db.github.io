@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>网站建设 - Tag - Eira Haze</title>
+        <link>http://localhost:61395/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</link>
+        <description>网站建设 - Tag - Eira Haze</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 11 Mar 2025 00:20:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:61395/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo博客高级配置指南</title>
+    <link>http://localhost:61395/posts/advanced-configuration/</link>
+    <pubDate>Tue, 11 Mar 2025 00:20:00 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:61395/posts/advanced-configuration/</guid>
+    <description><![CDATA[<h1 id="hugo博客高级配置指南">Hugo博客高级配置指南</h1>
+<p>本文将介绍Hugo博客的高级配置选项，帮助你充分利用Hugo的强大功能，打造一个独特而高效的个人博客。</p>
+<h2 id="主题自定义">主题自定义</h2>
+<h3 id="修改主题配置">修改主题配置</h3>
+<p>大多数Hugo主题都提供了丰富的配置选项，可以在<code>hugo.toml</code>（或<code>config.toml</code>）中进行设置：</p>]]></description>
+</item>
+</channel>
+</rss>
