@@ -1,0 +1,26 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - Eira Hazel</title>
+        <link>http://localhost:1313/en/posts/</link>
+        <description>All Posts | Eira Hazel</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 02:06:20 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/en/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Data Quality Challenges: Handling Noisy and Missing Industrial Data</title>
+    <link>http://localhost:1313/en/posts/data-quality-challenges/</link>
+    <pubDate>Tue, 11 Mar 2025 02:06:20 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/en/posts/data-quality-challenges/</guid>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Data quality issues have always been a significant challenge for data scientists and engineers in industrial scenarios. This article delves into common noise and missing data problems in industrial data and provides practical solutions.</p>
+<h2 id="characteristics-and-challenges-of-industrial-data">Characteristics and Challenges of Industrial Data</h2>
+<h3 id="1-data-noise">1. Data Noise</h3>
+<p>The main sources of noise in industrial data include:</p>
+<ul>
+<li>Sensor measurement errors</li>
+<li>Environmental interference</li>
+<li>Equipment vibration</li>
+<li>Electrical interference</li>
+</ul>
+<p>These noises affect data quality and can lead to poor model training results.</p>]]></description>
+</item>
+</channel>
+</rss>

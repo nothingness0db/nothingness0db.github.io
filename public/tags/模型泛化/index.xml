@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>模型泛化 - Tag - Eira Hazel</title>
+        <title>模型泛化 - 标签 - Eira Hazel</title>
         <link>http://localhost:1313/tags/%E6%A8%A1%E5%9E%8B%E6%B3%9B%E5%8C%96/</link>
-        <description>模型泛化 - Tag - Eira Hazel</description>
+        <description>模型泛化 - 标签 - Eira Hazel</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%A8%A1%E5%9E%8B%E6%B3%9B%E5%8C%96/" rel="self" type="application/rss+xml" /><item>
     <title>动态环境下的模型泛化难题</title>
     <link>http://localhost:1313/posts/model-generalization-challenges/</link>

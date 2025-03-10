@@ -1,94 +1,125 @@
 baseURL = "https://nothingness0db.github.io/"
-
-# 更改使用 Hugo 构建网站时使用的默认主题
 theme = "LoveIt"
+defaultContentLanguage = "zh-cn"
 
-# 网站标题
-title = "Eira Hazel"
+[languages]
+  [languages.zh-cn]
+    weight = 1
+    title = "Eira Hazel"
+    languageCode = "zh-CN"
+    languageName = "简体中文"
+    hasCJKLanguage = true
+    [[languages.zh-cn.menu.main]]
+      weight = 1
+      identifier = "posts"
+      pre = ""
+      post = ""
+      name = "文章"
+      url = "/posts/"
+      title = ""
+    [[languages.zh-cn.menu.main]]
+      weight = 2
+      identifier = "tags"
+      pre = ""
+      post = ""
+      name = "标签"
+      url = "/tags/"
+      title = ""
+    [[languages.zh-cn.menu.main]]
+      weight = 3
+      identifier = "categories"
+      pre = ""
+      post = ""
+      name = "分类"
+      url = "/categories/"
+      title = ""
 
-# 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
-languageCode = "zh-CN"
-# 语言名称 ["English", "简体中文", "Français", "Polski", ...]
-languageName = "简体中文"
-# 是否包括中日韩文字
-hasCJKLanguage = true
+  [languages.en]
+    weight = 2
+    title = "Eira Hazel"
+    languageCode = "en"
+    languageName = "English"
+    [[languages.en.menu.main]]
+      weight = 1
+      identifier = "posts"
+      pre = ""
+      post = ""
+      name = "Posts"
+      url = "/posts/"
+      title = ""
+    [[languages.en.menu.main]]
+      weight = 2
+      identifier = "tags"
+      pre = ""
+      post = ""
+      name = "Tags"
+      url = "/tags/"
+      title = ""
+    [[languages.en.menu.main]]
+      weight = 3
+      identifier = "categories"
+      pre = ""
+      post = ""
+      name = "Categories"
+      url = "/categories/"
+      title = ""
 
 [params]
   # 网站副标题
-  subtitle = "Welcome to Eira's Blog"
-  
-  # 主页配置
+  [params.header]
+    # 桌面端导航栏模式 ["fixed", "normal", "auto"]
+    desktopMode = "fixed"
+    # 移动端导航栏模式 ["fixed", "normal", "auto"]
+    mobileMode = "auto"
+    # 主题切换模式
+    themeChangeMode = "select"
+    # 页面头部导航栏标题配置
+    [params.header.title]
+      # LOGO 的 URL
+      logo = ""
+      # 标题名称
+      name = "Eira Hazel"
+      # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+      pre = ""
+      # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+      post = ""
+      # 是否为标题显示打字机动画
+      typeit = false
+
   [params.home]
-    # RSS 文章数目
     rss = 10
     # 主页个人信息
     [params.home.profile]
       enable = true
       avatarURL = "images/OIP.jpg"
-      # 设置头像大小为原来的 120%
-      imageWidth = 360  # 默认值通常是 300px
-      imageHeight = 360 # 默认值通常是 300px
+      imageWidth = 360
+      imageHeight = 360
       subtitle = "Welcome to Eira's Blog"
       typeit = true
     
     # 主页文章列表
     [params.home.posts]
       enable = true
-      # 主页每页显示文章数量
       paginate = 6
-      # 被 params.page 中的 hiddenFromHomePage 替代
-      # 当你没有在文章前置参数中设置 "hiddenFromHomePage" 时的默认行为
       defaultHiddenFromHomePage = false
   
-  # 网站图标, 目录和图片资源
-  [params.app]
-    # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-    title = "Eira Hazel"
-    # 是否使用 SVG 图标
-    noFavicon = false
-    # 更新前面的图标
-    svgFavicon = ""
-    # Android 浏览器主题色
-    themeColor = "#ffffff"
-    # Safari 图标颜色
-    iconColor = "#5bbad5"
-    # Windows v8-10 磁贴颜色
-    tileColor = "#da532c"
-  
+  # 页面配置
+  [params.page]
+    hiddenFromHomePage = false
+    hiddenFromSearch = false
+    twemoji = false
+    lightgallery = true
+    ruby = true
+    fraction = true
+    fontawesome = true
+    linkToMarkdown = true
+    
   # 社交链接
   [params.social]
     Twitter = "https://x.com/ADsdssd40847"
     Bilibili = "https://space.bilibili.com/495335682"
 
-# 菜单配置
-[menu]
-  [[menu.main]]
-    weight = 1
-    identifier = "posts"
-    pre = ""
-    post = ""
-    name = "文章"
-    url = "/posts/"
-    title = ""
-  [[menu.main]]
-    weight = 2
-    identifier = "tags"
-    pre = ""
-    post = ""
-    name = "标签"
-    url = "/tags/"
-    title = ""
-  [[menu.main]]
-    weight = 3
-    identifier = "categories"
-    pre = ""
-    post = ""
-    name = "分类"
-    url = "/categories/"
-    title = ""
-
 # Hugo 解析文档的配置
 [markup]
-  # 语法高亮设置
   [markup.highlight]
     noClasses = false
