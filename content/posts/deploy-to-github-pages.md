@@ -1,5 +1,6 @@
 ---
 title: "如何将Hugo博客部署到GitHub Pages"
+author: "Eira Hazel"
 date: 2025-03-11T00:10:00+08:00
 draft: false
 tags:

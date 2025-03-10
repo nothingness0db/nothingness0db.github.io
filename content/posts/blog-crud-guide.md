@@ -1,5 +1,6 @@
 ---
 title: "Hugo博客日常文章管理指南"
+author: "Eira Hazel"
 date: 2025-03-11T00:15:00+08:00
 draft: false
 tags:

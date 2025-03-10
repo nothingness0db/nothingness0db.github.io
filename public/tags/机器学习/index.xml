@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>机器学习 - Tag - Eira Hazel</title>
+        <link>http://localhost:1313/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
+        <description>机器学习 - Tag - Eira Hazel</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 11 Mar 2025 02:06:20 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="self" type="application/rss+xml" /><item>
+    <title>数据质量问题：工业数据噪声大、缺失多怎么办</title>
+    <link>http://localhost:1313/posts/data-quality-challenges/</link>
+    <pubDate>Tue, 11 Mar 2025 02:06:20 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/posts/data-quality-challenges/</guid>
+    <description><![CDATA[<h2 id="引言">引言</h2>
+<p>在工业场景中，数据质量问题一直是困扰数据科学家和工程师的重要挑战。本文将深入探讨工业数据中常见的噪声和缺失问题，并提供实用的解决方案。</p>
+<h2 id="工业数据的特点与挑战">工业数据的特点与挑战</h2>
+<h3 id="1-数据噪声">1. 数据噪声</h3>
+<p>工业数据中的噪声主要来源于以下几个方面：</p>]]></description>
+</item>
+</channel>
+</rss>
