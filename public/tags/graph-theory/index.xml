@@ -3,15 +3,15 @@
         <title>Graph Theory - Tag - Eira Hazel</title>
         <link>http://localhost:1313/tags/graph-theory/</link>
         <description>Graph Theory - Tag - Eira Hazel</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 20 Jun 2024 15:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/graph-theory/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 12 Mar 2025 01:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/graph-theory/" rel="self" type="application/rss+xml" /><item>
     <title>Understanding Dominator Trees</title>
     <link>http://localhost:1313/posts/dominator-tree/</link>
-    <pubDate>Thu, 20 Jun 2024 15:00:00 &#43;0800</pubDate>
+    <pubDate>Wed, 12 Mar 2025 01:00:00 &#43;0800</pubDate>
     <author>xxxx</author>
     <guid>http://localhost:1313/posts/dominator-tree/</guid>
-    <description><![CDATA[<p>Dominator trees are an important concept in graph theory with widespread applications in compiler optimization, program analysis, and other fields. I&rsquo;d like to help everyone understand this concept through some simple explanations.</p>
-<h2 id="what-is-a-domination-relationship">What is a Domination Relationship?</h2>
-<p>In a directed graph, if all paths from the entry point to a node v must pass through node u, then we say node u dominates node v, denoted as u dom v. Intuitively, if you want to reach v, you must first go through u, making u like a &ldquo;checkpoint&rdquo; on the way to v.</p>]]></description>
+    <description><![CDATA[<p>&ldquo;Brief Discussion on Dominator Trees
+Dominator trees are an important concept in graph theory, with wide applications in compiler optimization, program analysis, and other fields. I want to help everyone understand this concept through some simple explanations.</p>
+<p>First, what is dominance? In a directed graph, if all paths from the starting point to a node v must pass through node u, then we say node u dominates node v, denoted as u dom v. Intuitively, to reach v, one must first pass through u - u acts like a &ldquo;checkpoint&rdquo; guarding access to v.</p>]]></description>
 </item>
 </channel>
 </rss>
