@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>动态环境 - 标签 - Eira Hazel</title>
+        <link>http://localhost:1313/zh-cn/tags/%E5%8A%A8%E6%80%81%E7%8E%AF%E5%A2%83/</link>
+        <description>动态环境 - 标签 - Eira Hazel</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/zh-cn/tags/%E5%8A%A8%E6%80%81%E7%8E%AF%E5%A2%83/" rel="self" type="application/rss+xml" /><item>
+    <title>动态环境下的模型泛化难题</title>
+    <link>http://localhost:1313/zh-cn/posts/model-generalization-challenges/</link>
+    <pubDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/zh-cn/posts/model-generalization-challenges/</guid>
+    <description><![CDATA[<h2 id="引言">引言</h2>
+<p>在现实世界的应用中，机器学习模型常常面临着动态环境带来的巨大挑战。模型在训练数据上表现良好，但在实际部署环境中性能却大幅下降。本文将深入探讨这一问题，并提供实用的解决方案。</p>]]></description>
+</item>
+</channel>
+</rss>

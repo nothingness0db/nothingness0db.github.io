@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>图论 - 标签 - Eira Hazel</title>
+        <link>http://localhost:1313/zh-cn/tags/%E5%9B%BE%E8%AE%BA/</link>
+        <description>图论 - 标签 - Eira Hazel</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 12 Mar 2023 15:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/zh-cn/tags/%E5%9B%BE%E8%AE%BA/" rel="self" type="application/rss+xml" /><item>
+    <title>浅谈支配树</title>
+    <link>http://localhost:1313/zh-cn/posts/dominator-tree/</link>
+    <pubDate>Sun, 12 Mar 2023 15:00:00 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/zh-cn/posts/dominator-tree/</guid>
+    <description><![CDATA[<p>浅谈支配树
+支配树是图论中的重要概念，它在编译器优化、程序分析等领域有着广泛应用。我想通过一些简单的解释来帮助大家理解这个概念。
+首先，什么是支配关系？在一个有向图中，如果从起点到某个节点v的所有路径都必须经过节点u，那么我们就说节点u支配节点v，记作u dom v。直观地说，如果想要到达v，就必须先经过u，u就像是通往v的一个&quot;关卡&quot;。
+支配关系有几个性质：每个节点都支配自己；如果a支配b且b支配c，那么a也支配c；如果a支配b且b支配a，那么a和b是同一个节点。
+对于每个节点，它都有一个特殊的支配者，叫做&quot;直接支配者&quot;。这是距离该节点最近的支配者。支配树就是由这些直接支配关系构成的树形结构，其中起点是根节点，每个节点的父节点就是它的直接支配者。
+构造支配树的经典算法是Lengauer-Tarjan算法，这个算法虽然实现复杂，但效率很高。它基于深度优先搜索和并查集，通过计算&quot;半支配点&quot;来最终确定直接支配者。
+支配树在编译器中有什么用途呢？当我们将程序表示为控制流图时，支配树可以帮助我们分析变量的生命周期、找出循环不变量、构建静态单赋值形式等。举个例子，如果节点A支配节点B，那么程序执行到B时，A中定义的变量一定是可用的。
+除了编译器优化，支配树还用于程序分析中检测不可达代码、识别控制依赖关系；在网络分析中找出关键节点；在控制流分析中确定哪些代码块的执行依赖于哪些条件。
+与支配树相关的还有一些扩展概念。支配边界是指那些自身不被某节点支配，但至少有一个前驱被该节点支配的节点集合。后支配树则基于&quot;后支配&quot;关系，它考虑的是从节点到终点的所有路径。
+理解支配树需要一定的图论基础，但掌握了这个概念，对于深入学习编译原理和程序分析会有很大帮助。尽管构造算法看起来复杂，但支配树本身的概念是直观的：它揭示了程序执行过程中的必经之路，帮助我们理解代码的结构和依赖关系。</p>]]></description>
+</item>
+</channel>
+</rss>

@@ -2,16 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://localhost:1313/zh-cn/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="http://localhost:1313/categories/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="http://localhost:1313/zh-cn/categories/"
-                    /></url><url>
-            <loc>http://localhost:1313/zh-cn/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>http://localhost:1313/zh-cn/</loc><lastmod>2025-03-12T15:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="http://localhost:1313/"
@@ -20,7 +11,25 @@
                     hreflang="zh-cn"
                     href="http://localhost:1313/zh-cn/"
                     /></url><url>
-            <loc>http://localhost:1313/zh-cn/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>http://localhost:1313/zh-cn/posts/</loc><lastmod>2025-03-12T15:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://localhost:1313/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="http://localhost:1313/zh-cn/posts/"
+                    /></url><url>
+            <loc>http://localhost:1313/zh-cn/categories/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://localhost:1313/categories/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="http://localhost:1313/zh-cn/categories/"
+                    /></url><url>
+            <loc>http://localhost:1313/zh-cn/tags/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="http://localhost:1313/tags/"
@@ -28,4 +37,51 @@
                     rel="alternate"
                     hreflang="zh-cn"
                     href="http://localhost:1313/zh-cn/tags/"
+                    /></url><url>
+            <loc>http://localhost:1313/zh-cn/tags/%E5%8A%A8%E6%80%81%E7%8E%AF%E5%A2%83/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/zh-cn/posts/model-generalization-challenges/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://localhost:1313/posts/model-generalization-challenges/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="http://localhost:1313/zh-cn/posts/model-generalization-challenges/"
+                    /></url><url>
+            <loc>http://localhost:1313/zh-cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/zh-cn/categories/%E6%8A%80%E6%9C%AF%E6%8E%A2%E8%AE%A8/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/zh-cn/tags/%E6%A8%A1%E5%9E%8B%E6%B3%9B%E5%8C%96/</loc><lastmod>2025-03-11T02:07:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/zh-cn/posts/advanced-configuration/</loc><lastmod>2025-03-11T00:20:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://localhost:1313/posts/advanced-configuration/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="http://localhost:1313/zh-cn/posts/advanced-configuration/"
+                    /></url><url>
+            <loc>http://localhost:1313/zh-cn/tags/%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/</loc><lastmod>2025-03-11T00:20:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/zh-cn/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</loc><lastmod>2025-03-11T00:20:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/zh-cn/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</loc><lastmod>2025-03-11T00:20:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/zh-cn/posts/blog-crud-guide/</loc><lastmod>2025-03-11T00:15:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://localhost:1313/posts/blog-crud-guide/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="http://localhost:1313/zh-cn/posts/blog-crud-guide/"
+                    /></url><url>
+            <loc>http://localhost:1313/zh-cn/tags/%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/</loc><lastmod>2025-03-11T00:15:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/zh-cn/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/</loc><lastmod>2025-03-11T00:15:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/zh-cn/tags/github/</loc><lastmod>2025-03-11T00:10:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/zh-cn/tags/%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97/</loc><lastmod>2025-03-11T00:10:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/zh-cn/posts/deploy-to-github-pages/</loc><lastmod>2025-03-11T00:10:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="http://localhost:1313/posts/deploy-to-github-pages/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="http://localhost:1313/zh-cn/posts/deploy-to-github-pages/"
                     /></url></urlset>
