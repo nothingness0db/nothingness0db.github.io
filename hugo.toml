@@ -182,8 +182,8 @@ hasCJKLanguage = true
   # 社交链接
   [params.social]
     GitHub = "nothingness0db"
-    Twitter = "https://x.com/ADsdssd40847"
-    Bilibili = "https://space.bilibili.com/495335682"
+    Twitter = "ADsdssd40847"
+    Bilibili = "495335682"
     RSS = "/index.xml"
 
 # Hugo 解析文档的配置
