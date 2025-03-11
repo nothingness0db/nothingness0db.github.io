@@ -98,5 +98,15 @@
 </ul>
 <p>These noises affect data quality and can lead to poor model training results.</p>]]></description>
 </item>
+<item>
+    <title>Understanding Dominator Trees</title>
+    <link>http://localhost:1313/en/posts/dominator-tree/</link>
+    <pubDate>Thu, 20 Jun 2024 15:00:00 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/en/posts/dominator-tree/</guid>
+    <description><![CDATA[<p>Dominator trees are an important concept in graph theory with widespread applications in compiler optimization, program analysis, and other fields. I&rsquo;d like to help everyone understand this concept through some simple explanations.</p>
+<h2 id="what-is-a-domination-relationship">What is a Domination Relationship?</h2>
+<p>In a directed graph, if all paths from the entry point to a node v must pass through node u, then we say node u dominates node v, denoted as u dom v. Intuitively, if you want to reach v, you must first go through u, making u like a &ldquo;checkpoint&rdquo; on the way to v.</p>]]></description>
+</item>
 </channel>
 </rss>

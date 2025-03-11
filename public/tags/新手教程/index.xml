@@ -1,9 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>新手教程 - Tag - Eira Hazel</title>
+        <title>新手教程 - 标签 - Eira Hazel</title>
         <link>http://localhost:1313/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/</link>
-        <description>新手教程 - Tag - Eira Hazel</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 00:15:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/" rel="self" type="application/rss+xml" /><item>
+        <description>新手教程 - 标签 - Eira Hazel</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 11 Mar 2025 00:15:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/" rel="self" type="application/rss+xml" /><item>
     <title>Hugo博客日常文章管理指南</title>
     <link>http://localhost:1313/posts/blog-crud-guide/</link>
     <pubDate>Tue, 11 Mar 2025 00:15:00 &#43;0800</pubDate>
@@ -27,7 +27,7 @@
     <div class="code-header language-python">
         <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
         <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 代码块演示</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello Hugo!&#34;</span><span class="p">)</span></span></span></code></pre></div></div>
 <div class="details admonition tip open">

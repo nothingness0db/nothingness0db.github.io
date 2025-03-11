@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Hugo - Tag - Eira Hazel</title>
+        <link>http://localhost:1313/en/tags/hugo/</link>
+        <description>Hugo - Tag - Eira Hazel</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 00:25:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/hugo/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo Blog CRUD Operations Guide</title>
+    <link>http://localhost:1313/en/posts/blog-crud-guide/</link>
+    <pubDate>Tue, 11 Mar 2025 00:25:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/en/posts/blog-crud-guide/</guid>
+    <description><![CDATA[<h1 id="hugo-blog-crud-operations-guide">Hugo Blog CRUD Operations Guide</h1>
+<p>This guide covers the basic Create, Read, Update, and Delete operations for managing content on your Hugo blog.</p>
+<blockquote>
+<p>Note: This is a placeholder for translation. The complete translation will be added later.</p></blockquote>
+<h2 id="creating-new-content">Creating New Content</h2>
+<p>Hugo provides simple commands to create new content for your blog.</p>
+<h2 id="reading-content">Reading Content</h2>
+<p>Learn how to properly structure and organize your content for easy navigation.</p>
+<h2 id="updating-content">Updating Content</h2>
+<p>Discover the best practices for updating existing content while maintaining SEO.</p>]]></description>
+</item>
+</channel>
+</rss>

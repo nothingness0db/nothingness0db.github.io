@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "dark.min.css",
-	"sourceRoot": "C:/Users/34397/Documents/GitHub/nothingness0db.github-io",
+	"sourceRoot": "C:/Users/34397/Documents/GitHub/io",
 	"sources": [
 		"themes/LoveIt/assets/lib/aplayer/dark.scss"
 	],

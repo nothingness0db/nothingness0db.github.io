@@ -7,14 +7,14 @@
         <title>All Tags - Eira Hazel</title><meta name="Description" content="This is my cool site"><meta property="og:url" content="http://localhost:1313/en/tags/">
   <meta property="og:site_name" content="Eira Hazel">
   <meta property="og:title" content="Tags">
-  <meta property="og:description" content="This is my cool site">
+  <meta property="og:description" content="Here are all the tags used on this site.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Tags">
-  <meta name="twitter:description" content="This is my cool site">
-      <meta name="twitter:site" content="@https://x.com/ADsdssd40847">
+  <meta name="twitter:description" content="Here are all the tags used on this site.">
+      <meta name="twitter:site" content="@ADsdssd40847">
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -30,26 +30,10 @@
             <a href="/en/" title="Eira Hazel">Eira Hazel</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/en/music/"><i class='fas fa-music fa-fw'></i> Music </a><a class="menu-item" href="/en/posts/"> Posts </a><a class="menu-item active" href="/en/tags/"> Tags </a><a class="menu-item" href="/en/categories/"> Categories </a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><a class="menu-item" href="/en/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i>  </a><span class="menu-item delimiter"></span>
-                
-                <div class="dropdown">
-                    <a class="menu-item dropdown-toggle" href="javascript:void(0);" title="选择语言">
-                        <i class="fas fa-language fa-fw"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="http://localhost:1313//enzh-cn/">🇨🇳 简体中文</a></li>
-                        
-                        
-                        
-                        <li><a href="http://localhost:1313//en">🇺🇸 English</a></li>
-                        
-                        
-                    </ul>
-                </div>
-                
-                <a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/en/music/"><i class='fas fa-music fa-fw'></i> Music </a><a class="menu-item" href="/en/posts/"> Posts </a><a class="menu-item active" href="/en/tags/"> Tags </a><a class="menu-item" href="/en/categories/"> Categories </a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><a class="menu-item" href="/en/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">
+                        <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="http://localhost:1313/en/" selected>English</option><option value="http://localhost:1313/">简体中文</option></select>
+                    </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a>
             </div>
@@ -65,91 +49,17 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/en/music/" title=""><i class='fas fa-music fa-fw'></i>Music</a><a class="menu-item" href="/en/posts/" title="">Posts</a><a class="menu-item" href="/en/tags/" title="">Tags</a><a class="menu-item" href="/en/categories/" title="">Categories</a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a class="menu-item" href="/en/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i></a>
-            
-            <div class="dropdown mobile-dropdown">
-                <a class="menu-item dropdown-toggle" href="javascript:void(0);" title="选择语言">
-                    <i class="fas fa-language fa-fw"></i> 语言
-                </a>
-                <div class="dropdown-content">
-                    
-                    
-                    <a href="http://localhost:1313//enzh-cn/">🇨🇳 简体中文</a>
-                    
-                    
-                    
-                    <a href="http://localhost:1313//en">🇺🇸 English</a>
-                    
-                    
-                </div>
-            </div>
-            
-            <a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/en/music/" title=""><i class='fas fa-music fa-fw'></i>Music</a><a class="menu-item" href="/en/posts/" title="">Posts</a><a class="menu-item" href="/en/tags/" title="">Tags</a><a class="menu-item" href="/en/categories/" title="">Categories</a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a class="menu-item" href="/en/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i></a><a class="menu-item language" title="Select Language">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="http://localhost:1313/en/" selected>English</option><option value="http://localhost:1313/">简体中文</option></select>
+                </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a>
         </div>
     </div>
 </header>
-
-<style>
- 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    border-radius: 4px;
-    right: 0;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.dropdown-menu li {
-    list-style: none;
-    margin: 8px 0;
-}
-
-.dropdown-menu li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.dropdown-menu li a:hover {
-    color: #2d96bd;
-}
-
- 
-.mobile-dropdown {
-    display: block;
-    width: 100%;
-}
-
-.dropdown-content {
-    display: none;
-    padding-left: 20px;
-}
-
-.mobile-dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a {
-    display: block;
-    padding: 8px 0;
-}
-</style>
 <main class="main">
-                <div class="container"><div class="page archive"><h2 class="single-title animate__animated animate__pulse animate__faster">All Tags</h2><div class="tag-cloud-tags"><a href="/en/tags/machine-learning/">Machine Learning <sup>2</sup></a><a href="/en/tags/data-quality/">Data Quality <sup>1</sup></a><a href="/en/tags/dynamic-environment/">Dynamic Environment <sup>1</sup></a><a href="/en/tags/industrial-data/">Industrial Data <sup>1</sup></a><a href="/en/tags/model-generalization/">Model Generalization <sup>1</sup></a></div></div></div>
+                <div class="container"><div class="page archive"><h2 class="single-title animate__animated animate__pulse animate__faster">All Tags</h2><div class="tag-cloud-tags"><a href="/en/tags/machine-learning/">Machine Learning <sup>2</sup></a><a href="/en/tags/compiler-design/">Compiler Design <sup>1</sup></a><a href="/en/tags/configuration-guide/">Configuration Guide <sup>1</sup></a><a href="/en/tags/data-quality/">Data Quality <sup>1</sup></a><a href="/en/tags/deployment/">Deployment <sup>1</sup></a><a href="/en/tags/dynamic-environment/">Dynamic Environment <sup>1</sup></a><a href="/en/tags/first-post/">First Post <sup>1</sup></a><a href="/en/tags/github-pages/">GitHub Pages <sup>1</sup></a><a href="/en/tags/graph-theory/">Graph Theory <sup>1</sup></a><a href="/en/tags/hugo/">Hugo <sup>1</sup></a><a href="/en/tags/industrial-data/">Industrial Data <sup>1</sup></a><a href="/en/tags/model-generalization/">Model Generalization <sup>1</sup></a><a href="/en/tags/program-analysis/">Program Analysis <sup>1</sup></a><a href="/en/tags/tutorial/">Tutorial <sup>1</sup></a><a href="/en/tags/website-building/">Website Building <sup>1</sup></a></div></div></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.145.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.3.0"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/en/" target="_blank">xxxx</a></span></div>

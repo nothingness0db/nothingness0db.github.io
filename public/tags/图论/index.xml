@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>图论 - 标签 - Eira Hazel</title>
+        <link>http://localhost:1313/tags/%E5%9B%BE%E8%AE%BA/</link>
+        <description>图论 - 标签 - Eira Hazel</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 20 Jun 2024 15:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%9B%BE%E8%AE%BA/" rel="self" type="application/rss+xml" /><item>
+    <title>浅谈支配树</title>
+    <link>http://localhost:1313/posts/dominator-tree/</link>
+    <pubDate>Thu, 20 Jun 2024 15:00:00 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/posts/dominator-tree/</guid>
+    <description><![CDATA[<p>支配树是图论中的重要概念，它在编译器优化、程序分析等领域有着广泛应用。我想通过一些简单的解释来帮助大家理解这个概念。</p>
+<h2 id="什么是支配关系">什么是支配关系？</h2>
+<p>在一个有向图中，如果从起点到某个节点v的所有路径都必须经过节点u，那么我们就说节点u支配节点v，记作u dom v。直观地说，如果想要到达v，就必须先经过u，u就像是通往v的一个&quot;关卡&quot;。</p>]]></description>
+</item>
+</channel>
+</rss>
