@@ -1,6 +1,6 @@
 ---
 title: "Understanding Dominator Trees"
-date: 2025-03-1T15:00:00+08:00
+date: 2025-03-01T15:00:00+08:00
 draft: false
 tags:
   - Graph Theory
