@@ -1,5 +1,5 @@
 ---
-title: "Express框架极简笔记"
+title: "Express学习前端笔记"
 date: 2024-03-28T09:00:00+08:00
 language: zh-cn
 weight: 90
@@ -15,43 +15,54 @@ keywords:
 - RESTful API
 ---
 
-## 快速启动
-```bash
-npm init -y
-npm install express --save
-```
+* Express搭前端测试环境
+- 装express：pnpm add express
+- 新建server.js ↓
 
-## 核心三要素
-### 1. 路由配置模板
-```javascript
-app.get('/api/users', (req, res) => {
-  // 验证请求参数
-  const { page } = req.query;
+// 最简启动
+const express = require('express')
+const app = express()
+app.use(express.static('public'))  ← 静态资源扔这个文件夹
+app.listen(3000)
+
+* 文件夹结构：
+/public
+  |- index.html
+  |- style.css
+  |- app.js
+/server.js
+
+* 动态路由模拟数据 ← 假装有后端API
+// 在server.js加这个
+app.get('/api/user', (req, res) => {
   res.json({ 
-    data: mockUsers,
-    pagination: { current: page }
-  });
-});
-```
+    name: '临时数据',
+    id: Date.now() 
+  })
+})
 
-### 2. 中间件工作流
-▌典型中间件栈：
-1. 请求预处理（body-parser）
-2. 身份验证（JWT验证）
-3. 业务逻辑处理
-4. 错误统一处理
+// 前端js里用fetch调用
+fetch('/api/user')
+  .then(res => res.json())
+  .then(data => console.log(data))
 
-### 3. 错误处理方案
-```javascript
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send('服务端异常！');
-});
-```
+> 注意！！解决跨域问题：
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*')
+  next()
+})
 
-## 性能优化
-1. 启用gzip压缩
-2. 使用cluster模式
-3. 设置缓存头
+* 路由history模式支持 ← 用这个让前端路由不出现#号
+const history = require('connect-history-api-fallback')
+app.use(history())  ← 加在static中间件前面
 
-*示例仓库：express-demo（包含RESTful API完整实现）*
+（记得装包 pnpm add connect-history-api-fallback）
+
+* 热更新小技巧
+- 用nodemon监控文件改动
+- package.json里加：
+"scripts": {
+  "dev": "nodemon server.js"
+}
+
+（下次试试用vite更好？不过express手动配更透明）

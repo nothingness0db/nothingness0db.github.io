@@ -1,5 +1,5 @@
 ---
-title: "Express Framework Minimalist Guide"
+title: "Express learning front-end notes"
 date: 2024-03-28T09:00:00+08:00
 language: en
 weight: 90
@@ -15,43 +15,66 @@ keywords:
 - RESTful API
 ---
 
-## Quick Start
-```bash
-npm init -y
-npm install express --save
+
+
+* Setting up a frontend test environment with Express is super convenient
+- Install Express: `pnpm add express`
+- Create server.js ↓
+
+```javascript
+// Minimal setup to start
+const express = require('express')
+const app = express()
+app.use(express.static('public'))  ← Static assets go here
+app.listen(3000)
 ```
 
-## Core Concepts
-### 1. Routing Template
+* Folder structure:
+```
+/public
+  |- index.html
+  |- style.css
+  |- app.js
+/server.js
+```
+
+* Mock API endpoints ← Simulate backend data
 ```javascript
-app.get('/api/users', (req, res) => {
-  // Validate request parameters
-  const { page } = req.query;
+// Add this to server.js
+app.get('/api/user', (req, res) => {
   res.json({ 
-    data: mockUsers,
-    pagination: { current: page }
-  });
-});
+    name: 'Temporary data',
+    id: Date.now() 
+  })
+})
+
+// Frontend fetch usage
+fetch('/api/user')
+  .then(res => res.json())
+  .then(data => console.log(data))
 ```
 
-### 2. Middleware Workflow
-▌Typical middleware stack:
-1. Request preprocessing (body-parser)
-2. Authentication (JWT verification)
-3. Business logic handling
-4. Unified error handling
-
-### 3. Error Handling Solution
+> Important!! Fix CORS issues:
 ```javascript
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send('Server Error!');
-});
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*')
+  next()
+})
 ```
 
-## Performance Optimization
-1. Enable gzip compression
-2. Use cluster mode
-3. Set cache headers
+* History mode routing support ← Remove hash (#) from URLs
+```javascript
+const history = require('connect-history-api-fallback')
+app.use(history())  ← Place before static middleware
+```
+(Remember to install: `pnpm add connect-history-api-fallback`)
 
-*Demo repository: express-demo (complete RESTful API implementation)*
+* Hot reload trick
+- Use nodemon to monitor file changes
+- Add to package.json:
+```json
+"scripts": {
+  "dev": "nodemon server.js"
+}
+```
+(Might try Vite next time? But manual Express configuration offers more transparency)
