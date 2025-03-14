@@ -1,6 +1,7 @@
 ---
 title: "我的机器学习入门指南"
-date: 2024-03-25T14:30:00+08:00
+date: 2025-03-13T14:30:00+08:00
+author: "Eira Hazel"
 language: zh-cn
 weight: 100
 draft: false

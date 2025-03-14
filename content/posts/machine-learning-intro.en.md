@@ -1,6 +1,6 @@
 ---
 title: "My Machine Learning Starter Guide"
-date: 2024-03-25T14:30:00+08:00
+date: 2025-03-13T14:30:00+08:00
 language: en
 weight: 100
 draft: false

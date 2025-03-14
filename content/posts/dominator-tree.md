@@ -1,6 +1,7 @@
 ---
 title: "Understanding Dominator Trees"
 date: 2025-03-12T01:00:00+08:00
+author: "Eira Hazel"
 draft: false
 tags:
   - Graph Theory
