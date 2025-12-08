@@ -1,20 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Node.js on Eira Hazel</title><link>https://nothingness0db.github.io/zh-cn/tags/node.js/</link><description>Recent content in Node.js on Eira Hazel</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 13 Mar 2025 14:30:00 +0800</lastBuildDate><atom:link href="https://nothingness0db.github.io/zh-cn/tags/node.js/index.xml" rel="self" type="application/rss+xml"/><item><title>Express学习前端笔记</title><link>https://nothingness0db.github.io/zh-cn/posts/express-notes/</link><pubDate>Thu, 13 Mar 2025 14:30:00 +0800</pubDate><guid>https://nothingness0db.github.io/zh-cn/posts/express-notes/</guid><description>&lt;ul>
-&lt;li>Express搭前端测试环境&lt;/li>
-&lt;/ul>
-&lt;ul>
-&lt;li>装express：pnpm add express&lt;/li>
-&lt;li>新建server.js ↓&lt;/li>
-&lt;/ul>
-&lt;p>// 最简启动
-const express = require(&amp;rsquo;express&amp;rsquo;)
-const app = express()
-app.use(express.static(&amp;lsquo;public&amp;rsquo;)) ← 静态资源扔这个文件夹
-app.listen(3000)&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>文件夹结构：
-/public
-|- index.html
-|- style.css
-|- app.js
-/server.js&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node.js on Eira Hazel</title>
+    <link>https://nothingness0db.github.io/zh-cn/tags/node.js/</link>
+    <description>Recent content in Node.js on Eira Hazel</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 13 Mar 2025 14:30:00 +0800</lastBuildDate>
+    <atom:link href="https://nothingness0db.github.io/zh-cn/tags/node.js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Express学习前端笔记</title>
+      <link>https://nothingness0db.github.io/zh-cn/posts/express-notes/</link>
+      <pubDate>Thu, 13 Mar 2025 14:30:00 +0800</pubDate>
+      <guid>https://nothingness0db.github.io/zh-cn/posts/express-notes/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Express搭前端测试环境&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;装express：pnpm add express&lt;/li&gt;&#xA;&lt;li&gt;新建server.js ↓&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;// 最简启动&#xA;const express = require(&amp;rsquo;express&amp;rsquo;)&#xA;const app = express()&#xA;app.use(express.static(&amp;lsquo;public&amp;rsquo;))  ← 静态资源扔这个文件夹&#xA;app.listen(3000)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;文件夹结构：&#xA;/public&#xA;|- index.html&#xA;|- style.css&#xA;|- app.js&#xA;/server.js&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

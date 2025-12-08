@@ -1,3 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Compiler Design on Eira Hazel</title><link>https://nothingness0db.github.io/tags/compiler-design/</link><description>Recent content in Compiler Design on Eira Hazel</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 12 Mar 2025 01:00:00 +0800</lastBuildDate><atom:link href="https://nothingness0db.github.io/tags/compiler-design/index.xml" rel="self" type="application/rss+xml"/><item><title>Understanding Dominator Trees</title><link>https://nothingness0db.github.io/posts/dominator-tree/</link><pubDate>Wed, 12 Mar 2025 01:00:00 +0800</pubDate><guid>https://nothingness0db.github.io/posts/dominator-tree/</guid><description>&lt;p>&amp;ldquo;Brief Discussion on Dominator Trees
-Dominator trees are an important concept in graph theory, with wide applications in compiler optimization, program analysis, and other fields. I want to help everyone understand this concept through some simple explanations.&lt;/p>
-&lt;p>First, what is dominance? In a directed graph, if all paths from the starting point to a node v must pass through node u, then we say node u dominates node v, denoted as u dom v. Intuitively, to reach v, one must first pass through u - u acts like a &amp;ldquo;checkpoint&amp;rdquo; guarding access to v.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Compiler Design on Eira Hazel</title>
+    <link>https://nothingness0db.github.io/tags/compiler-design/</link>
+    <description>Recent content in Compiler Design on Eira Hazel</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 12 Mar 2025 01:00:00 +0800</lastBuildDate>
+    <atom:link href="https://nothingness0db.github.io/tags/compiler-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Dominator Trees</title>
+      <link>https://nothingness0db.github.io/posts/dominator-tree/</link>
+      <pubDate>Wed, 12 Mar 2025 01:00:00 +0800</pubDate>
+      <guid>https://nothingness0db.github.io/posts/dominator-tree/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Brief Discussion on Dominator Trees&#xA;Dominator trees are an important concept in graph theory, with wide applications in compiler optimization, program analysis, and other fields. I want to help everyone understand this concept through some simple explanations.&lt;/p&gt;&#xA;&lt;p&gt;First, what is dominance? In a directed graph, if all paths from the starting point to a node v must pass through node u, then we say node u dominates node v, denoted as u dom v. Intuitively, to reach v, one must first pass through u - u acts like a &amp;ldquo;checkpoint&amp;rdquo; guarding access to v.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
