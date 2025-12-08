@@ -3,7 +3,6 @@ title: "Express学习前端笔记"
 date: 2025-03-13T14:30:00+08:00
 author: "Eira Hazel"
 language: zh-cn
-weight: 90
 draft: false
 categories:
 - 技术探讨
