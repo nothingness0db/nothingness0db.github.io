@@ -1,10 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>网站建设 on Eira Hazel</title><link>https://nothingness0db.github.io/zh-cn/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</link><description>Recent content in 网站建设 on Eira Hazel</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 11 Mar 2025 00:20:00 +0800</lastBuildDate><atom:link href="https://nothingness0db.github.io/zh-cn/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo博客高级配置指南</title><link>https://nothingness0db.github.io/zh-cn/posts/advanced-configuration/</link><pubDate>Tue, 11 Mar 2025 00:20:00 +0800</pubDate><guid>https://nothingness0db.github.io/zh-cn/posts/advanced-configuration/</guid><description>&lt;h1 id="hugo博客高级配置指南">Hugo博客高级配置指南&lt;/h1>
-&lt;p>本文将介绍Hugo博客的高级配置选项，帮助你充分利用Hugo的强大功能，打造一个独特而高效的个人博客。&lt;/p>
-&lt;h2 id="主题自定义">主题自定义&lt;/h2>
-&lt;h3 id="修改主题配置">修改主题配置&lt;/h3>
-&lt;p>大多数Hugo主题都提供了丰富的配置选项，可以在&lt;code>hugo.toml&lt;/code>（或&lt;code>config.toml&lt;/code>）中进行设置：&lt;/p></description></item><item><title>Hugo博客日常文章管理指南</title><link>https://nothingness0db.github.io/zh-cn/posts/blog-crud-guide/</link><pubDate>Tue, 11 Mar 2025 00:15:00 +0800</pubDate><guid>https://nothingness0db.github.io/zh-cn/posts/blog-crud-guide/</guid><description>&lt;h1 id="hugo博客日常文章管理指南">Hugo博客日常文章管理指南&lt;/h1>
-&lt;p>本文将详细介绍如何使用Hugo进行日常博客内容的创建、读取、更新和删除（CRUD）操作，帮助你高效管理博客内容。&lt;/p>
-&lt;h2 id="文章创建-create">文章创建 (Create)&lt;/h2>
-&lt;h3 id="使用命令行创建文章">使用命令行创建文章&lt;/h3>
-&lt;p>Hugo提供了便捷的命令行工具来创建新文章：&lt;/p></description></item><item><title>如何将Hugo博客部署到GitHub Pages</title><link>https://nothingness0db.github.io/zh-cn/posts/deploy-to-github-pages/</link><pubDate>Tue, 11 Mar 2025 00:10:00 +0800</pubDate><guid>https://nothingness0db.github.io/zh-cn/posts/deploy-to-github-pages/</guid><description>&lt;h1 id="将hugo博客部署到github-pages">将Hugo博客部署到GitHub Pages&lt;/h1>
-&lt;p>GitHub Pages是一个免费的静态网站托管服务，非常适合用来部署Hugo生成的静态博客。本文将指导你如何将Hugo博客部署到GitHub Pages上。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>网站建设 on Eira Hazel</title>
+    <link>https://nothingness0db.github.io/zh-cn/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</link>
+    <description>Recent content in 网站建设 on Eira Hazel</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 11 Mar 2025 00:20:00 +0800</lastBuildDate>
+    <atom:link href="https://nothingness0db.github.io/zh-cn/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo博客高级配置指南</title>
+      <link>https://nothingness0db.github.io/zh-cn/posts/advanced-configuration/</link>
+      <pubDate>Tue, 11 Mar 2025 00:20:00 +0800</pubDate>
+      <guid>https://nothingness0db.github.io/zh-cn/posts/advanced-configuration/</guid>
+      <description>&lt;h1 id=&#34;hugo博客高级配置指南&#34;&gt;Hugo博客高级配置指南&lt;/h1&gt;&#xA;&lt;p&gt;本文将介绍Hugo博客的高级配置选项，帮助你充分利用Hugo的强大功能，打造一个独特而高效的个人博客。&lt;/p&gt;&#xA;&lt;h2 id=&#34;主题自定义&#34;&gt;主题自定义&lt;/h2&gt;&#xA;&lt;h3 id=&#34;修改主题配置&#34;&gt;修改主题配置&lt;/h3&gt;&#xA;&lt;p&gt;大多数Hugo主题都提供了丰富的配置选项，可以在&lt;code&gt;hugo.toml&lt;/code&gt;（或&lt;code&gt;config.toml&lt;/code&gt;）中进行设置：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo博客日常文章管理指南</title>
+      <link>https://nothingness0db.github.io/zh-cn/posts/blog-crud-guide/</link>
+      <pubDate>Tue, 11 Mar 2025 00:15:00 +0800</pubDate>
+      <guid>https://nothingness0db.github.io/zh-cn/posts/blog-crud-guide/</guid>
+      <description>&lt;h1 id=&#34;hugo博客日常文章管理指南&#34;&gt;Hugo博客日常文章管理指南&lt;/h1&gt;&#xA;&lt;p&gt;本文将详细介绍如何使用Hugo进行日常博客内容的创建、读取、更新和删除（CRUD）操作，帮助你高效管理博客内容。&lt;/p&gt;&#xA;&lt;h2 id=&#34;文章创建-create&#34;&gt;文章创建 (Create)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;使用命令行创建文章&#34;&gt;使用命令行创建文章&lt;/h3&gt;&#xA;&lt;p&gt;Hugo提供了便捷的命令行工具来创建新文章：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>如何将Hugo博客部署到GitHub Pages</title>
+      <link>https://nothingness0db.github.io/zh-cn/posts/deploy-to-github-pages/</link>
+      <pubDate>Tue, 11 Mar 2025 00:10:00 +0800</pubDate>
+      <guid>https://nothingness0db.github.io/zh-cn/posts/deploy-to-github-pages/</guid>
+      <description>&lt;h1 id=&#34;将hugo博客部署到github-pages&#34;&gt;将Hugo博客部署到GitHub Pages&lt;/h1&gt;&#xA;&lt;p&gt;GitHub Pages是一个免费的静态网站托管服务，非常适合用来部署Hugo生成的静态博客。本文将指导你如何将Hugo博客部署到GitHub Pages上。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

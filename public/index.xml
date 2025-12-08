@@ -1,4 +1,17 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Eira Hazel</title><link>https://nothingness0db.github.io/</link><description>This is my cool site</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 03:40:00 +0800</lastBuildDate><atom:link href="https://nothingness0db.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Express learning front-end notes</title><link>https://nothingness0db.github.io/posts/express-notes/</link><pubDate>Thu, 13 Mar 2025 14:30:00 +0800</pubDate><author>Eira Hazel</author><guid>https://nothingness0db.github.io/posts/express-notes/</guid><description><![CDATA[<ul>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Eira Hazel</title>
+        <link>https://nothingness0db.github.io/</link>
+        <description>This is my cool site</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 03:40:00 &#43;0800</lastBuildDate>
+            <atom:link href="https://nothingness0db.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Express learning front-end notes</title>
+    <link>https://nothingness0db.github.io/posts/express-notes/</link>
+    <pubDate>Thu, 13 Mar 2025 14:30:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>https://nothingness0db.github.io/posts/express-notes/</guid>
+    <description><![CDATA[<ul>
 <li>Setting up a frontend test environment with Express is super convenient</li>
 </ul>
 <ul>
@@ -49,7 +62,15 @@
 </span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span> <span class="p">=&gt;</span> <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
 </span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span></span></span></code></pre></div></div>
 <blockquote>
-<p>Important!! Fix CORS issues:</p>]]></description></item><item><title>My Machine Learning Starter Guide</title><link>https://nothingness0db.github.io/posts/machine-learning-intro/</link><pubDate>Thu, 13 Mar 2025 14:30:00 +0800</pubDate><author>xxxx</author><guid>https://nothingness0db.github.io/posts/machine-learning-intro/</guid><description><![CDATA[<p><strong>▌What&rsquo;s preprocessing for?</strong>
+<p>Important!! Fix CORS issues:</p>]]></description>
+</item>
+<item>
+    <title>My Machine Learning Starter Guide</title>
+    <link>https://nothingness0db.github.io/posts/machine-learning-intro/</link>
+    <pubDate>Thu, 13 Mar 2025 14:30:00 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>https://nothingness0db.github.io/posts/machine-learning-intro/</guid>
+    <description><![CDATA[<p><strong>▌What&rsquo;s preprocessing for?</strong>
 Real-world data is messy: missing values, noise, inconsistent units (e.g., height 1.8m vs. weight 80kg). Feeding raw data to models = guaranteed failure.
 <strong>Must-have toolkit</strong>:</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
@@ -66,9 +87,25 @@ Real-world data is messy: missing values, noise, inconsistent units (e.g., heigh
 <li><strong>Best for</strong>: Uniformly distributed data (e.g., pixel values 0-255)</li>
 <li><strong>Weakness</strong>: A 3-meter-tall giant? All values get squashed below 0.5.</li>
 </ul>
-<p><strong>Case 2: Standardization</strong></p>]]></description></item><item><title>Understanding Dominator Trees</title><link>https://nothingness0db.github.io/posts/dominator-tree/</link><pubDate>Wed, 12 Mar 2025 01:00:00 +0800</pubDate><author>Eira Hazel</author><guid>https://nothingness0db.github.io/posts/dominator-tree/</guid><description><![CDATA[<p>&ldquo;Brief Discussion on Dominator Trees
+<p><strong>Case 2: Standardization</strong></p>]]></description>
+</item>
+<item>
+    <title>Understanding Dominator Trees</title>
+    <link>https://nothingness0db.github.io/posts/dominator-tree/</link>
+    <pubDate>Wed, 12 Mar 2025 01:00:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>https://nothingness0db.github.io/posts/dominator-tree/</guid>
+    <description><![CDATA[<p>&ldquo;Brief Discussion on Dominator Trees
 Dominator trees are an important concept in graph theory, with wide applications in compiler optimization, program analysis, and other fields. I want to help everyone understand this concept through some simple explanations.</p>
-<p>First, what is dominance? In a directed graph, if all paths from the starting point to a node v must pass through node u, then we say node u dominates node v, denoted as u dom v. Intuitively, to reach v, one must first pass through u - u acts like a &ldquo;checkpoint&rdquo; guarding access to v.</p>]]></description></item><item><title>Model Generalization Challenges in Dynamic Environments</title><link>https://nothingness0db.github.io/posts/model-generalization-challenges/</link><pubDate>Tue, 11 Mar 2025 02:07:30 +0800</pubDate><author>Eira Hazel</author><guid>https://nothingness0db.github.io/posts/model-generalization-challenges/</guid><description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>First, what is dominance? In a directed graph, if all paths from the starting point to a node v must pass through node u, then we say node u dominates node v, denoted as u dom v. Intuitively, to reach v, one must first pass through u - u acts like a &ldquo;checkpoint&rdquo; guarding access to v.</p>]]></description>
+</item>
+<item>
+    <title>Model Generalization Challenges in Dynamic Environments</title>
+    <link>https://nothingness0db.github.io/posts/model-generalization-challenges/</link>
+    <pubDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>https://nothingness0db.github.io/posts/model-generalization-challenges/</guid>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>In real-world applications, machine learning models often face significant challenges due to dynamic environments. Models that perform well on training data may experience substantial performance degradation when deployed in actual environments. This article explores this issue and provides practical solutions.</p>
 <h2 id="characteristics-of-dynamic-environments">Characteristics of Dynamic Environments</h2>
 <h3 id="1-data-distribution-shift">1. Data Distribution Shift</h3>
@@ -136,7 +173,15 @@ Dominator trees are an important concept in graph theory, with wide applications
 <h3 id="1-model-design">1. Model Design</h3>
 <ol>
 <li>
-<p><strong>Ensemble Diversity</strong></p>]]></description></item><item><title>Data Quality Challenges: Handling Noisy and Missing Industrial Data</title><link>https://nothingness0db.github.io/posts/data-quality-challenges/</link><pubDate>Tue, 11 Mar 2025 02:06:20 +0800</pubDate><author>Eira Hazel</author><guid>https://nothingness0db.github.io/posts/data-quality-challenges/</guid><description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p><strong>Ensemble Diversity</strong></p>]]></description>
+</item>
+<item>
+    <title>Data Quality Challenges: Handling Noisy and Missing Industrial Data</title>
+    <link>https://nothingness0db.github.io/posts/data-quality-challenges/</link>
+    <pubDate>Tue, 11 Mar 2025 02:06:20 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>https://nothingness0db.github.io/posts/data-quality-challenges/</guid>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>Data quality issues have always been a significant challenge for data scientists and engineers in industrial scenarios. This article delves into common noise and missing data problems in industrial data and provides practical solutions.</p>
 <h2 id="characteristics-and-challenges-of-industrial-data">Characteristics and Challenges of Industrial Data</h2>
 <h3 id="1-data-noise">1. Data Noise</h3>
@@ -147,7 +192,15 @@ Dominator trees are an important concept in graph theory, with wide applications
 <li>Equipment vibration</li>
 <li>Electrical interference</li>
 </ul>
-<p>These noises affect data quality and can lead to poor model training results.</p>]]></description></item><item><title>Deploying Hugo Blog to GitHub Pages</title><link>https://nothingness0db.github.io/posts/deploy-to-github-pages/</link><pubDate>Tue, 11 Mar 2025 00:30:00 +0800</pubDate><author>Eira Hazel</author><guid>https://nothingness0db.github.io/posts/deploy-to-github-pages/</guid><description><![CDATA[<h1 id="deploying-hugo-blog-to-github-pages">Deploying Hugo Blog to GitHub Pages</h1>
+<p>These noises affect data quality and can lead to poor model training results.</p>]]></description>
+</item>
+<item>
+    <title>Deploying Hugo Blog to GitHub Pages</title>
+    <link>https://nothingness0db.github.io/posts/deploy-to-github-pages/</link>
+    <pubDate>Tue, 11 Mar 2025 00:30:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>https://nothingness0db.github.io/posts/deploy-to-github-pages/</guid>
+    <description><![CDATA[<h1 id="deploying-hugo-blog-to-github-pages">Deploying Hugo Blog to GitHub Pages</h1>
 <p>This guide explains how to deploy your Hugo blog to GitHub Pages for free hosting.</p>
 <blockquote>
 <p>Note: This is a placeholder for translation. The complete translation will be added later.</p></blockquote>
@@ -156,7 +209,15 @@ Dominator trees are an important concept in graph theory, with wide applications
 <h2 id="configuring-github-actions">Configuring GitHub Actions</h2>
 <p>Use GitHub Actions to automate the build and deployment process of your Hugo site.</p>
 <h2 id="custom-domain-configuration">Custom Domain Configuration</h2>
-<p>Learn how to set up a custom domain for your GitHub Pages site.</p>]]></description></item><item><title>Hugo Blog CRUD Operations Guide</title><link>https://nothingness0db.github.io/posts/blog-crud-guide/</link><pubDate>Tue, 11 Mar 2025 00:25:00 +0800</pubDate><author>Eira Hazel</author><guid>https://nothingness0db.github.io/posts/blog-crud-guide/</guid><description><![CDATA[<h1 id="hugo-blog-crud-operations-guide">Hugo Blog CRUD Operations Guide</h1>
+<p>Learn how to set up a custom domain for your GitHub Pages site.</p>]]></description>
+</item>
+<item>
+    <title>Hugo Blog CRUD Operations Guide</title>
+    <link>https://nothingness0db.github.io/posts/blog-crud-guide/</link>
+    <pubDate>Tue, 11 Mar 2025 00:25:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>https://nothingness0db.github.io/posts/blog-crud-guide/</guid>
+    <description><![CDATA[<h1 id="hugo-blog-crud-operations-guide">Hugo Blog CRUD Operations Guide</h1>
 <p>This guide covers the basic Create, Read, Update, and Delete operations for managing content on your Hugo blog.</p>
 <blockquote>
 <p>Note: This is a placeholder for translation. The complete translation will be added later.</p></blockquote>
@@ -165,15 +226,34 @@ Dominator trees are an important concept in graph theory, with wide applications
 <h2 id="reading-content">Reading Content</h2>
 <p>Learn how to properly structure and organize your content for easy navigation.</p>
 <h2 id="updating-content">Updating Content</h2>
-<p>Discover the best practices for updating existing content while maintaining SEO.</p>]]></description></item><item><title>Advanced Hugo Blog Configuration Guide</title><link>https://nothingness0db.github.io/posts/advanced-configuration/</link><pubDate>Tue, 11 Mar 2025 00:20:00 +0800</pubDate><author>Eira Hazel</author><guid>https://nothingness0db.github.io/posts/advanced-configuration/</guid><description><![CDATA[<h1 id="advanced-hugo-blog-configuration-guide">Advanced Hugo Blog Configuration Guide</h1>
+<p>Discover the best practices for updating existing content while maintaining SEO.</p>]]></description>
+</item>
+<item>
+    <title>Advanced Hugo Blog Configuration Guide</title>
+    <link>https://nothingness0db.github.io/posts/advanced-configuration/</link>
+    <pubDate>Tue, 11 Mar 2025 00:20:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>https://nothingness0db.github.io/posts/advanced-configuration/</guid>
+    <description><![CDATA[<h1 id="advanced-hugo-blog-configuration-guide">Advanced Hugo Blog Configuration Guide</h1>
 <p>This is an English version of the advanced configuration guide for Hugo blogs. The content helps users configure their Hugo blog with advanced settings.</p>
 <blockquote>
 <p>Note: This is a placeholder for translation. The complete translation will be added later.</p></blockquote>
 <h2 id="basic-configuration">Basic Configuration</h2>
 <p>If you want to configure your Hugo blog with advanced settings, you need to modify the <code>config.toml</code> or <code>hugo.toml</code> file.</p>
 <h2 id="theme-configuration">Theme Configuration</h2>
-<p>Hugo themes provide various customization options. You can modify them according to your needs.</p>]]></description></item><item><title>My First Post</title><link>https://nothingness0db.github.io/posts/first_post/</link><pubDate>Mon, 10 Mar 2025 23:50:00 +0800</pubDate><author>Eira Hazel</author><guid>https://nothingness0db.github.io/posts/first_post/</guid><description><![CDATA[<h1 id="welcome-to-my-blog">Welcome to My Blog!</h1>
+<p>Hugo themes provide various customization options. You can modify them according to your needs.</p>]]></description>
+</item>
+<item>
+    <title>My First Post</title>
+    <link>https://nothingness0db.github.io/posts/first_post/</link>
+    <pubDate>Mon, 10 Mar 2025 23:50:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>https://nothingness0db.github.io/posts/first_post/</guid>
+    <description><![CDATA[<h1 id="welcome-to-my-blog">Welcome to My Blog!</h1>
 <p>This is my first post on this blog. I&rsquo;ll be sharing various thoughts and insights on technology, programming, and more.</p>
 <blockquote>
 <p>Note: This is a placeholder for translation. The complete translation will be added later.</p></blockquote>
-<p>I hope you enjoy reading my posts and find them informative and helpful!</p>]]></description></item></channel></rss>
+<p>I hope you enjoy reading my posts and find them informative and helpful!</p>]]></description>
+</item>
+</channel>
+</rss>

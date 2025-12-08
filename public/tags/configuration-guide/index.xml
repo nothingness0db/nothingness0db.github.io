@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Configuration Guide on Eira Hazel</title><link>https://nothingness0db.github.io/tags/configuration-guide/</link><description>Recent content in Configuration Guide on Eira Hazel</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 00:20:00 +0800</lastBuildDate><atom:link href="https://nothingness0db.github.io/tags/configuration-guide/index.xml" rel="self" type="application/rss+xml"/><item><title>Advanced Hugo Blog Configuration Guide</title><link>https://nothingness0db.github.io/posts/advanced-configuration/</link><pubDate>Tue, 11 Mar 2025 00:20:00 +0800</pubDate><guid>https://nothingness0db.github.io/posts/advanced-configuration/</guid><description>&lt;h1 id="advanced-hugo-blog-configuration-guide">Advanced Hugo Blog Configuration Guide&lt;/h1>
-&lt;p>This is an English version of the advanced configuration guide for Hugo blogs. The content helps users configure their Hugo blog with advanced settings.&lt;/p>
-&lt;blockquote>
-&lt;p>Note: This is a placeholder for translation. The complete translation will be added later.&lt;/p>&lt;/blockquote>
-&lt;h2 id="basic-configuration">Basic Configuration&lt;/h2>
-&lt;p>If you want to configure your Hugo blog with advanced settings, you need to modify the &lt;code>config.toml&lt;/code> or &lt;code>hugo.toml&lt;/code> file.&lt;/p>
-&lt;h2 id="theme-configuration">Theme Configuration&lt;/h2>
-&lt;p>Hugo themes provide various customization options. You can modify them according to your needs.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configuration Guide on Eira Hazel</title>
+    <link>https://nothingness0db.github.io/tags/configuration-guide/</link>
+    <description>Recent content in Configuration Guide on Eira Hazel</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 11 Mar 2025 00:20:00 +0800</lastBuildDate>
+    <atom:link href="https://nothingness0db.github.io/tags/configuration-guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced Hugo Blog Configuration Guide</title>
+      <link>https://nothingness0db.github.io/posts/advanced-configuration/</link>
+      <pubDate>Tue, 11 Mar 2025 00:20:00 +0800</pubDate>
+      <guid>https://nothingness0db.github.io/posts/advanced-configuration/</guid>
+      <description>&lt;h1 id=&#34;advanced-hugo-blog-configuration-guide&#34;&gt;Advanced Hugo Blog Configuration Guide&lt;/h1&gt;&#xA;&lt;p&gt;This is an English version of the advanced configuration guide for Hugo blogs. The content helps users configure their Hugo blog with advanced settings.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Note: This is a placeholder for translation. The complete translation will be added later.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;basic-configuration&#34;&gt;Basic Configuration&lt;/h2&gt;&#xA;&lt;p&gt;If you want to configure your Hugo blog with advanced settings, you need to modify the &lt;code&gt;config.toml&lt;/code&gt; or &lt;code&gt;hugo.toml&lt;/code&gt; file.&lt;/p&gt;&#xA;&lt;h2 id=&#34;theme-configuration&#34;&gt;Theme Configuration&lt;/h2&gt;&#xA;&lt;p&gt;Hugo themes provide various customization options. You can modify them according to your needs.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

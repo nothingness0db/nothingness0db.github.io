@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>新手教程 on Eira Hazel</title><link>https://nothingness0db.github.io/zh-cn/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/</link><description>Recent content in 新手教程 on Eira Hazel</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 11 Mar 2025 00:15:00 +0800</lastBuildDate><atom:link href="https://nothingness0db.github.io/zh-cn/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo博客日常文章管理指南</title><link>https://nothingness0db.github.io/zh-cn/posts/blog-crud-guide/</link><pubDate>Tue, 11 Mar 2025 00:15:00 +0800</pubDate><guid>https://nothingness0db.github.io/zh-cn/posts/blog-crud-guide/</guid><description>&lt;h1 id="hugo博客日常文章管理指南">Hugo博客日常文章管理指南&lt;/h1>
-&lt;p>本文将详细介绍如何使用Hugo进行日常博客内容的创建、读取、更新和删除（CRUD）操作，帮助你高效管理博客内容。&lt;/p>
-&lt;h2 id="文章创建-create">文章创建 (Create)&lt;/h2>
-&lt;h3 id="使用命令行创建文章">使用命令行创建文章&lt;/h3>
-&lt;p>Hugo提供了便捷的命令行工具来创建新文章：&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>新手教程 on Eira Hazel</title>
+    <link>https://nothingness0db.github.io/zh-cn/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/</link>
+    <description>Recent content in 新手教程 on Eira Hazel</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 11 Mar 2025 00:15:00 +0800</lastBuildDate>
+    <atom:link href="https://nothingness0db.github.io/zh-cn/tags/%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo博客日常文章管理指南</title>
+      <link>https://nothingness0db.github.io/zh-cn/posts/blog-crud-guide/</link>
+      <pubDate>Tue, 11 Mar 2025 00:15:00 +0800</pubDate>
+      <guid>https://nothingness0db.github.io/zh-cn/posts/blog-crud-guide/</guid>
+      <description>&lt;h1 id=&#34;hugo博客日常文章管理指南&#34;&gt;Hugo博客日常文章管理指南&lt;/h1&gt;&#xA;&lt;p&gt;本文将详细介绍如何使用Hugo进行日常博客内容的创建、读取、更新和删除（CRUD）操作，帮助你高效管理博客内容。&lt;/p&gt;&#xA;&lt;h2 id=&#34;文章创建-create&#34;&gt;文章创建 (Create)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;使用命令行创建文章&#34;&gt;使用命令行创建文章&lt;/h3&gt;&#xA;&lt;p&gt;Hugo提供了便捷的命令行工具来创建新文章：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

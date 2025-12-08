@@ -1,3 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编译原理 on Eira Hazel</title><link>https://nothingness0db.github.io/zh-cn/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</link><description>Recent content in 编译原理 on Eira Hazel</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 12 Mar 2025 01:00:00 +0800</lastBuildDate><atom:link href="https://nothingness0db.github.io/zh-cn/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>浅谈支配树</title><link>https://nothingness0db.github.io/zh-cn/posts/dominator-tree/</link><pubDate>Wed, 12 Mar 2025 01:00:00 +0800</pubDate><guid>https://nothingness0db.github.io/zh-cn/posts/dominator-tree/</guid><description>&lt;p>浅谈支配树&lt;/p>
-&lt;p>支配树是图论中的重要概念，它在编译器优化、程序分析等领域有着广泛应用。我想通过一些简单的解释来帮助大家理解这个概念。
-首先，什么是支配关系？在一个有向图中，如果从起点到某个节点v的所有路径都必须经过节点u，那么我们就说节点u支配节点v，记作u dom v。直观地说，如果想要到达v，就必须先经过u，u就像是通往v的一个&amp;quot;关卡&amp;quot;。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编译原理 on Eira Hazel</title>
+    <link>https://nothingness0db.github.io/zh-cn/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</link>
+    <description>Recent content in 编译原理 on Eira Hazel</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 12 Mar 2025 01:00:00 +0800</lastBuildDate>
+    <atom:link href="https://nothingness0db.github.io/zh-cn/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>浅谈支配树</title>
+      <link>https://nothingness0db.github.io/zh-cn/posts/dominator-tree/</link>
+      <pubDate>Wed, 12 Mar 2025 01:00:00 +0800</pubDate>
+      <guid>https://nothingness0db.github.io/zh-cn/posts/dominator-tree/</guid>
+      <description>&lt;p&gt;浅谈支配树&lt;/p&gt;&#xA;&lt;p&gt;支配树是图论中的重要概念，它在编译器优化、程序分析等领域有着广泛应用。我想通过一些简单的解释来帮助大家理解这个概念。&#xA;首先，什么是支配关系？在一个有向图中，如果从起点到某个节点v的所有路径都必须经过节点u，那么我们就说节点u支配节点v，记作u dom v。直观地说，如果想要到达v，就必须先经过u，u就像是通往v的一个&amp;quot;关卡&amp;quot;。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

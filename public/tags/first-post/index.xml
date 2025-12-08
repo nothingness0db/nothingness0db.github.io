@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>First Post on Eira Hazel</title><link>https://nothingness0db.github.io/tags/first-post/</link><description>Recent content in First Post on Eira Hazel</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 10 Mar 2025 23:50:00 +0800</lastBuildDate><atom:link href="https://nothingness0db.github.io/tags/first-post/index.xml" rel="self" type="application/rss+xml"/><item><title>My First Post</title><link>https://nothingness0db.github.io/posts/first_post/</link><pubDate>Mon, 10 Mar 2025 23:50:00 +0800</pubDate><guid>https://nothingness0db.github.io/posts/first_post/</guid><description>&lt;h1 id="welcome-to-my-blog">Welcome to My Blog!&lt;/h1>
-&lt;p>This is my first post on this blog. I&amp;rsquo;ll be sharing various thoughts and insights on technology, programming, and more.&lt;/p>
-&lt;blockquote>
-&lt;p>Note: This is a placeholder for translation. The complete translation will be added later.&lt;/p>&lt;/blockquote>
-&lt;p>I hope you enjoy reading my posts and find them informative and helpful!&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>First Post on Eira Hazel</title>
+    <link>https://nothingness0db.github.io/tags/first-post/</link>
+    <description>Recent content in First Post on Eira Hazel</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 10 Mar 2025 23:50:00 +0800</lastBuildDate>
+    <atom:link href="https://nothingness0db.github.io/tags/first-post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://nothingness0db.github.io/posts/first_post/</link>
+      <pubDate>Mon, 10 Mar 2025 23:50:00 +0800</pubDate>
+      <guid>https://nothingness0db.github.io/posts/first_post/</guid>
+      <description>&lt;h1 id=&#34;welcome-to-my-blog&#34;&gt;Welcome to My Blog!&lt;/h1&gt;&#xA;&lt;p&gt;This is my first post on this blog. I&amp;rsquo;ll be sharing various thoughts and insights on technology, programming, and more.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Note: This is a placeholder for translation. The complete translation will be added later.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;I hope you enjoy reading my posts and find them informative and helpful!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
