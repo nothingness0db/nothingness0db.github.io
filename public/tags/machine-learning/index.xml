@@ -1,102 +1,97 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Machine Learning - Tag - Eira Hazel</title>
-        <link>http://localhost:1313/tags/machine-learning/</link>
-        <description>Machine Learning - Tag - Eira Hazel</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/machine-learning/" rel="self" type="application/rss+xml" /><item>
-    <title>Model Generalization Challenges in Dynamic Environments</title>
-    <link>http://localhost:1313/posts/model-generalization-challenges/</link>
-    <pubDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</pubDate>
-    <author>Eira Hazel</author>
-    <guid>http://localhost:1313/posts/model-generalization-challenges/</guid>
-    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>In real-world applications, machine learning models often face significant challenges due to dynamic environments. Models that perform well on training data may experience substantial performance degradation when deployed in actual environments. This article explores this issue and provides practical solutions.</p>
-<h2 id="characteristics-of-dynamic-environments">Characteristics of Dynamic Environments</h2>
-<h3 id="1-data-distribution-shift">1. Data Distribution Shift</h3>
-<p>Data distribution shifts manifest in several ways:</p>
-<ul>
-<li>Feature distribution changes (covariate shift)</li>
-<li>Label distribution changes (concept drift)</li>
-<li>Feature-label relationship changes (conditional shift)</li>
-</ul>
-<h3 id="2-environmental-factor-changes">2. Environmental Factor Changes</h3>
-<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-python">
-        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Example: Detecting distribution shift</span>
-</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">ks_2samp</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">detect_distribution_shift</span><span class="p">(</span><span class="n">reference_data</span><span class="p">,</span> <span class="n">new_data</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.05</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
-</span></span></span><span class="line"><span class="cl"><span class="s2">    Use KS test to detect significant changes in data distribution
-</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">statistic</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">ks_2samp</span><span class="p">(</span><span class="n">reference_data</span><span class="p">,</span> <span class="n">new_data</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">p_value</span> <span class="o">&lt;</span> <span class="n">threshold</span></span></span></code></pre></div></div>
-<h2 id="solutions">Solutions</h2>
-<h3 id="1-robust-training">1. Robust Training</h3>
-<h4 id="11-data-augmentation">1.1 Data Augmentation</h4>
-<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-python">
-        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">augment_data</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">noise_level</span><span class="o">=</span><span class="mf">0.1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
-</span></span></span><span class="line"><span class="cl"><span class="s2">    Add random noise for data augmentation
-</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">noise</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">noise_level</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">data</span> <span class="o">+</span> <span class="n">noise</span></span></span></code></pre></div></div>
-<h4 id="12-adversarial-training">1.2 Adversarial Training</h4>
-<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-python">
-        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">adversarial_training</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">0.1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
-</span></span></span><span class="line"><span class="cl"><span class="s2">    Generate adversarial samples for training
-</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">perturbed_data</span> <span class="o">=</span> <span class="n">data</span> <span class="o">+</span> <span class="n">epsilon</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">compute_gradients</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">train_step</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">perturbed_data</span><span class="p">)</span></span></span></code></pre></div></div>
-<h3 id="2-adaptive-learning">2. Adaptive Learning</h3>
-<h4 id="21-online-learning">2.1 Online Learning</h4>
-<ul>
-<li>Incremental learning strategies</li>
-<li>Sliding window updates</li>
-<li>Weight decay mechanisms</li>
-</ul>
-<h4 id="22-transfer-learning">2.2 Transfer Learning</h4>
-<ul>
-<li>Domain adaptation</li>
-<li>Feature alignment</li>
-<li>Meta-learning methods</li>
-</ul>
-<h2 id="practical-tips">Practical Tips</h2>
-<h3 id="1-model-design">1. Model Design</h3>
-<ol>
-<li>
-<p><strong>Ensemble Diversity</strong></p>]]></description>
-</item>
-<item>
-    <title>Data Quality Challenges: Handling Noisy and Missing Industrial Data</title>
-    <link>http://localhost:1313/posts/data-quality-challenges/</link>
-    <pubDate>Tue, 11 Mar 2025 02:06:20 &#43;0800</pubDate>
-    <author>Eira Hazel</author>
-    <guid>http://localhost:1313/posts/data-quality-challenges/</guid>
-    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Data quality issues have always been a significant challenge for data scientists and engineers in industrial scenarios. This article delves into common noise and missing data problems in industrial data and provides practical solutions.</p>
-<h2 id="characteristics-and-challenges-of-industrial-data">Characteristics and Challenges of Industrial Data</h2>
-<h3 id="1-data-noise">1. Data Noise</h3>
-<p>The main sources of noise in industrial data include:</p>
-<ul>
-<li>Sensor measurement errors</li>
-<li>Environmental interference</li>
-<li>Equipment vibration</li>
-<li>Electrical interference</li>
-</ul>
-<p>These noises affect data quality and can lead to poor model training results.</p>]]></description>
-</item>
-</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Machine Learning on Eira Hazel</title><link>https://nothingness0db.github.io/tags/machine-learning/</link><description>Recent content in Machine Learning on Eira Hazel</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 13 Mar 2025 14:30:00 +0800</lastBuildDate><atom:link href="https://nothingness0db.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml"/><item><title>My Machine Learning Starter Guide</title><link>https://nothingness0db.github.io/posts/machine-learning-intro/</link><pubDate>Thu, 13 Mar 2025 14:30:00 +0800</pubDate><guid>https://nothingness0db.github.io/posts/machine-learning-intro/</guid><description>&lt;p>&lt;strong>▌What&amp;rsquo;s preprocessing for?&lt;/strong>
+Real-world data is messy: missing values, noise, inconsistent units (e.g., height 1.8m vs. weight 80kg). Feeding raw data to models = guaranteed failure.
+&lt;strong>Must-have toolkit&lt;/strong>:&lt;/p>
+&lt;div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+ &lt;div class="code-header language-bash">
+ &lt;span class="code-title">&lt;i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true">&lt;/i>&lt;/span>
+ &lt;span class="ellipses">&lt;i class="fas fa-ellipsis-h fa-fw" aria-hidden="true">&lt;/i>&lt;/span>
+ &lt;span class="copy" title="Copy to clipboard">&lt;i class="far fa-copy fa-fw" aria-hidden="true">&lt;/i>&lt;/span>
+ &lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">pip install scikit-learn&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;hr>
+&lt;p>&lt;strong>Normalization&lt;/strong>
+&lt;strong>Case 1: Min-Max Scaling&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Formula&lt;/strong>: (Current value - column min) / (column max - min)&lt;/li>
+&lt;li>&lt;strong>Best for&lt;/strong>: Uniformly distributed data (e.g., pixel values 0-255)&lt;/li>
+&lt;li>&lt;strong>Weakness&lt;/strong>: A 3-meter-tall giant? All values get squashed below 0.5.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Case 2: Standardization&lt;/strong>&lt;/p></description></item><item><title>Model Generalization Challenges in Dynamic Environments</title><link>https://nothingness0db.github.io/posts/model-generalization-challenges/</link><pubDate>Tue, 11 Mar 2025 02:07:30 +0800</pubDate><guid>https://nothingness0db.github.io/posts/model-generalization-challenges/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>In real-world applications, machine learning models often face significant challenges due to dynamic environments. Models that perform well on training data may experience substantial performance degradation when deployed in actual environments. This article explores this issue and provides practical solutions.&lt;/p>
+&lt;h2 id="characteristics-of-dynamic-environments">Characteristics of Dynamic Environments&lt;/h2>
+&lt;h3 id="1-data-distribution-shift">1. Data Distribution Shift&lt;/h3>
+&lt;p>Data distribution shifts manifest in several ways:&lt;/p>
+&lt;ul>
+&lt;li>Feature distribution changes (covariate shift)&lt;/li>
+&lt;li>Label distribution changes (concept drift)&lt;/li>
+&lt;li>Feature-label relationship changes (conditional shift)&lt;/li>
+&lt;/ul>
+&lt;h3 id="2-environmental-factor-changes">2. Environmental Factor Changes&lt;/h3>
+&lt;div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+ &lt;div class="code-header language-python">
+ &lt;span class="code-title">&lt;i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true">&lt;/i>&lt;/span>
+ &lt;span class="ellipses">&lt;i class="fas fa-ellipsis-h fa-fw" aria-hidden="true">&lt;/i>&lt;/span>
+ &lt;span class="copy" title="Copy to clipboard">&lt;i class="far fa-copy fa-fw" aria-hidden="true">&lt;/i>&lt;/span>
+ &lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Example: Detecting distribution shift&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">scipy.stats&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">ks_2samp&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">detect_distribution_shift&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">reference_data&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">new_data&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">threshold&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mf">0.05&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> Use KS test to detect significant changes in data distribution
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> &amp;#34;&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">statistic&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">p_value&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">ks_2samp&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">reference_data&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">new_data&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">p_value&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">threshold&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;h2 id="solutions">Solutions&lt;/h2>
+&lt;h3 id="1-robust-training">1. Robust Training&lt;/h3>
+&lt;h4 id="11-data-augmentation">1.1 Data Augmentation&lt;/h4>
+&lt;div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+ &lt;div class="code-header language-python">
+ &lt;span class="code-title">&lt;i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true">&lt;/i>&lt;/span>
+ &lt;span class="ellipses">&lt;i class="fas fa-ellipsis-h fa-fw" aria-hidden="true">&lt;/i>&lt;/span>
+ &lt;span class="copy" title="Copy to clipboard">&lt;i class="far fa-copy fa-fw" aria-hidden="true">&lt;/i>&lt;/span>
+ &lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">augment_data&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">data&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">noise_level&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mf">0.1&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> Add random noise for data augmentation
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> &amp;#34;&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">noise&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">np&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">random&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">normal&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">noise_level&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">shape&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">data&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">noise&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;h4 id="12-adversarial-training">1.2 Adversarial Training&lt;/h4>
+&lt;div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+ &lt;div class="code-header language-python">
+ &lt;span class="code-title">&lt;i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true">&lt;/i>&lt;/span>
+ &lt;span class="ellipses">&lt;i class="fas fa-ellipsis-h fa-fw" aria-hidden="true">&lt;/i>&lt;/span>
+ &lt;span class="copy" title="Copy to clipboard">&lt;i class="far fa-copy fa-fw" aria-hidden="true">&lt;/i>&lt;/span>
+ &lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">adversarial_training&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">model&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">epsilon&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mf">0.1&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> Generate adversarial samples for training
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> &amp;#34;&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">perturbed_data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">data&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">epsilon&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">np&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">sign&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">compute_gradients&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">model&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">train_step&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">model&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">perturbed_data&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;h3 id="2-adaptive-learning">2. Adaptive Learning&lt;/h3>
+&lt;h4 id="21-online-learning">2.1 Online Learning&lt;/h4>
+&lt;ul>
+&lt;li>Incremental learning strategies&lt;/li>
+&lt;li>Sliding window updates&lt;/li>
+&lt;li>Weight decay mechanisms&lt;/li>
+&lt;/ul>
+&lt;h4 id="22-transfer-learning">2.2 Transfer Learning&lt;/h4>
+&lt;ul>
+&lt;li>Domain adaptation&lt;/li>
+&lt;li>Feature alignment&lt;/li>
+&lt;li>Meta-learning methods&lt;/li>
+&lt;/ul>
+&lt;h2 id="practical-tips">Practical Tips&lt;/h2>
+&lt;h3 id="1-model-design">1. Model Design&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Ensemble Diversity&lt;/strong>&lt;/p></description></item><item><title>Data Quality Challenges: Handling Noisy and Missing Industrial Data</title><link>https://nothingness0db.github.io/posts/data-quality-challenges/</link><pubDate>Tue, 11 Mar 2025 02:06:20 +0800</pubDate><guid>https://nothingness0db.github.io/posts/data-quality-challenges/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Data quality issues have always been a significant challenge for data scientists and engineers in industrial scenarios. This article delves into common noise and missing data problems in industrial data and provides practical solutions.&lt;/p>
+&lt;h2 id="characteristics-and-challenges-of-industrial-data">Characteristics and Challenges of Industrial Data&lt;/h2>
+&lt;h3 id="1-data-noise">1. Data Noise&lt;/h3>
+&lt;p>The main sources of noise in industrial data include:&lt;/p>
+&lt;ul>
+&lt;li>Sensor measurement errors&lt;/li>
+&lt;li>Environmental interference&lt;/li>
+&lt;li>Equipment vibration&lt;/li>
+&lt;li>Electrical interference&lt;/li>
+&lt;/ul>
+&lt;p>These noises affect data quality and can lead to poor model training results.&lt;/p></description></item></channel></rss>
