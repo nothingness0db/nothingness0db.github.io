@@ -1,22 +1,39 @@
-/* 自定义CSS：移除图标链接的下划线 */
-/* 导航栏中的图标链接 */
-.menu a.search-toggle,
-.menu a.theme-switch,
-.menu a.language,
-.menu a.menu-item,
-.menu a.menu-item:hover,
-.menu a.menu-item:focus {
-    text-decoration: none !important;
-    border-bottom: none !important;
+/* ===============================================================
+   自定义样式覆盖 (Override LoveIt Theme)
+   =============================================================== */
+
+/* 1. 隐藏导航栏里那个奇怪的 "_" 分隔符
+   对应 header.html 中的 <span class="menu-item delimiter"></span> */
+#header-desktop .menu-item.delimiter,
+#header-mobile .menu-item.delimiter {
+    display: none !important;
 }
 
-/* 社交媒体图标链接 */
-.links a,
-.links a:hover,
-.links a:focus {
+/* 2. 移除导航栏功能图标的下划线 (搜索、主题、语言)
+   使用 #id 提升权重，防止被主题默认样式覆盖 */
+#header-desktop .menu-item.search-toggle,
+#header-desktop .menu-item.search-clear,
+#header-desktop .menu-item.theme-switch,
+#header-desktop .menu-item.language,
+#header-mobile .menu-item.search-toggle,
+#header-mobile .menu-item.search-clear,
+#header-mobile .menu-item.theme-switch,
+#header-mobile .menu-item.language {
     text-decoration: none !important;
     border-bottom: none !important;
+    background: none !important; /* 某些主题用背景图模拟下划线，一并去掉 */
 }
 
-/* 确保只针对图标，不影响文字链接（例如导航菜单中的文字链接） */
-/* 如果需要，可以进一步细化选择器 */
+/* 3. 移除首页个人介绍(Profile)下方社交图标的下划线
+   对应 profile.html 中的 .links */
+.home-profile .links a {
+    text-decoration: none !important;
+    border-bottom: none !important;
+    background: none !important;
+}
+
+/* 4. 甚至移除导航文字菜单的下划线，如果你想让它们看起来更干净
+   如果你想保留文字菜单的下划线，请删除下面这一段 */
+#header-desktop .menu-item {
+    /* border-bottom: none !important; */
+}
