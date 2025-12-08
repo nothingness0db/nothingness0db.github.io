@@ -1,0 +1,22 @@
+/* 自定义CSS：移除图标链接的下划线 */
+/* 导航栏中的图标链接 */
+.menu a.search-toggle,
+.menu a.theme-switch,
+.menu a.language,
+.menu a.menu-item,
+.menu a.menu-item:hover,
+.menu a.menu-item:focus {
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+/* 社交媒体图标链接 */
+.links a,
+.links a:hover,
+.links a:focus {
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+/* 确保只针对图标，不影响文字链接（例如导航菜单中的文字链接） */
+/* 如果需要，可以进一步细化选择器 */
