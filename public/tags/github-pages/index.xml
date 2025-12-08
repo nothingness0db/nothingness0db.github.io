@@ -1,24 +1,10 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>GitHub Pages - Tag - Eira Hazel</title>
-        <link>http://localhost:1313/tags/github-pages/</link>
-        <description>GitHub Pages - Tag - Eira Hazel</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 00:30:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/github-pages/" rel="self" type="application/rss+xml" /><item>
-    <title>Deploying Hugo Blog to GitHub Pages</title>
-    <link>http://localhost:1313/posts/deploy-to-github-pages/</link>
-    <pubDate>Tue, 11 Mar 2025 00:30:00 &#43;0800</pubDate>
-    <author>Eira Hazel</author>
-    <guid>http://localhost:1313/posts/deploy-to-github-pages/</guid>
-    <description><![CDATA[<h1 id="deploying-hugo-blog-to-github-pages">Deploying Hugo Blog to GitHub Pages</h1>
-<p>This guide explains how to deploy your Hugo blog to GitHub Pages for free hosting.</p>
-<blockquote>
-<p>Note: This is a placeholder for translation. The complete translation will be added later.</p></blockquote>
-<h2 id="setting-up-your-github-repository">Setting Up Your GitHub Repository</h2>
-<p>Create a repository named <code>yourusername.github.io</code> to host your blog.</p>
-<h2 id="configuring-github-actions">Configuring GitHub Actions</h2>
-<p>Use GitHub Actions to automate the build and deployment process of your Hugo site.</p>
-<h2 id="custom-domain-configuration">Custom Domain Configuration</h2>
-<p>Learn how to set up a custom domain for your GitHub Pages site.</p>]]></description>
-</item>
-</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GitHub Pages on Eira Hazel</title><link>https://nothingness0db.github.io/tags/github-pages/</link><description>Recent content in GitHub Pages on Eira Hazel</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 00:30:00 +0800</lastBuildDate><atom:link href="https://nothingness0db.github.io/tags/github-pages/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploying Hugo Blog to GitHub Pages</title><link>https://nothingness0db.github.io/posts/deploy-to-github-pages/</link><pubDate>Tue, 11 Mar 2025 00:30:00 +0800</pubDate><guid>https://nothingness0db.github.io/posts/deploy-to-github-pages/</guid><description>&lt;h1 id="deploying-hugo-blog-to-github-pages">Deploying Hugo Blog to GitHub Pages&lt;/h1>
+&lt;p>This guide explains how to deploy your Hugo blog to GitHub Pages for free hosting.&lt;/p>
+&lt;blockquote>
+&lt;p>Note: This is a placeholder for translation. The complete translation will be added later.&lt;/p>&lt;/blockquote>
+&lt;h2 id="setting-up-your-github-repository">Setting Up Your GitHub Repository&lt;/h2>
+&lt;p>Create a repository named &lt;code>yourusername.github.io&lt;/code> to host your blog.&lt;/p>
+&lt;h2 id="configuring-github-actions">Configuring GitHub Actions&lt;/h2>
+&lt;p>Use GitHub Actions to automate the build and deployment process of your Hugo site.&lt;/p>
+&lt;h2 id="custom-domain-configuration">Custom Domain Configuration&lt;/h2>
+&lt;p>Learn how to set up a custom domain for your GitHub Pages site.&lt;/p></description></item></channel></rss>

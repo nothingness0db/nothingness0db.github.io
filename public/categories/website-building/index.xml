@@ -1,56 +1,26 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Website Building - Category - Eira Hazel</title>
-        <link>http://localhost:1313/categories/website-building/</link>
-        <description>Website Building - Category - Eira Hazel</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 00:30:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/categories/website-building/" rel="self" type="application/rss+xml" /><item>
-    <title>Deploying Hugo Blog to GitHub Pages</title>
-    <link>http://localhost:1313/posts/deploy-to-github-pages/</link>
-    <pubDate>Tue, 11 Mar 2025 00:30:00 &#43;0800</pubDate>
-    <author>Eira Hazel</author>
-    <guid>http://localhost:1313/posts/deploy-to-github-pages/</guid>
-    <description><![CDATA[<h1 id="deploying-hugo-blog-to-github-pages">Deploying Hugo Blog to GitHub Pages</h1>
-<p>This guide explains how to deploy your Hugo blog to GitHub Pages for free hosting.</p>
-<blockquote>
-<p>Note: This is a placeholder for translation. The complete translation will be added later.</p></blockquote>
-<h2 id="setting-up-your-github-repository">Setting Up Your GitHub Repository</h2>
-<p>Create a repository named <code>yourusername.github.io</code> to host your blog.</p>
-<h2 id="configuring-github-actions">Configuring GitHub Actions</h2>
-<p>Use GitHub Actions to automate the build and deployment process of your Hugo site.</p>
-<h2 id="custom-domain-configuration">Custom Domain Configuration</h2>
-<p>Learn how to set up a custom domain for your GitHub Pages site.</p>]]></description>
-</item>
-<item>
-    <title>Hugo Blog CRUD Operations Guide</title>
-    <link>http://localhost:1313/posts/blog-crud-guide/</link>
-    <pubDate>Tue, 11 Mar 2025 00:25:00 &#43;0800</pubDate>
-    <author>Eira Hazel</author>
-    <guid>http://localhost:1313/posts/blog-crud-guide/</guid>
-    <description><![CDATA[<h1 id="hugo-blog-crud-operations-guide">Hugo Blog CRUD Operations Guide</h1>
-<p>This guide covers the basic Create, Read, Update, and Delete operations for managing content on your Hugo blog.</p>
-<blockquote>
-<p>Note: This is a placeholder for translation. The complete translation will be added later.</p></blockquote>
-<h2 id="creating-new-content">Creating New Content</h2>
-<p>Hugo provides simple commands to create new content for your blog.</p>
-<h2 id="reading-content">Reading Content</h2>
-<p>Learn how to properly structure and organize your content for easy navigation.</p>
-<h2 id="updating-content">Updating Content</h2>
-<p>Discover the best practices for updating existing content while maintaining SEO.</p>]]></description>
-</item>
-<item>
-    <title>Advanced Hugo Blog Configuration Guide</title>
-    <link>http://localhost:1313/posts/advanced-configuration/</link>
-    <pubDate>Tue, 11 Mar 2025 00:20:00 &#43;0800</pubDate>
-    <author>Eira Hazel</author>
-    <guid>http://localhost:1313/posts/advanced-configuration/</guid>
-    <description><![CDATA[<h1 id="advanced-hugo-blog-configuration-guide">Advanced Hugo Blog Configuration Guide</h1>
-<p>This is an English version of the advanced configuration guide for Hugo blogs. The content helps users configure their Hugo blog with advanced settings.</p>
-<blockquote>
-<p>Note: This is a placeholder for translation. The complete translation will be added later.</p></blockquote>
-<h2 id="basic-configuration">Basic Configuration</h2>
-<p>If you want to configure your Hugo blog with advanced settings, you need to modify the <code>config.toml</code> or <code>hugo.toml</code> file.</p>
-<h2 id="theme-configuration">Theme Configuration</h2>
-<p>Hugo themes provide various customization options. You can modify them according to your needs.</p>]]></description>
-</item>
-</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Website Building on Eira Hazel</title><link>https://nothingness0db.github.io/categories/website-building/</link><description>Recent content in Website Building on Eira Hazel</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 11 Mar 2025 00:30:00 +0800</lastBuildDate><atom:link href="https://nothingness0db.github.io/categories/website-building/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploying Hugo Blog to GitHub Pages</title><link>https://nothingness0db.github.io/posts/deploy-to-github-pages/</link><pubDate>Tue, 11 Mar 2025 00:30:00 +0800</pubDate><guid>https://nothingness0db.github.io/posts/deploy-to-github-pages/</guid><description>&lt;h1 id="deploying-hugo-blog-to-github-pages">Deploying Hugo Blog to GitHub Pages&lt;/h1>
+&lt;p>This guide explains how to deploy your Hugo blog to GitHub Pages for free hosting.&lt;/p>
+&lt;blockquote>
+&lt;p>Note: This is a placeholder for translation. The complete translation will be added later.&lt;/p>&lt;/blockquote>
+&lt;h2 id="setting-up-your-github-repository">Setting Up Your GitHub Repository&lt;/h2>
+&lt;p>Create a repository named &lt;code>yourusername.github.io&lt;/code> to host your blog.&lt;/p>
+&lt;h2 id="configuring-github-actions">Configuring GitHub Actions&lt;/h2>
+&lt;p>Use GitHub Actions to automate the build and deployment process of your Hugo site.&lt;/p>
+&lt;h2 id="custom-domain-configuration">Custom Domain Configuration&lt;/h2>
+&lt;p>Learn how to set up a custom domain for your GitHub Pages site.&lt;/p></description></item><item><title>Hugo Blog CRUD Operations Guide</title><link>https://nothingness0db.github.io/posts/blog-crud-guide/</link><pubDate>Tue, 11 Mar 2025 00:25:00 +0800</pubDate><guid>https://nothingness0db.github.io/posts/blog-crud-guide/</guid><description>&lt;h1 id="hugo-blog-crud-operations-guide">Hugo Blog CRUD Operations Guide&lt;/h1>
+&lt;p>This guide covers the basic Create, Read, Update, and Delete operations for managing content on your Hugo blog.&lt;/p>
+&lt;blockquote>
+&lt;p>Note: This is a placeholder for translation. The complete translation will be added later.&lt;/p>&lt;/blockquote>
+&lt;h2 id="creating-new-content">Creating New Content&lt;/h2>
+&lt;p>Hugo provides simple commands to create new content for your blog.&lt;/p>
+&lt;h2 id="reading-content">Reading Content&lt;/h2>
+&lt;p>Learn how to properly structure and organize your content for easy navigation.&lt;/p>
+&lt;h2 id="updating-content">Updating Content&lt;/h2>
+&lt;p>Discover the best practices for updating existing content while maintaining SEO.&lt;/p></description></item><item><title>Advanced Hugo Blog Configuration Guide</title><link>https://nothingness0db.github.io/posts/advanced-configuration/</link><pubDate>Tue, 11 Mar 2025 00:20:00 +0800</pubDate><guid>https://nothingness0db.github.io/posts/advanced-configuration/</guid><description>&lt;h1 id="advanced-hugo-blog-configuration-guide">Advanced Hugo Blog Configuration Guide&lt;/h1>
+&lt;p>This is an English version of the advanced configuration guide for Hugo blogs. The content helps users configure their Hugo blog with advanced settings.&lt;/p>
+&lt;blockquote>
+&lt;p>Note: This is a placeholder for translation. The complete translation will be added later.&lt;/p>&lt;/blockquote>
+&lt;h2 id="basic-configuration">Basic Configuration&lt;/h2>
+&lt;p>If you want to configure your Hugo blog with advanced settings, you need to modify the &lt;code>config.toml&lt;/code> or &lt;code>hugo.toml&lt;/code> file.&lt;/p>
+&lt;h2 id="theme-configuration">Theme Configuration&lt;/h2>
+&lt;p>Hugo themes provide various customization options. You can modify them according to your needs.&lt;/p></description></item></channel></rss>

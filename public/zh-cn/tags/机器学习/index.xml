@@ -1,16 +1,12 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>机器学习 - 标签 - Eira Hazel</title>
-        <link>http://localhost:1313/zh-cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
-        <description>机器学习 - 标签 - Eira Hazel</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/zh-cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="self" type="application/rss+xml" /><item>
-    <title>动态环境下的模型泛化难题</title>
-    <link>http://localhost:1313/zh-cn/posts/model-generalization-challenges/</link>
-    <pubDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</pubDate>
-    <author>Eira Hazel</author>
-    <guid>http://localhost:1313/zh-cn/posts/model-generalization-challenges/</guid>
-    <description><![CDATA[<h2 id="引言">引言</h2>
-<p>在现实世界的应用中，机器学习模型常常面临着动态环境带来的巨大挑战。模型在训练数据上表现良好，但在实际部署环境中性能却大幅下降。本文将深入探讨这一问题，并提供实用的解决方案。</p>]]></description>
-</item>
-</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>机器学习 on Eira Hazel</title><link>https://nothingness0db.github.io/zh-cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link><description>Recent content in 机器学习 on Eira Hazel</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 13 Mar 2025 14:30:00 +0800</lastBuildDate><atom:link href="https://nothingness0db.github.io/zh-cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>我的机器学习入门指南</title><link>https://nothingness0db.github.io/zh-cn/posts/machine-learning-intro/</link><pubDate>Thu, 13 Mar 2025 14:30:00 +0800</pubDate><guid>https://nothingness0db.github.io/zh-cn/posts/machine-learning-intro/</guid><description>&lt;p>&lt;strong>▌预处理是什么的？&lt;/strong>
+现实数据都特脏：有缺失、有噪声、单位还乱七八糟（比如身高1.8m vs 体重80kg）。不处理直接喂给模型，容易死
+&lt;strong>工具包必装&lt;/strong>：&lt;/p>
+&lt;div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+ &lt;div class="code-header language-bash">
+ &lt;span class="code-title">&lt;i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true">&lt;/i>&lt;/span>
+ &lt;span class="ellipses">&lt;i class="fas fa-ellipsis-h fa-fw" aria-hidden="true">&lt;/i>&lt;/span>
+ &lt;span class="copy" title="复制到剪贴板">&lt;i class="far fa-copy fa-fw" aria-hidden="true">&lt;/i>&lt;/span>
+ &lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">pip install scikit-learn &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;p>**归一化：
+&lt;strong>情况1：最大最小归一化&lt;/strong>&lt;/p></description></item><item><title>动态环境下的模型泛化难题</title><link>https://nothingness0db.github.io/zh-cn/posts/model-generalization-challenges/</link><pubDate>Tue, 11 Mar 2025 02:07:30 +0800</pubDate><guid>https://nothingness0db.github.io/zh-cn/posts/model-generalization-challenges/</guid><description>&lt;h2 id="引言">引言&lt;/h2>
+&lt;p>在现实世界的应用中，机器学习模型常常面临着动态环境带来的巨大挑战。模型在训练数据上表现良好，但在实际部署环境中性能却大幅下降。本文将深入探讨这一问题，并提供实用的解决方案。&lt;/p></description></item></channel></rss>
