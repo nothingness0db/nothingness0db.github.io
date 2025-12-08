@@ -21,14 +21,6 @@ hasCJKLanguage = true
           subtitle = "欢迎来到Eira的博客"
     [[languages.zh-cn.menu.main]]
       weight = 1
-      identifier = "music"
-      pre = "<i class='fas fa-music fa-fw'></i>"
-      post = ""
-      name = "音乐"
-      url = "/music/"
-      title = ""
-    [[languages.zh-cn.menu.main]]
-      weight = 2
       identifier = "posts"
       pre = ""
       post = ""
@@ -36,7 +28,7 @@ hasCJKLanguage = true
       url = "/posts/"
       title = ""
     [[languages.zh-cn.menu.main]]
-      weight = 3
+      weight = 2
       identifier = "tags"
       pre = ""
       post = ""
@@ -44,7 +36,7 @@ hasCJKLanguage = true
       url = "/tags/"
       title = ""
     [[languages.zh-cn.menu.main]]
-      weight = 4
+      weight = 3
       identifier = "categories"
       pre = ""
       post = ""
@@ -52,7 +44,7 @@ hasCJKLanguage = true
       url = "/categories/"
       title = ""
     [[languages.zh-cn.menu.main]]
-      weight = 5
+      weight = 4
       identifier = "github"
       pre = "<i class='fab fa-github fa-fw'></i>"
       post = ""
@@ -60,7 +52,7 @@ hasCJKLanguage = true
       url = "https://github.com/nothingness0db"
       title = "GitHub"
     [[languages.zh-cn.menu.main]]
-      weight = 6
+      weight = 5
       identifier = "rss"
       pre = "<i class='fas fa-rss fa-fw'></i>"
       post = ""
@@ -82,14 +74,6 @@ hasCJKLanguage = true
           subtitle = "Welcome to Eira's Blog"
     [[languages.en.menu.main]]
       weight = 1
-      identifier = "music"
-      pre = "<i class='fas fa-music fa-fw'></i>"
-      post = ""
-      name = "Music"
-      url = "/music/"
-      title = ""
-    [[languages.en.menu.main]]
-      weight = 2
       identifier = "posts"
       pre = ""
       post = ""
@@ -97,7 +81,7 @@ hasCJKLanguage = true
       url = "/posts/"
       title = ""
     [[languages.en.menu.main]]
-      weight = 3
+      weight = 2
       identifier = "tags"
       pre = ""
       post = ""
@@ -105,7 +89,7 @@ hasCJKLanguage = true
       url = "/tags/"
       title = ""
     [[languages.en.menu.main]]
-      weight = 4
+      weight = 3
       identifier = "categories"
       pre = ""
       post = ""
@@ -113,7 +97,7 @@ hasCJKLanguage = true
       url = "/categories/"
       title = ""
     [[languages.en.menu.main]]
-      weight = 5
+      weight = 4
       identifier = "github"
       pre = "<i class='fab fa-github fa-fw'></i>"
       post = ""
@@ -121,7 +105,7 @@ hasCJKLanguage = true
       url = "https://github.com/nothingness0db"
       title = "GitHub"
     [[languages.en.menu.main]]
-      weight = 6
+      weight = 5
       identifier = "rss"
       pre = "<i class='fas fa-rss fa-fw'></i>"
       post = ""
