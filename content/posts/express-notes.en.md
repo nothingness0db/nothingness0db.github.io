@@ -3,7 +3,6 @@ title: "Express learning front-end notes"
 date: 2025-03-13T14:30:00+08:00
 author: "Eira Hazel"
 language: en
-weight: 90
 draft: false
 categories:
 - Technical Discussion
