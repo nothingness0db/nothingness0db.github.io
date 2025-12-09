@@ -3,81 +3,30 @@
         <title>所有文章 - Eira Hazel</title>
         <link>https://nothingness0db.github.io/zh-cn/posts/</link>
         <description>所有文章 | Eira Hazel</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 13 Mar 2025 14:30:00 &#43;0800</lastBuildDate><atom:link href="https://nothingness0db.github.io/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Express学习前端笔记</title>
-    <link>https://nothingness0db.github.io/zh-cn/posts/express-notes/</link>
-    <pubDate>Thu, 13 Mar 2025 14:30:00 &#43;0800</pubDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 08 Dec 2025 17:09:30 &#43;0800</lastBuildDate><atom:link href="https://nothingness0db.github.io/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>开会</title>
+    <link>https://nothingness0db.github.io/zh-cn/posts/meetings/</link>
+    <pubDate>Mon, 08 Dec 2025 17:09:30 &#43;0800</pubDate>
     <author>Eira Hazel</author>
-    <guid>https://nothingness0db.github.io/zh-cn/posts/express-notes/</guid>
-    <description><![CDATA[<ul>
-<li>Express搭前端测试环境</li>
-</ul>
-<ul>
-<li>装express：pnpm add express</li>
-<li>新建server.js ↓</li>
-</ul>
-<p>// 最简启动
-const express = require(&rsquo;express&rsquo;)
-const app = express()
-app.use(express.static(&lsquo;public&rsquo;))  ← 静态资源扔这个文件夹
-app.listen(3000)</p>
-<ul>
-<li>
-<p>文件夹结构：
-/public
-|- index.html
-|- style.css
-|- app.js
-/server.js</p>]]></description>
+    <guid>https://nothingness0db.github.io/zh-cn/posts/meetings/</guid>
+    <description><![CDATA[<p>世界上最无趣的莫过于开会了，大好的日子，一大推人被迫放下手头的急事、要事、趣事，济济一堂，只为听三五个人逞其舌锋，争辩一件议而不决、关而不行、行而不通的事情，真是集体浪费时间的最佳方式。</p>]]></description>
 </item>
 <item>
-    <title>我的机器学习入门指南</title>
-    <link>https://nothingness0db.github.io/zh-cn/posts/machine-learning-intro/</link>
-    <pubDate>Thu, 13 Mar 2025 14:30:00 &#43;0800</pubDate>
+    <title>太空快递</title>
+    <link>https://nothingness0db.github.io/zh-cn/posts/space-express/</link>
+    <pubDate>Fri, 15 Aug 2025 14:30:45 &#43;0800</pubDate>
     <author>Eira Hazel</author>
-    <guid>https://nothingness0db.github.io/zh-cn/posts/machine-learning-intro/</guid>
-    <description><![CDATA[<p><strong>▌预处理是什么的？</strong>
-现实数据都特脏：有缺失、有噪声、单位还乱七八糟（比如身高1.8m vs 体重80kg）。不处理直接喂给模型，容易死
-<strong>工具包必装</strong>：</p>
-<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-bash">
-        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install scikit-learn  </span></span></code></pre></div></div>
-<p>**归一化：
-<strong>情况1：最大最小归一化</strong></p>]]></description>
+    <guid>https://nothingness0db.github.io/zh-cn/posts/space-express/</guid>
+    <description><![CDATA[<p>看到有人在吹太空快递 真的绷不住 老中是不是对“基建狂魔”这几个字有什么奇怪的性癖啊 觉得这玩意能替代顺丰的建议重修高中物理 哪怕是去刷两道力学题也不至于问出这种弱智问题</p>]]></description>
 </item>
 <item>
-    <title>浅谈支配树</title>
-    <link>https://nothingness0db.github.io/zh-cn/posts/dominator-tree/</link>
-    <pubDate>Wed, 12 Mar 2025 01:00:00 &#43;0800</pubDate>
+    <title>标签失效之后</title>
+    <link>https://nothingness0db.github.io/zh-cn/posts/after-labels-fail/</link>
+    <pubDate>Fri, 01 Aug 2025 10:22:18 &#43;0800</pubDate>
     <author>Eira Hazel</author>
-    <guid>https://nothingness0db.github.io/zh-cn/posts/dominator-tree/</guid>
-    <description><![CDATA[<p>浅谈支配树</p>
-<p>支配树是图论中的重要概念，它在编译器优化、程序分析等领域有着广泛应用。我想通过一些简单的解释来帮助大家理解这个概念。
-首先，什么是支配关系？在一个有向图中，如果从起点到某个节点v的所有路径都必须经过节点u，那么我们就说节点u支配节点v，记作u dom v。直观地说，如果想要到达v，就必须先经过u，u就像是通往v的一个&quot;关卡&quot;。</p>]]></description>
-</item>
-<item>
-    <title>动态环境下的模型泛化难题</title>
-    <link>https://nothingness0db.github.io/zh-cn/posts/model-generalization-challenges/</link>
-    <pubDate>Tue, 11 Mar 2025 02:07:30 &#43;0800</pubDate>
-    <author>Eira Hazel</author>
-    <guid>https://nothingness0db.github.io/zh-cn/posts/model-generalization-challenges/</guid>
-    <description><![CDATA[<h2 id="引言">引言</h2>
-<p>在现实世界的应用中，机器学习模型常常面临着动态环境带来的巨大挑战。模型在训练数据上表现良好，但在实际部署环境中性能却大幅下降。本文将深入探讨这一问题，并提供实用的解决方案。</p>]]></description>
-</item>
-<item>
-    <title>Hugo博客高级配置指南</title>
-    <link>https://nothingness0db.github.io/zh-cn/posts/advanced-configuration/</link>
-    <pubDate>Tue, 11 Mar 2025 00:20:00 &#43;0800</pubDate>
-    <author>Eira Hazel</author>
-    <guid>https://nothingness0db.github.io/zh-cn/posts/advanced-configuration/</guid>
-    <description><![CDATA[<h1 id="hugo博客高级配置指南">Hugo博客高级配置指南</h1>
-<p>本文将介绍Hugo博客的高级配置选项，帮助你充分利用Hugo的强大功能，打造一个独特而高效的个人博客。</p>
-<h2 id="主题自定义">主题自定义</h2>
-<h3 id="修改主题配置">修改主题配置</h3>
-<p>大多数Hugo主题都提供了丰富的配置选项，可以在<code>hugo.toml</code>（或<code>config.toml</code>）中进行设置：</p>]]></description>
+    <guid>https://nothingness0db.github.io/zh-cn/posts/after-labels-fail/</guid>
+    <description><![CDATA[<p>现在的人好像已经丧失了处理“高保真信息”的能力，大脑 GPU 算力根本不够，跑不动“独立思考”这种高负载进程。</p>
+<p>绝大多数老中需要的只是一个 Tag，一个被压缩后的残渣。</p>]]></description>
 </item>
 <item>
     <title>Hugo博客日常文章管理指南</title>
