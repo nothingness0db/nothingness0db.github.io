@@ -6,35 +6,14 @@
     <description>Recent content in 技术探讨 on Eira Hazel</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 13 Mar 2025 14:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 15 Aug 2025 14:30:45 +0800</lastBuildDate>
     <atom:link href="https://nothingness0db.github.io/zh-cn/categories/%E6%8A%80%E6%9C%AF%E6%8E%A2%E8%AE%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Express学习前端笔记</title>
-      <link>https://nothingness0db.github.io/zh-cn/posts/express-notes/</link>
-      <pubDate>Thu, 13 Mar 2025 14:30:00 +0800</pubDate>
-      <guid>https://nothingness0db.github.io/zh-cn/posts/express-notes/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;Express搭前端测试环境&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;装express：pnpm add express&lt;/li&gt;&#xA;&lt;li&gt;新建server.js ↓&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;// 最简启动&#xA;const express = require(&amp;rsquo;express&amp;rsquo;)&#xA;const app = express()&#xA;app.use(express.static(&amp;lsquo;public&amp;rsquo;))  ← 静态资源扔这个文件夹&#xA;app.listen(3000)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;文件夹结构：&#xA;/public&#xA;|- index.html&#xA;|- style.css&#xA;|- app.js&#xA;/server.js&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>我的机器学习入门指南</title>
-      <link>https://nothingness0db.github.io/zh-cn/posts/machine-learning-intro/</link>
-      <pubDate>Thu, 13 Mar 2025 14:30:00 +0800</pubDate>
-      <guid>https://nothingness0db.github.io/zh-cn/posts/machine-learning-intro/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;▌预处理是什么的？&lt;/strong&gt;&#xA;现实数据都特脏：有缺失、有噪声、单位还乱七八糟（比如身高1.8m vs 体重80kg）。不处理直接喂给模型，容易死&#xA;&lt;strong&gt;工具包必装&lt;/strong&gt;：&lt;/p&gt;&#xA;&lt;div class=&#34;code-block code-line-numbers open&#34; style=&#34;counter-reset: code-block 0&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;code-header language-bash&#34;&gt;&#xD;&#xA;        &lt;span class=&#34;code-title&#34;&gt;&lt;i class=&#34;arrow fas fa-chevron-right fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/span&gt;&#xD;&#xA;        &lt;span class=&#34;ellipses&#34;&gt;&lt;i class=&#34;fas fa-ellipsis-h fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/span&gt;&#xD;&#xA;        &lt;span class=&#34;copy&#34; title=&#34;复制到剪贴板&#34;&gt;&lt;i class=&#34;far fa-copy fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/span&gt;&#xD;&#xA;    &lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install scikit-learn  &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;**归一化：&#xA;&lt;strong&gt;情况1：最大最小归一化&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>浅谈支配树</title>
-      <link>https://nothingness0db.github.io/zh-cn/posts/dominator-tree/</link>
-      <pubDate>Wed, 12 Mar 2025 01:00:00 +0800</pubDate>
-      <guid>https://nothingness0db.github.io/zh-cn/posts/dominator-tree/</guid>
-      <description>&lt;p&gt;浅谈支配树&lt;/p&gt;&#xA;&lt;p&gt;支配树是图论中的重要概念，它在编译器优化、程序分析等领域有着广泛应用。我想通过一些简单的解释来帮助大家理解这个概念。&#xA;首先，什么是支配关系？在一个有向图中，如果从起点到某个节点v的所有路径都必须经过节点u，那么我们就说节点u支配节点v，记作u dom v。直观地说，如果想要到达v，就必须先经过u，u就像是通往v的一个&amp;quot;关卡&amp;quot;。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>动态环境下的模型泛化难题</title>
-      <link>https://nothingness0db.github.io/zh-cn/posts/model-generalization-challenges/</link>
-      <pubDate>Tue, 11 Mar 2025 02:07:30 +0800</pubDate>
-      <guid>https://nothingness0db.github.io/zh-cn/posts/model-generalization-challenges/</guid>
-      <description>&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;&#xA;&lt;p&gt;在现实世界的应用中，机器学习模型常常面临着动态环境带来的巨大挑战。模型在训练数据上表现良好，但在实际部署环境中性能却大幅下降。本文将深入探讨这一问题，并提供实用的解决方案。&lt;/p&gt;</description>
+      <title>太空快递</title>
+      <link>https://nothingness0db.github.io/zh-cn/posts/space-express/</link>
+      <pubDate>Fri, 15 Aug 2025 14:30:45 +0800</pubDate>
+      <guid>https://nothingness0db.github.io/zh-cn/posts/space-express/</guid>
+      <description>&lt;p&gt;看到有人在吹太空快递 真的绷不住 老中是不是对“基建狂魔”这几个字有什么奇怪的性癖啊 觉得这玩意能替代顺丰的建议重修高中物理 哪怕是去刷两道力学题也不至于问出这种弱智问题&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

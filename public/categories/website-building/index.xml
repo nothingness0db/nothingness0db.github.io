@@ -22,12 +22,5 @@
       <guid>https://nothingness0db.github.io/posts/blog-crud-guide/</guid>
       <description>&lt;h1 id=&#34;hugo-blog-crud-operations-guide&#34;&gt;Hugo Blog CRUD Operations Guide&lt;/h1&gt;&#xA;&lt;p&gt;This guide covers the basic Create, Read, Update, and Delete operations for managing content on your Hugo blog.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Note: This is a placeholder for translation. The complete translation will be added later.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;creating-new-content&#34;&gt;Creating New Content&lt;/h2&gt;&#xA;&lt;p&gt;Hugo provides simple commands to create new content for your blog.&lt;/p&gt;&#xA;&lt;h2 id=&#34;reading-content&#34;&gt;Reading Content&lt;/h2&gt;&#xA;&lt;p&gt;Learn how to properly structure and organize your content for easy navigation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;updating-content&#34;&gt;Updating Content&lt;/h2&gt;&#xA;&lt;p&gt;Discover the best practices for updating existing content while maintaining SEO.&lt;/p&gt;</description>
     </item>
-    <item>
-      <title>Advanced Hugo Blog Configuration Guide</title>
-      <link>https://nothingness0db.github.io/posts/advanced-configuration/</link>
-      <pubDate>Tue, 11 Mar 2025 00:20:00 +0800</pubDate>
-      <guid>https://nothingness0db.github.io/posts/advanced-configuration/</guid>
-      <description>&lt;h1 id=&#34;advanced-hugo-blog-configuration-guide&#34;&gt;Advanced Hugo Blog Configuration Guide&lt;/h1&gt;&#xA;&lt;p&gt;This is an English version of the advanced configuration guide for Hugo blogs. The content helps users configure their Hugo blog with advanced settings.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Note: This is a placeholder for translation. The complete translation will be added later.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;basic-configuration&#34;&gt;Basic Configuration&lt;/h2&gt;&#xA;&lt;p&gt;If you want to configure your Hugo blog with advanced settings, you need to modify the &lt;code&gt;config.toml&lt;/code&gt; or &lt;code&gt;hugo.toml&lt;/code&gt; file.&lt;/p&gt;&#xA;&lt;h2 id=&#34;theme-configuration&#34;&gt;Theme Configuration&lt;/h2&gt;&#xA;&lt;p&gt;Hugo themes provide various customization options. You can modify them according to your needs.&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>
