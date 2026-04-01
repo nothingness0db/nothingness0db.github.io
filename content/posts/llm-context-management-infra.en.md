@@ -1,5 +1,5 @@
 ---
-title: "A New Start"
+title: "Dynamic Context Management Infrastructure for LLMs"
 author: "Eira Hazel"
 date: 2026-04-02T02:24:00+08:00
 draft: false
@@ -13,7 +13,7 @@ categories:
   - Tech
 ---
 
-# Dynamic Context Management Infrastructure for LLMs: From Text Compression to Semantic Database
+My original idea was extremely simple: optimize at the model layer by storing sparse feature vectors directly as the compressed representation, without restoring them into text. During downstream consumption, these feature vectors would be injected back into the corresponding layers of the same model, skipping token decoding and re-encoding. Alright, that was the model-layer approach. Obviously, what I’m writing here isn’t that, because I can’t pull that off in less than a month. But I came up with a practical alternative that works now and is worth exploring. Below is an AI-generated summary of my chat records with alam.
 
 > Design Overview · Draft
 
