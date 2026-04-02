@@ -13,9 +13,11 @@ categories:
   - Tech
 ---
 
-My original idea was extremely simple: optimize at the model layer by storing sparse feature vectors directly as the compressed representation, without restoring them into text. During downstream consumption, these feature vectors would be injected back into the corresponding layers of the same model, skipping token decoding and re-encoding. Alright, that was the model-layer approach. Obviously, what I’m writing here isn’t that, because I can’t pull that off in less than a month. But I came up with a practical alternative that works now and is worth exploring. Below is an AI-generated summary of my chat records with alam.
+# Dynamic Context Management Infrastructure for LLMs
 
-> Design Overview · Draft
+---
+
+My original idea was extremely simple: optimize at the model layer by storing sparse feature vectors directly as the compressed representation, without restoring them into text. During downstream consumption, these feature vectors would be injected back into the corresponding layers of the same model, skipping token decoding and re-encoding. Alright, that was the model-layer approach. Obviously, what I'm writing here isn't that, because I can't pull that off in less than a month. But I came up with a practical alternative that works now and is worth exploring. Below is an AI-generated summary of my chat records with alam.
 
 ---
 
@@ -49,7 +51,7 @@ The core challenge: when chunk boundaries don't align with semantic units, seman
 
 Compared to SOTA models (GPT-4o, Claude 3.5 Sonnet, etc.), this approach lags in general compression quality. The root cause is that SOTA models can grasp the full document holistically, whereas chunked approaches suffer from localized information loss.
 
-However, **the choice of evaluation framework changes the competitive landscape**. When the target use case shifts from "human-readable summary" to "downstream LLM input," SOTA's advantage shrinks dramatically—existing SOTA models are not specifically optimized for "downstream task performance after compression." If the training objective is tuned directly for downstream accuracy, a small model can theoretically surpass general SOTA on this narrow task.
+However, the choice of evaluation framework changes the competitive landscape. When the target use case shifts from "human-readable summary" to "downstream LLM input," SOTA's advantage shrinks dramatically—existing SOTA models are not specifically optimized for "downstream task performance after compression." If the training objective is tuned directly for downstream accuracy, a small model can theoretically surpass general SOTA on this narrow task.
 
 ---
 
@@ -57,7 +59,7 @@ However, **the choice of evaluation framework changes the competitive landscape*
 
 The real scenario is anchored in context overflow for Claude Opus-level models inside Claude Code. Complex programming tasks quickly exhaust the context window, and existing solutions (calling SOTA for compression) are costly and mediocre.
 
-**Key Insight**: The root problem of context overflow is not length, but noise—the conversation history is full of discarded plans, repeated error messages, and irrelevant intermediate states. Thus, the core value of a compressor is **denoising**, not merely shortening.
+**Key Insight**: The root problem of context overflow is not length, but noise—the conversation history is full of discarded plans, repeated error messages, and irrelevant intermediate states. Thus, the core value of a compressor is denoising, not merely shortening.
 
 Moreover, if the compressed context lets the downstream model reduce token consumption while improving task completion rate, the positioning of the solution upgrades from "low-cost alternative" to "higher-quality context management layer."
 
@@ -72,9 +74,9 @@ As the scenario deepened, the nature of the problem shifted. Model fine-tuning i
 - Coordination layer design between the two pipelines
 - Latency budget control across the entire chain
 
-**Conversation history** follows temporal decay logic: early exploration can be heavily compressed, while recent actions and current error contexts must be preserved intact.
+Conversation history follows temporal decay logic: early exploration can be heavily compressed, while recent actions and current error contexts must be preserved intact.
 
-**Code files** follow task-relevance logic: they are not cropped by time, but by keeping interface definitions and key functions relevant to the current task while folding irrelevant implementation details.
+Code files follow task-relevance logic: they are not cropped by time, but by keeping interface definitions and key functions relevant to the current task while folding irrelevant implementation details.
 
 The two pipelines are not independent; the semantic state of the conversation history must back-propagate to guide the compression granularity of code files.
 
@@ -95,15 +97,15 @@ Core primitives of the context database:
 | **Update** | When a new version of the same file arrives, the old version is down-weighted or invalidated, not simply overwritten |
 | **Forget** | Long-unretrieved content is further compressed or archived, not deleted |
 
-The essential difference from existing solutions (RAG, MemGPT, etc.) is that this approach unifies compression, indexing, retrieval, and lifecycle management at the **infrastructure layer**, rather than making localized optimizations at the application layer.
+The essential difference from existing solutions (RAG, MemGPT, etc.) is that this approach unifies compression, indexing, retrieval, and lifecycle management at the infrastructure layer, rather than making localized optimizations at the application layer.
 
 ---
 
 ## 7. Retrieval: The Hardest Part
 
-The fundamental difficulty of retrieval is that **relevance is semantic, not structural**. Function B may be tightly coupled to Function A in ways that never appear in the call graph, instead being implicit in business logic. Rules cannot discover such relationships, while real-time LLM judgment introduces latency and cost issues.
+The fundamental difficulty of retrieval is that relevance is semantic, not structural. Function B may be tightly coupled to Function A in ways that never appear in the call graph, instead being implicit in business logic. Rules cannot discover such relationships, while real-time LLM judgment introduces latency and cost issues.
 
-**Way out**: Shift real-time semantic judgment to **offline precomputation at write time**.
+**Way out**: Shift real-time semantic judgment to offline precomputation at write time.
 
 Concrete path:
 
@@ -111,8 +113,25 @@ Concrete path:
 2. An LLM scans the code to identify semantically strong couplings not reflected in the call graph, supplementing edges (semantic enhancement layer, executed offline)
 3. Retrieval follows graph traversal, diffusing from the current task node by weight, truncated by token budget
 
-The LLM's role thus shifts to **asynchronously maintaining the semantic relationship graph**, rather than participating in every retrieval decision in real time.
+The LLM's role thus shifts to asynchronously maintaining the semantic relationship graph, rather than participating in every retrieval decision in real time.
 
 ---
 
-That's about as far as the discussion with my friend went for now. New content is still experimental, so it's not ready to publish yet.
+## 8. Known Issues
+
+This design has real problems. I know about them. Some I'm working on; some I'm not going to solve and am treating as accepted degradations.
+
+**The offline semantic graph goes stale.** In any real codebase, a single interface change can invalidate large swaths of the graph. "Offline" and "kept up to date" are mutually exclusive—if the graph isn't refreshed, the retrieval layer is consuming expired relationships and generating hallucinations downstream; if it is refreshed, it's no longer offline and the cost advantage disappears. I'm not solving this. The fallback is to narrow the graph's scope: stable core modules get full semantic scanning, frequently-changing modules degrade to pure vector retrieval and accept the retrieval quality loss. The graph becomes a partial index, not a complete one.
+
+**The dual-pipeline coupling is fragile.** Having the conversation history's semantic state back-propagate to guide code file compression creates a cascade dependency. If the intent summarization drifts, the downstream code compression makes systematically wrong decisions—and the errors are silent, only surfacing when the downstream model fails on the actual task. I'm working on this. The direction is forced decoupling: both pipelines share a common task state representation as input, but neither takes the other's output as a dependency. The coordination happens upstream at the shared state layer, not in-flight between pipelines.
+
+**The generality claim is premature.** The current design is Claude Code-specific in more ways than it admits—AST parsing, call graphs, symbol-level diffing are all code-native. Claiming other scenarios "naturally fall into place" skips over real differences in content structure and lifecycle. For now, Claude Code is the only validation target. Generality is a later question.
+
+---
+
+*That's about as far as the discussion with my friend went for now. New content is still experimental, so it's not ready to publish yet.*
+
+---
+
+*Updated on 2026-04-02*  
+*Tags: LLM, Context Management, Semantic Compression, System Design, AI Engineering*
