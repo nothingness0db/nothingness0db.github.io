@@ -2,7 +2,7 @@
 title: "人类是歪了的动物"
 author: "Eira Hazel"
 date: 2026-04-07T00:30:00+08:00
-draft: true
+draft: false
 tags:
   - 随笔
   - 大模型

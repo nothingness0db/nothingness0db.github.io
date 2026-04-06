@@ -2,7 +2,7 @@
 title: "Humans Are Crooked Animals"
 author: "Eira Hazel"
 date: 2026-04-07T00:30:00+08:00
-draft: true
+draft: false
 tags:
   - Essay
   - LLM
