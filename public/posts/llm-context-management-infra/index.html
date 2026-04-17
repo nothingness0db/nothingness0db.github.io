@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Dynamic Context Management Infrastructure for LLMs - Eira Hazel</title><meta name="Description" content="This is my cool site"><meta property="og:url" content="http://localhost:1313/posts/llm-context-management-infra/">
+  <meta property="og:site_name" content="Eira Hazel">
+  <meta property="og:title" content="Dynamic Context Management Infrastructure for LLMs">
+  <meta property="og:description" content="Dynamic Context Management Infrastructure for LLMs My original idea was extremely simple: optimize at the model layer by storing sparse feature vectors directly as the compressed representation, without restoring them into text. During downstream consumption, these feature vectors would be injected back into the corresponding layers of the same model, skipping token decoding and re-encoding. Alright, that was the model-layer approach. Obviously, what I’m writing here isn’t that, because I can’t pull that off in less than a month. But I came up with a practical alternative that works now and is worth exploring. Below is an AI-generated summary of my chat records with alam.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-02T02:24:00+08:00">
+    <meta property="article:modified_time" content="2026-04-02T02:24:00+08:00">
+    <meta property="article:tag" content="LLM">
+    <meta property="article:tag" content="Context Management">
+    <meta property="article:tag" content="Semantic Compression">
+    <meta property="article:tag" content="System Design">
+    <meta property="article:tag" content="AI Engineering">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Dynamic Context Management Infrastructure for LLMs">
+  <meta name="twitter:description" content="Dynamic Context Management Infrastructure for LLMs My original idea was extremely simple: optimize at the model layer by storing sparse feature vectors directly as the compressed representation, without restoring them into text. During downstream consumption, these feature vectors would be injected back into the corresponding layers of the same model, skipping token decoding and re-encoding. Alright, that was the model-layer approach. Obviously, what I’m writing here isn’t that, because I can’t pull that off in less than a month. But I came up with a practical alternative that works now and is worth exploring. Below is an AI-generated summary of my chat records with alam.">
+      <meta name="twitter:site" content="@ADsdssd40847">
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/images/kl3xu-n6gik-001.ico" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/llm-context-management-infra/" /><link rel="prev" href="http://localhost:1313/posts/goodbye-apple/" /><link rel="next" href="http://localhost:1313/posts/new-post/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Dynamic Context Management Infrastructure for LLMs",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/posts\/llm-context-management-infra\/"
+        },"genre": "posts","keywords": "LLM, Context Management, Semantic Compression, System Design, AI Engineering","wordcount":  1282 ,
+        "url": "http:\/\/localhost:1313\/posts\/llm-context-management-infra\/","datePublished": "2026-04-02T02:24:00+08:00","dateModified": "2026-04-02T02:24:00+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Eira Hazel"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Eira Hazel">Eira Hazel</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><a class="menu-item" href="/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">
+                        <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="http://localhost:1313/zh-cn/">简体中文</option><option value="http://localhost:1313/" selected>English</option></select>
+                    </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Eira Hazel">Eira Hazel</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a class="menu-item" href="/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i></a><a class="menu-item language" title="Select Language">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="http://localhost:1313/zh-cn/">简体中文</option><option value="http://localhost:1313/" selected>English</option></select>
+                </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</header>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Dynamic Context Management Infrastructure for LLMs</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Eira Hazel</a></span>&nbsp;<span class="post-category">included in <a href="/categories/tech/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Tech</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2026-04-02">2026-04-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1282 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;7 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#abstract">Abstract</a></li>
+    <li><a href="#1-starting-point-semantic-text-compression">1. Starting Point: Semantic Text Compression</a></li>
+    <li><a href="#2-pipeline-design-chunking--semantic-state-passing">2. Pipeline Design: Chunking + Semantic State Passing</a></li>
+    <li><a href="#3-comparison-with-sota">3. Comparison with SOTA</a></li>
+    <li><a href="#4-real-need-long-context-compression-for-llms">4. Real Need: Long Context Compression for LLMs</a></li>
+    <li><a href="#5-an-engineering-task-not-a-model-task">5. An Engineering Task, Not a Model Task</a></li>
+    <li><a href="#6-context-database-the-emergence-of-the-core-abstraction">6. Context Database: The Emergence of the Core Abstraction</a></li>
+    <li><a href="#7-retrieval-the-hardest-part">7. Retrieval: The Hardest Part</a></li>
+    <li><a href="#8-known-issues">8. Known Issues</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="dynamic-context-management-infrastructure-for-llms">Dynamic Context Management Infrastructure for LLMs</h1>
+<hr>
+<p>My original idea was extremely simple: optimize at the model layer by storing sparse feature vectors directly as the compressed representation, without restoring them into text. During downstream consumption, these feature vectors would be injected back into the corresponding layers of the same model, skipping token decoding and re-encoding. Alright, that was the model-layer approach. Obviously, what I&rsquo;m writing here isn&rsquo;t that, because I can&rsquo;t pull that off in less than a month. But I came up with a practical alternative that works now and is worth exploring. Below is an AI-generated summary of my chat records with alam.</p>
+<hr>
+<h2 id="abstract">Abstract</h2>
+<p>This article traces a design exploration that evolved from a &ldquo;text semantic compressor&rdquo; to an &ldquo;LLM context management infrastructure layer.&rdquo; It covers core topics including model selection, data construction, engineering architecture, retrieval mechanisms, and semantic structure maintenance, ultimately framing the problem as an engineering task centered on a dynamic semantic database rather than a pure model-training task.</p>
+<hr>
+<h2 id="1-starting-point-semantic-text-compression">1. Starting Point: Semantic Text Compression</h2>
+<p>The initial goal was to build a compressor that preserves core semantics while pruning verbosity. Unlike keyword extraction or abstractive summarization, semantic compression demands that the compressed text remain semantically equivalent to the original, serving as a higher-density alternative input.</p>
+<p><strong>Initial Plan</strong>: Fine-tune a small model to replace expensive SOTA LLM calls. Base model: Qwen2.5-1.5B-Instruct. Training data distilled from a larger model. Training stack: LLaMA-Factory + QLoRA on a single consumer GPU (3090/4090).</p>
+<hr>
+<h2 id="2-pipeline-design-chunking--semantic-state-passing">2. Pipeline Design: Chunking + Semantic State Passing</h2>
+<p>To handle long texts, a chunked compression pipeline was proposed:</p>
+<ul>
+<li>Traditional methods handle coarse-grained chunking</li>
+<li>The small model compresses each chunk</li>
+<li>Cross-chunk coherence is maintained via &ldquo;semantic prompts&rdquo; that carry context state</li>
+</ul>
+<p>The core challenge: when chunk boundaries don&rsquo;t align with semantic units, semantic prompts have limited compensatory power. Meanwhile, the representation of semantic state (summaries, entity lists, structured descriptions) directly affects compression quality and training data design.</p>
+<hr>
+<h2 id="3-comparison-with-sota">3. Comparison with SOTA</h2>
+<p>Compared to SOTA models (GPT-4o, Claude 3.5 Sonnet, etc.), this approach lags in general compression quality. The root cause is that SOTA models can grasp the full document holistically, whereas chunked approaches suffer from localized information loss.</p>
+<p>However, the choice of evaluation framework changes the competitive landscape. When the target use case shifts from &ldquo;human-readable summary&rdquo; to &ldquo;downstream LLM input,&rdquo; SOTA&rsquo;s advantage shrinks dramatically—existing SOTA models are not specifically optimized for &ldquo;downstream task performance after compression.&rdquo; If the training objective is tuned directly for downstream accuracy, a small model can theoretically surpass general SOTA on this narrow task.</p>
+<hr>
+<h2 id="4-real-need-long-context-compression-for-llms">4. Real Need: Long Context Compression for LLMs</h2>
+<p>The real scenario is anchored in context overflow for Claude Opus-level models inside Claude Code. Complex programming tasks quickly exhaust the context window, and existing solutions (calling SOTA for compression) are costly and mediocre.</p>
+<p><strong>Key Insight</strong>: The root problem of context overflow is not length, but noise—the conversation history is full of discarded plans, repeated error messages, and irrelevant intermediate states. Thus, the core value of a compressor is denoising, not merely shortening.</p>
+<p>Moreover, if the compressed context lets the downstream model reduce token consumption while improving task completion rate, the positioning of the solution upgrades from &ldquo;low-cost alternative&rdquo; to &ldquo;higher-quality context management layer.&rdquo;</p>
+<hr>
+<h2 id="5-an-engineering-task-not-a-model-task">5. An Engineering Task, Not a Model Task</h2>
+<p>As the scenario deepened, the nature of the problem shifted. Model fine-tuning is just one operator in the whole system. The real engineering complexity lies in:</p>
+<ul>
+<li>How to plug into Claude Code&rsquo;s context pipeline</li>
+<li>Differentiated processing logic for two content types (conversation history vs. code files)</li>
+<li>Coordination layer design between the two pipelines</li>
+<li>Latency budget control across the entire chain</li>
+</ul>
+<p>Conversation history follows temporal decay logic: early exploration can be heavily compressed, while recent actions and current error contexts must be preserved intact.</p>
+<p>Code files follow task-relevance logic: they are not cropped by time, but by keeping interface definitions and key functions relevant to the current task while folding irrelevant implementation details.</p>
+<p>The two pipelines are not independent; the semantic state of the conversation history must back-propagate to guide the compression granularity of code files.</p>
+<hr>
+<h2 id="6-context-database-the-emergence-of-the-core-abstraction">6. Context Database: The Emergence of the Core Abstraction</h2>
+<p>Expanding the &ldquo;compressor&rdquo; into a &ldquo;context database&rdquo; is the most critical conceptual leap in this discussion.</p>
+<p>The fundamental flaw of existing LLM contexts is their linear structure, volatility, and lack of organization—four semantic layers (facts, action records, intent, state) are flattened into the same sequence without differentiated management.</p>
+<p>Core primitives of the context database:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Operation</th>
+          <th>Semantics</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Write</strong></td>
+          <td>Content + task context → compression + semantic vector + metadata (source, time, importance weight)</td>
+      </tr>
+      <tr>
+          <td><strong>Retrieve</strong></td>
+          <td>Current task → relevance ranking → dynamically assemble context window within token budget</td>
+      </tr>
+      <tr>
+          <td><strong>Update</strong></td>
+          <td>When a new version of the same file arrives, the old version is down-weighted or invalidated, not simply overwritten</td>
+      </tr>
+      <tr>
+          <td><strong>Forget</strong></td>
+          <td>Long-unretrieved content is further compressed or archived, not deleted</td>
+      </tr>
+  </tbody>
+</table>
+<p>The essential difference from existing solutions (RAG, MemGPT, etc.) is that this approach unifies compression, indexing, retrieval, and lifecycle management at the infrastructure layer, rather than making localized optimizations at the application layer.</p>
+<hr>
+<h2 id="7-retrieval-the-hardest-part">7. Retrieval: The Hardest Part</h2>
+<p>The fundamental difficulty of retrieval is that relevance is semantic, not structural. Function B may be tightly coupled to Function A in ways that never appear in the call graph, instead being implicit in business logic. Rules cannot discover such relationships, while real-time LLM judgment introduces latency and cost issues.</p>
+<p><strong>Way out</strong>: Shift real-time semantic judgment to offline precomputation at write time.</p>
+<p>Concrete path:</p>
+<ol>
+<li>Static analysis builds the call graph (rule layer)</li>
+<li>An LLM scans the code to identify semantically strong couplings not reflected in the call graph, supplementing edges (semantic enhancement layer, executed offline)</li>
+<li>Retrieval follows graph traversal, diffusing from the current task node by weight, truncated by token budget</li>
+</ol>
+<p>The LLM&rsquo;s role thus shifts to asynchronously maintaining the semantic relationship graph, rather than participating in every retrieval decision in real time.</p>
+<hr>
+<h2 id="8-known-issues">8. Known Issues</h2>
+<p>This design has real problems. I know about them. Some I&rsquo;m working on; some I&rsquo;m not going to solve and am treating as accepted degradations.</p>
+<p><strong>The offline semantic graph goes stale.</strong> In any real codebase, a single interface change can invalidate large swaths of the graph. &ldquo;Offline&rdquo; and &ldquo;kept up to date&rdquo; are mutually exclusive—if the graph isn&rsquo;t refreshed, the retrieval layer is consuming expired relationships and generating hallucinations downstream; if it is refreshed, it&rsquo;s no longer offline and the cost advantage disappears. I&rsquo;m not solving this. The fallback is to narrow the graph&rsquo;s scope: stable core modules get full semantic scanning, frequently-changing modules degrade to pure vector retrieval and accept the retrieval quality loss. The graph becomes a partial index, not a complete one.</p>
+<p><strong>The dual-pipeline coupling is fragile.</strong> Having the conversation history&rsquo;s semantic state back-propagate to guide code file compression creates a cascade dependency. If the intent summarization drifts, the downstream code compression makes systematically wrong decisions—and the errors are silent, only surfacing when the downstream model fails on the actual task. I&rsquo;m working on this. The direction is forced decoupling: both pipelines share a common task state representation as input, but neither takes the other&rsquo;s output as a dependency. The coordination happens upstream at the shared state layer, not in-flight between pipelines.</p>
+<p><strong>The generality claim is premature.</strong> The current design is Claude Code-specific in more ways than it admits—AST parsing, call graphs, symbol-level diffing are all code-native. Claiming other scenarios &ldquo;naturally fall into place&rdquo; skips over real differences in content structure and lifecycle. For now, Claude Code is the only validation target. Generality is a later question.</p>
+<hr>
+<p><em>That&rsquo;s about as far as the discussion with my friend went for now. New content is still experimental, so it&rsquo;s not ready to publish yet.</em></p>
+<hr>
+<p><em>Updated on 2026-04-02</em><br>
+<em>Tags: LLM, Context Management, Semantic Compression, System Design, AI Engineering</em></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2026-04-02</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://localhost:1313/posts/llm-context-management-infra/" data-title="Dynamic Context Management Infrastructure for LLMs" data-via="ADsdssd40847" data-hashtags="LLM,Context Management,Semantic Compression,System Design,AI Engineering"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://localhost:1313/posts/llm-context-management-infra/" data-title="Dynamic Context Management Infrastructure for LLMs"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/posts/llm-context-management-infra/" data-hashtag="LLM"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/posts/llm-context-management-infra/" data-title="Dynamic Context Management Infrastructure for LLMs"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/posts/llm-context-management-infra/" data-title="Dynamic Context Management Infrastructure for LLMs"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/posts/llm-context-management-infra/" data-title="Dynamic Context Management Infrastructure for LLMs"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="http://localhost:1313/posts/llm-context-management-infra/" data-title="Dynamic Context Management Infrastructure for LLMs" data-description=""><i class="fab fa-diaspora fa-fw" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fllm-context-management-infra%2f&amp;text=Dynamic%20Context%20Management%20Infrastructure%20for%20LLMs" target="_blank" title="Share on Telegram"><i class="fab fa-telegram fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/llm/">LLM</a>,&nbsp;<a href="/tags/context-management/">Context Management</a>,&nbsp;<a href="/tags/semantic-compression/">Semantic Compression</a>,&nbsp;<a href="/tags/system-design/">System Design</a>,&nbsp;<a href="/tags/ai-engineering/">AI Engineering</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/goodbye-apple/" class="prev" rel="prev" title="Fuck You Apple"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Fuck You Apple</a>
+            <a href="/posts/new-post/" class="next" rel="next" title="New Post">New Post<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.154.4">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.3.0"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"comment":{},"lightgallery":true};</script><script src="/js/theme.min.js"></script></body>
+</html>

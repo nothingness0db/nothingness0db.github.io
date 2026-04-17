@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Essay on Eira Hazel</title>
+    <link>http://localhost:1313/tags/essay/</link>
+    <description>Recent content in Essay on Eira Hazel</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Apr 2026 00:30:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/essay/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Humans Are Crooked Animals</title>
+      <link>http://localhost:1313/posts/humans-are-crooked-animals/</link>
+      <pubDate>Tue, 07 Apr 2026 00:30:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/humans-are-crooked-animals/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve always felt that reaching AGI and connecting models to everything in the world — but here&amp;rsquo;s the thing: humans are crooked animals.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve always felt that reaching AGI means connecting models to everything in the world. But that definitely doesn&amp;rsquo;t mean simulating human behavioral patterns and adding constraints. If we treat models as living organisms, we&amp;rsquo;d find they have almost no constraints or limits. Adding those constraints is a kind of dimensionality reduction.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How Intimacy Is Priced</title>
+      <link>http://localhost:1313/posts/pricing-intimacy/</link>
+      <pubDate>Mon, 06 Apr 2026 12:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/pricing-intimacy/</guid>
+      <description>&lt;p&gt;i honestly feel like i cant write this piece well which is why draft has been true this whole time&#xA;recently i saw a video that was absolutely insane&lt;/p&gt;&#xA;&lt;p&gt;【300万日元买一场幻觉：拆解日本地偶的情感收割算法｜少女、応援、債務と推し活】 &lt;a href=&#34;https://www.bilibili.com/video/BV1QuXqBxEo7/?share_source=copy_web&amp;amp;vd_source=64bc3d4bcbdf9bb7d1fb779011d54b88&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;https://www.bilibili.com/video/BV1QuXqBxEo7/?share_source=copy_web&amp;vd_source=64bc3d4bcbdf9bb7d1fb779011d54b88&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New Post</title>
+      <link>http://localhost:1313/posts/new-post/</link>
+      <pubDate>Fri, 03 Apr 2026 12:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/new-post/</guid>
+      <description>&lt;p&gt;Write something here.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

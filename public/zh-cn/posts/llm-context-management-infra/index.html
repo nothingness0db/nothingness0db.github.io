@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>面向 LLM 的动态上下文管理基建 - Eira Hazel</title><meta name="Description" content="This is my cool site"><meta property="og:url" content="http://localhost:1313/zh-cn/posts/llm-context-management-infra/">
+  <meta property="og:site_name" content="Eira Hazel">
+  <meta property="og:title" content="面向 LLM 的动态上下文管理基建">
+  <meta property="og:description" content="我原本设想的极其简单，在模型上做优化，直接把稀疏特征向量当压缩后的表示存起来，不还原成文本。下游消费时把特征向量注回同一模型的对应层，跳过token解码和重新编码的过程。好了，这是模型层的，那我写这个显然不是模型层的，因为这个我没个一个月我做不明白，但是我想到一个现在可以用，并且可以炒的方案，下面是我和alam聊天记录的ai总结">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-02T02:24:00+08:00">
+    <meta property="article:modified_time" content="2026-04-02T02:24:00+08:00">
+    <meta property="article:tag" content="LLM">
+    <meta property="article:tag" content="上下文管理">
+    <meta property="article:tag" content="语义压缩">
+    <meta property="article:tag" content="系统设计">
+    <meta property="article:tag" content="AI工程">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="面向 LLM 的动态上下文管理基建">
+  <meta name="twitter:description" content="我原本设想的极其简单，在模型上做优化，直接把稀疏特征向量当压缩后的表示存起来，不还原成文本。下游消费时把特征向量注回同一模型的对应层，跳过token解码和重新编码的过程。好了，这是模型层的，那我写这个显然不是模型层的，因为这个我没个一个月我做不明白，但是我想到一个现在可以用，并且可以炒的方案，下面是我和alam聊天记录的ai总结">
+      <meta name="twitter:site" content="@ADsdssd40847">
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/images/kl3xu-n6gik-001.ico" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/zh-cn/posts/llm-context-management-infra/" /><link rel="prev" href="http://localhost:1313/zh-cn/posts/goodbye-apple/" /><link rel="next" href="http://localhost:1313/zh-cn/posts/new-post/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "面向 LLM 的动态上下文管理基建",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/zh-cn\/posts\/llm-context-management-infra\/"
+        },"genre": "posts","keywords": "LLM, 上下文管理, 语义压缩, 系统设计, AI工程","wordcount":  2613 ,
+        "url": "http:\/\/localhost:1313\/zh-cn\/posts\/llm-context-management-infra\/","datePublished": "2026-04-02T02:24:00+08:00","dateModified": "2026-04-02T02:24:00+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Eira Hazel"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/zh-cn/" title="Eira Hazel">Eira Hazel</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/zh-cn/posts/"> 文章 </a><a class="menu-item" href="/zh-cn/tags/"> 标签 </a><a class="menu-item" href="/zh-cn/categories/"> 分类 </a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><a class="menu-item" href="/zh-cn/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                        <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="http://localhost:1313/zh-cn/" selected>简体中文</option><option value="http://localhost:1313/">English</option></select>
+                    </a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/zh-cn/" title="Eira Hazel">Eira Hazel</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/zh-cn/posts/" title="">文章</a><a class="menu-item" href="/zh-cn/tags/" title="">标签</a><a class="menu-item" href="/zh-cn/categories/" title="">分类</a><a class="menu-item" href="https://github.com/nothingness0db" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a class="menu-item" href="/zh-cn/index.xml" title="RSS"><i class='fas fa-rss fa-fw'></i></a><a class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="http://localhost:1313/zh-cn/" selected>简体中文</option><option value="http://localhost:1313/">English</option></select>
+                </a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</header>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">面向 LLM 的动态上下文管理基建</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/zh-cn/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Eira Hazel</a></span>&nbsp;<span class="post-category">收录于 <a href="/zh-cn/categories/%E6%8A%80%E6%9C%AF/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>技术</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2026-04-02">2026-04-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 2613 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 6 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#摘要">摘要</a></li>
+    <li><a href="#1-问题起点文本语义压缩">1. 问题起点：文本语义压缩</a></li>
+    <li><a href="#2-流水线设计传统切割--语义状态传递">2. 流水线设计：传统切割 + 语义状态传递</a></li>
+    <li><a href="#3-与-sota-的对比分析">3. 与 SOTA 的对比分析</a></li>
+    <li><a href="#4-真实需求llm-长上下文压缩">4. 真实需求：LLM 长上下文压缩</a></li>
+    <li><a href="#5-工程任务而非模型任务">5. 工程任务而非模型任务</a></li>
+    <li><a href="#6-上下文数据库核心抽象的涌现">6. 上下文数据库：核心抽象的涌现</a></li>
+    <li><a href="#7-召回问题最难的部分">7. 召回问题：最难的部分</a></li>
+    <li><a href="#8-已知问题">8. 已知问题</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>我原本设想的极其简单，在模型上做优化，直接把稀疏特征向量当压缩后的表示存起来，不还原成文本。下游消费时把特征向量注回同一模型的对应层，跳过token解码和重新编码的过程。好了，这是模型层的，那我写这个显然不是模型层的，因为这个我没个一个月我做不明白，但是我想到一个现在可以用，并且可以炒的方案，下面是我和alam聊天记录的ai总结</p>
+<blockquote>
+<p>设计思路总览 · 草稿</p>
+</blockquote>
+<hr>
+<h2 id="摘要">摘要</h2>
+<p>本文梳理了一次从&quot;文本语义压缩器&quot;出发、逐步推演至&quot;LLM 上下文管理基建层&quot;的设计探索过程。讨论涵盖模型选型、数据构造、工程架构、召回机制、语义结构维护等核心议题，最终将问题定性为一个以动态语义数据库为核心的工程任务，而非单纯的模型训练任务。</p>
+<hr>
+<h2 id="1-问题起点文本语义压缩">1. 问题起点：文本语义压缩</h2>
+<p>初始目标是构建一个能够保留核心语义、精简文字表达的压缩器。区别于关键词抽取或抽象摘要，语义压缩的核心约束是：压缩后的文本必须在语义层面等价于原文，适合作为信息密度更高的替代输入。</p>
+<p><strong>初步方案</strong>：微调一个小模型专门承担此任务，以替代调用 SOTA 大模型的高成本路径。基座模型选定 Qwen2.5-1.5B-Instruct，训练数据通过大模型蒸馏生成，训练框架采用 LLaMA-Factory + QLoRA，运行于单张消费级 GPU（3090/4090）。</p>
+<hr>
+<h2 id="2-流水线设计传统切割--语义状态传递">2. 流水线设计：传统切割 + 语义状态传递</h2>
+<p>为处理长文本，提出分块压缩流水线：</p>
+<ul>
+<li>传统方法负责粗粒度切割</li>
+<li>小模型对每个块执行语义压缩</li>
+<li>块间通过&quot;语义 prompt&quot;传递上下文状态，保证跨块连贯性</li>
+</ul>
+<p>该设计的核心挑战在于：切割边界与语义单元不一致时，语义 prompt 的补偿能力有限；同时，语义状态的表达形式（摘要、实体列表、结构化描述）直接影响压缩质量和训练数据设计。</p>
+<hr>
+<h2 id="3-与-sota-的对比分析">3. 与 SOTA 的对比分析</h2>
+<p>与 SOTA 大模型（GPT-4o、Claude 3.5 Sonnet 等）相比，本方案在通用压缩质量上存在差距，根本原因在于 SOTA 模型能够整体把握全文语义，而分块方案存在信息局部化损耗。</p>
+<p>然而，<strong>评估框架的选择改变了竞争格局</strong>。当目标用途从&quot;人类可读摘要&quot;切换为&quot;下游 LLM 的输入&quot;，SOTA 的优势被大幅压缩——现有 SOTA 模型并未针对&quot;压缩后下游任务表现&quot;这一目标专门优化。若将训练目标直接对准下游任务准确率，小模型理论上可以在此窄任务上超越通用 SOTA。</p>
+<hr>
+<h2 id="4-真实需求llm-长上下文压缩">4. 真实需求：LLM 长上下文压缩</h2>
+<p>真实使用场景锚定于 Claude Code 中 Claude Opus 级别模型的上下文溢出问题。复杂编程任务会快速耗尽上下文窗口，现有解法（直接调用 SOTA 压缩）成本高且效果一般。</p>
+<p><strong>关键洞察</strong>：上下文溢出的根本问题并非长度，而是噪声——对话历史中充斥着已被推翻的方案、重复的报错信息、以及不再相关的中间状态。因此，压缩器的核心价值是<strong>去噪</strong>，而非单纯缩短。</p>
+<p>此外，若压缩后的上下文能让下游模型在降低 token 消耗的同时提升任务完成率，则该方案的定位将从&quot;低成本替代品&quot;升级为&quot;质量更优的上下文管理层&quot;。</p>
+<hr>
+<h2 id="5-工程任务而非模型任务">5. 工程任务而非模型任务</h2>
+<p>随着场景深入，问题的本质发生转变。模型微调只是整个系统的一个算子，真正的工程复杂度集中在：</p>
+<ul>
+<li>如何接入 Claude Code 的上下文管道</li>
+<li>两类内容（对话历史 vs. 代码文件）的差异化处理逻辑</li>
+<li>两条管道之间的协调层设计</li>
+<li>整个链路的延迟预算控制</li>
+</ul>
+<p><strong>对话历史</strong>遵循时序衰减逻辑：早期探索过程可大幅压缩，近期操作和当前错误现场须完整保留。</p>
+<p><strong>代码文件</strong>遵循任务相关性逻辑：不按时间裁剪，而是根据当前任务保留接口定义和关键函数，折叠无关实现细节。</p>
+<p>两条管道并非独立，对话历史的语义状态需反向指导代码文件的压缩粒度。</p>
+<hr>
+<h2 id="6-上下文数据库核心抽象的涌现">6. 上下文数据库：核心抽象的涌现</h2>
+<p>将&quot;压缩器&quot;扩展为&quot;上下文数据库&quot;，是本次讨论中最关键的概念跃迁。</p>
+<p>现有 LLM 上下文的根本缺陷在于：线性结构、易失性、无组织——四类语义层次（事实性内容、操作记录、意图、状态）平铺在同一序列中，缺乏差异化管理。</p>
+<p>上下文数据库的核心原语：</p>
+<table>
+  <thead>
+      <tr>
+          <th>操作</th>
+          <th>语义</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>写入</strong></td>
+          <td>内容 + 任务上下文 → 压缩 + 语义向量 + 元数据（来源、时间、重要性权重）</td>
+      </tr>
+      <tr>
+          <td><strong>召回</strong></td>
+          <td>当前任务 → 相关性排序 → 按 token 预算动态组装上下文窗口</td>
+      </tr>
+      <tr>
+          <td><strong>更新</strong></td>
+          <td>同一文件新版本进入时，旧版本降权或失效，而非简单覆盖</td>
+      </tr>
+      <tr>
+          <td><strong>遗忘</strong></td>
+          <td>长期未被召回的内容进一步压缩或归档，而非删除</td>
+      </tr>
+  </tbody>
+</table>
+<p>与现有方案（RAG、MemGPT 等）的本质区别在于：本方案在<strong>基建层</strong>统一处理压缩、索引、召回和生命周期管理，而非在应用层做局部优化。</p>
+<hr>
+<h2 id="7-召回问题最难的部分">7. 召回问题：最难的部分</h2>
+<p>召回的根本难点在于：<strong>相关性是语义的，不是结构的</strong>。函数 B 与函数 A 的强耦合可能完全不体现在调用图中，而是隐含在业务逻辑里。规则无法发现这类关联，LLM 实时判断又带来延迟和成本问题。</p>
+<p><strong>出路</strong>：将实时语义判断转移至<strong>写入时的离线预计算</strong>。</p>
+<p>具体路径：</p>
+<ol>
+<li>静态分析建立调用图（规则层）</li>
+<li>LLM 扫描代码，识别调用图中未体现但语义上强耦合的关系，补充边（语义增强层，离线执行）</li>
+<li>召回时走图遍历，从当前任务节点按权重扩散，按 token 预算截断</li>
+</ol>
+<p>LLM 的职责因此转变为<strong>异步维护语义关系图</strong>，而非实时参与每次召回决策。</p>
+<hr>
+<h2 id="8-已知问题">8. 已知问题</h2>
+<p>这个设计有真实的问题。我知道它们。有些我正在解决；有些我不打算解决，当作可接受的降级处理。</p>
+<p><strong>离线语义图会过时。</strong> 在任何真实代码库中，单个接口变更可能使图的大部分失效。&ldquo;离线&quot;和&quot;保持最新&quot;是互斥的——如果图不刷新，召回层就在消费过期关系并在下游产生幻觉；如果刷新，它就不再是离线的，成本优势消失。我不解决这个问题。回退方案是缩小图的范围：稳定的核心模块获得完整语义扫描，频繁变更的模块降级为纯向量检索并接受召回质量损失。图成为部分索引，而非完整索引。</p>
+<p><strong>双管道耦合是脆弱的。</strong> 让对话历史的语义状态反向传播以指导代码文件压缩，产生了级联依赖。如果意图摘要漂移，下游代码压缩就会系统性地做出错误决策——而且错误是静默的，只有在下游模型在实际任务上失败时才会浮现。我正在解决这个问题。方向是强制解耦：两个管道共享一个共同的任务状态表示作为输入，但都不将对方的输出作为依赖。协调发生在上游的共享状态层，而不是管道之间的运行中。</p>
+<p><strong>通用性主张为时过早。</strong> 当前设计在多个方面都是 Claude Code 特定的——AST 解析、调用图、符号级差异对比都是代码原生的。声称其他场景&quot;自然适配&quot;忽略了内容结构和生命周期的真实差异。目前，Claude Code 是唯一的验证目标。通用性是后来的问题。</p>
+<hr>
+<p><em>笔者当前问题和朋友的讨论差不多就到这，新内容还在实验阶段不好发</em></p>
+<hr>
+<p><em>Updated on 2026-04-02</em><br>
+<em>Tags: LLM, Context Management, Semantic Compression, System Design, AI Engineering</em></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2026-04-02</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 X" data-sharer="x" data-url="http://localhost:1313/zh-cn/posts/llm-context-management-infra/" data-title="面向 LLM 的动态上下文管理基建" data-via="ADsdssd40847" data-hashtags="LLM,上下文管理,语义压缩,系统设计,AI工程"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Threads" data-sharer="threads" data-url="http://localhost:1313/zh-cn/posts/llm-context-management-infra/" data-title="面向 LLM 的动态上下文管理基建"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://localhost:1313/zh-cn/posts/llm-context-management-infra/" data-hashtag="LLM"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/zh-cn/posts/llm-context-management-infra/" data-title="面向 LLM 的动态上下文管理基建"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="http://localhost:1313/zh-cn/posts/llm-context-management-infra/" data-title="面向 LLM 的动态上下文管理基建"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://localhost:1313/zh-cn/posts/llm-context-management-infra/" data-title="面向 LLM 的动态上下文管理基建"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Diaspora" data-sharer="diaspora" data-url="http://localhost:1313/zh-cn/posts/llm-context-management-infra/" data-title="面向 LLM 的动态上下文管理基建" data-description=""><i class="fab fa-diaspora fa-fw" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fzh-cn%2fposts%2fllm-context-management-infra%2f&amp;text=%e9%9d%a2%e5%90%91%20LLM%20%e7%9a%84%e5%8a%a8%e6%80%81%e4%b8%8a%e4%b8%8b%e6%96%87%e7%ae%a1%e7%90%86%e5%9f%ba%e5%bb%ba" target="_blank" title="分享到 Telegram"><i class="fab fa-telegram fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/zh-cn/tags/llm/">LLM</a>,&nbsp;<a href="/zh-cn/tags/%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86/">上下文管理</a>,&nbsp;<a href="/zh-cn/tags/%E8%AF%AD%E4%B9%89%E5%8E%8B%E7%BC%A9/">语义压缩</a>,&nbsp;<a href="/zh-cn/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/">系统设计</a>,&nbsp;<a href="/zh-cn/tags/ai%E5%B7%A5%E7%A8%8B/">AI工程</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/zh-cn/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/zh-cn/posts/goodbye-apple/" class="prev" rel="prev" title="操你妈苹果"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>操你妈苹果</a>
+            <a href="/zh-cn/posts/new-post/" class="next" rel="next" title="新文章">新文章<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.154.4">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.3.0"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/zh-cn/" target="_blank">xxxx</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"comment":{},"lightgallery":true};</script><script src="/js/theme.min.js"></script></body>
+</html>

@@ -1,53 +1,96 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>所有文章 - Eira Hazel</title>
-        <link>https://nothingness0db.github.io/zh-cn/posts/</link>
+        <link>http://localhost:1313/zh-cn/posts/</link>
         <description>所有文章 | Eira Hazel</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 08 Dec 2025 17:09:30 &#43;0800</lastBuildDate><atom:link href="https://nothingness0db.github.io/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 07 Apr 2026 12:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title></title>
+    <link>http://localhost:1313/zh-cn/posts/llm/</link>
+    <pubDate>Tue, 07 Apr 2026 12:00:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/zh-cn/posts/llm/</guid>
+    <description><![CDATA[<p>我觉得达到agi和让模型和世界的一切互动必不可少，当时肯定不是往人类的行为模式去模拟，加约束条件，如果我们把模型当生物看，我们会发现他们没什么约束和限制，把限制加上之后是某种降维，</p>]]></description>
+</item>
+<item>
+    <title>人类是歪了的动物</title>
+    <link>http://localhost:1313/zh-cn/posts/humans-are-crooked-animals/</link>
+    <pubDate>Tue, 07 Apr 2026 00:30:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/zh-cn/posts/humans-are-crooked-animals/</guid>
+    <description><![CDATA[<p>我一直觉得达到agi和让模型和世界的一切交互产生联系但是人类是一种歪了的动物</p>
+<p>我一直觉得达到agi和让模型和世界的一切交互产生联系。，，但是肯定不是往人类的行为模式去模拟，加约束条件，如果我们把模型当生物看，我们会发现他们没什么约束和限制，把限制加上之后是某种降维，</p>]]></description>
+</item>
+<item>
+    <title>亲密感是怎么被定价的</title>
+    <link>http://localhost:1313/zh-cn/posts/pricing-intimacy/</link>
+    <pubDate>Mon, 06 Apr 2026 12:00:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/zh-cn/posts/pricing-intimacy/</guid>
+    <description><![CDATA[<p>这篇妈的我是真觉得自己写不好，于是draft一直是true，最近看到个糖爆了的视频，写得一坨啊，不是事实不对,是那种看法不对,把一整个结构问题讲成了几个极端案例。
+我直接自信心爆棚了所以我又回来写这篇了，对了现在事件是4/17
+</p>]]></description>
+</item>
+<item>
+    <title>新文章</title>
+    <link>http://localhost:1313/zh-cn/posts/new-post/</link>
+    <pubDate>Fri, 03 Apr 2026 12:00:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/zh-cn/posts/new-post/</guid>
+    <description><![CDATA[<p>关于skill和Anthropic的阴谋论</p>
+<p>skill是一个md，里面写&quot;遇到 PDF 任务就用 pdfplumber，遇到 Word 就用 python-docx，输出扔到这个目录&quot;。Claude读完之后，就知道怎么干活了</p>]]></description>
+</item>
+<item>
+    <title>面向 LLM 的动态上下文管理基建</title>
+    <link>http://localhost:1313/zh-cn/posts/llm-context-management-infra/</link>
+    <pubDate>Thu, 02 Apr 2026 02:24:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/zh-cn/posts/llm-context-management-infra/</guid>
+    <description><![CDATA[<p>我原本设想的极其简单，在模型上做优化，直接把稀疏特征向量当压缩后的表示存起来，不还原成文本。下游消费时把特征向量注回同一模型的对应层，跳过token解码和重新编码的过程。好了，这是模型层的，那我写这个显然不是模型层的，因为这个我没个一个月我做不明白，但是我想到一个现在可以用，并且可以炒的方案，下面是我和alam聊天记录的ai总结</p>]]></description>
+</item>
+<item>
+    <title>操你妈苹果</title>
+    <link>http://localhost:1313/zh-cn/posts/goodbye-apple/</link>
+    <pubDate>Mon, 09 Feb 2026 03:08:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/zh-cn/posts/goodbye-apple/</guid>
+    <description><![CDATA[<p>2月8日是我的生日，我从6号开始被他妈的手机所折磨，我很难受，我讨厌iphone，他有着世界上最sb的返回逻辑，和无法自定义的桌面，傲慢的认为他给用户的是最好的。虽然如此但是我还是在13mini和se3的体验中感到了iphone生态的强大，前者因为sb oled屏不恶心眼睛被我踢了，后着因为我是188cm的人类，se3对我来说是在脑瘫于是我打算把se3也踢了，现在我发现一切的原因都是因为我买了apple watch ，我不想在这上面焦虑了，我想彻底的永久的去除这些问题，完美的答案并不存在，我不需要寻找他，我需要把时间用在真正需要他的事情，我在这件事上使用的注意力比找到完美的解决方案之后给我带来的注意力解放已经开始非常不可控了，我希望快速的解决这些然后回到生活中去，</p>]]></description>
+</item>
+<item>
     <title>开会</title>
-    <link>https://nothingness0db.github.io/zh-cn/posts/meetings/</link>
+    <link>http://localhost:1313/zh-cn/posts/meetings/</link>
     <pubDate>Mon, 08 Dec 2025 17:09:30 &#43;0800</pubDate>
     <author>Eira Hazel</author>
-    <guid>https://nothingness0db.github.io/zh-cn/posts/meetings/</guid>
+    <guid>http://localhost:1313/zh-cn/posts/meetings/</guid>
     <description><![CDATA[<p>世界上最无趣的莫过于开会了，大好的日子，一大推人被迫放下手头的急事、要事、趣事，济济一堂，只为听三五个人逞其舌锋，争辩一件议而不决、关而不行、行而不通的事情，真是集体浪费时间的最佳方式。</p>]]></description>
 </item>
 <item>
     <title>太空快递</title>
-    <link>https://nothingness0db.github.io/zh-cn/posts/space-express/</link>
+    <link>http://localhost:1313/zh-cn/posts/space-express/</link>
     <pubDate>Fri, 15 Aug 2025 14:30:45 &#43;0800</pubDate>
     <author>Eira Hazel</author>
-    <guid>https://nothingness0db.github.io/zh-cn/posts/space-express/</guid>
+    <guid>http://localhost:1313/zh-cn/posts/space-express/</guid>
     <description><![CDATA[<p>看到有人在吹太空快递 真的绷不住 老中是不是对“基建狂魔”这几个字有什么奇怪的性癖啊 觉得这玩意能替代顺丰的建议重修高中物理 哪怕是去刷两道力学题也不至于问出这种弱智问题</p>]]></description>
 </item>
 <item>
     <title>标签失效之后</title>
-    <link>https://nothingness0db.github.io/zh-cn/posts/after-labels-fail/</link>
+    <link>http://localhost:1313/zh-cn/posts/after-labels-fail/</link>
     <pubDate>Fri, 01 Aug 2025 10:22:18 &#43;0800</pubDate>
     <author>Eira Hazel</author>
-    <guid>https://nothingness0db.github.io/zh-cn/posts/after-labels-fail/</guid>
+    <guid>http://localhost:1313/zh-cn/posts/after-labels-fail/</guid>
     <description><![CDATA[<p>现在的人好像已经丧失了处理“高保真信息”的能力，大脑 GPU 算力根本不够，跑不动“独立思考”这种高负载进程。</p>
 <p>绝大多数老中需要的只是一个 Tag，一个被压缩后的残渣。</p>]]></description>
 </item>
 <item>
     <title>Hugo博客日常文章管理指南</title>
-    <link>https://nothingness0db.github.io/zh-cn/posts/blog-crud-guide/</link>
+    <link>http://localhost:1313/zh-cn/posts/blog-crud-guide/</link>
     <pubDate>Tue, 11 Mar 2025 00:15:00 &#43;0800</pubDate>
     <author>Eira Hazel</author>
-    <guid>https://nothingness0db.github.io/zh-cn/posts/blog-crud-guide/</guid>
+    <guid>http://localhost:1313/zh-cn/posts/blog-crud-guide/</guid>
     <description><![CDATA[<h1 id="hugo博客日常文章管理指南">Hugo博客日常文章管理指南</h1>
 <p>本文将详细介绍如何使用Hugo进行日常博客内容的创建、读取、更新和删除（CRUD）操作，帮助你高效管理博客内容。</p>
 <h2 id="文章创建-create">文章创建 (Create)</h2>
 <h3 id="使用命令行创建文章">使用命令行创建文章</h3>
 <p>Hugo提供了便捷的命令行工具来创建新文章：</p>]]></description>
-</item>
-<item>
-    <title>如何将Hugo博客部署到GitHub Pages</title>
-    <link>https://nothingness0db.github.io/zh-cn/posts/deploy-to-github-pages/</link>
-    <pubDate>Tue, 11 Mar 2025 00:10:00 &#43;0800</pubDate>
-    <author>Eira Hazel</author>
-    <guid>https://nothingness0db.github.io/zh-cn/posts/deploy-to-github-pages/</guid>
-    <description><![CDATA[<h1 id="将hugo博客部署到github-pages">将Hugo博客部署到GitHub Pages</h1>
-<p>GitHub Pages是一个免费的静态网站托管服务，非常适合用来部署Hugo生成的静态博客。本文将指导你如何将Hugo博客部署到GitHub Pages上。</p>]]></description>
 </item>
 </channel>
 </rss>

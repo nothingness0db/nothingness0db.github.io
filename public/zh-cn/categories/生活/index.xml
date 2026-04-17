@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>生活 on Eira Hazel</title>
+    <link>http://localhost:1313/zh-cn/categories/%E7%94%9F%E6%B4%BB/</link>
+    <description>Recent content in 生活 on Eira Hazel</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 06 Apr 2026 12:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh-cn/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>亲密感是怎么被定价的</title>
+      <link>http://localhost:1313/zh-cn/posts/pricing-intimacy/</link>
+      <pubDate>Mon, 06 Apr 2026 12:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/zh-cn/posts/pricing-intimacy/</guid>
+      <description>&lt;p&gt;这篇妈的我是真觉得自己写不好，于是draft一直是true，最近看到个糖爆了的视频，写得一坨啊，不是事实不对,是那种看法不对,把一整个结构问题讲成了几个极端案例。&#xA;我直接自信心爆棚了所以我又回来写这篇了，对了现在事件是4/17&#xA;&lt;img&#xD;&#xA;        class=&#34;lazyload&#34;&#xD;&#xA;        src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xD;&#xA;        data-src=&#34;http://localhost:1313/images/PixPin_2026-04-17_09-38-44.png&#34;&#xD;&#xA;        data-srcset=&#34;http://localhost:1313/images/PixPin_2026-04-17_09-38-44.png, http://localhost:1313/images/PixPin_2026-04-17_09-38-44.png 1.5x, http://localhost:1313/images/PixPin_2026-04-17_09-38-44.png 2x&#34;&#xD;&#xA;        data-sizes=&#34;auto&#34;&#xD;&#xA;        alt=&#34;/images/PixPin_2026-04-17_09-38-44.png&#34;&#xD;&#xA;        title=&#34;我评论&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>新文章</title>
+      <link>http://localhost:1313/zh-cn/posts/new-post/</link>
+      <pubDate>Fri, 03 Apr 2026 12:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/zh-cn/posts/new-post/</guid>
+      <description>&lt;p&gt;关于skill和Anthropic的阴谋论&lt;/p&gt;&#xA;&lt;p&gt;skill是一个md，里面写&amp;quot;遇到 PDF 任务就用 pdfplumber，遇到 Word 就用 python-docx，输出扔到这个目录&amp;quot;。Claude读完之后，就知道怎么干活了&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>操你妈苹果</title>
+      <link>http://localhost:1313/zh-cn/posts/goodbye-apple/</link>
+      <pubDate>Mon, 09 Feb 2026 03:08:00 +0800</pubDate>
+      <guid>http://localhost:1313/zh-cn/posts/goodbye-apple/</guid>
+      <description>&lt;p&gt;2月8日是我的生日，我从6号开始被他妈的手机所折磨，我很难受，我讨厌iphone，他有着世界上最sb的返回逻辑，和无法自定义的桌面，傲慢的认为他给用户的是最好的。虽然如此但是我还是在13mini和se3的体验中感到了iphone生态的强大，前者因为sb oled屏不恶心眼睛被我踢了，后着因为我是188cm的人类，se3对我来说是在脑瘫于是我打算把se3也踢了，现在我发现一切的原因都是因为我买了apple watch ，我不想在这上面焦虑了，我想彻底的永久的去除这些问题，完美的答案并不存在，我不需要寻找他，我需要把时间用在真正需要他的事情，我在这件事上使用的注意力比找到完美的解决方案之后给我带来的注意力解放已经开始非常不可控了，我希望快速的解决这些然后回到生活中去，&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

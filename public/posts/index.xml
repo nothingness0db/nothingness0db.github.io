@@ -1,31 +1,76 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>All Posts - Eira Hazel</title>
-        <link>https://nothingness0db.github.io/posts/</link>
+        <link>http://localhost:1313/posts/</link>
         <description>All Posts | Eira Hazel</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 08 Dec 2025 17:09:30 &#43;0800</lastBuildDate><atom:link href="https://nothingness0db.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 07 Apr 2026 00:30:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Humans Are Crooked Animals</title>
+    <link>http://localhost:1313/posts/humans-are-crooked-animals/</link>
+    <pubDate>Tue, 07 Apr 2026 00:30:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/posts/humans-are-crooked-animals/</guid>
+    <description><![CDATA[<p>I&rsquo;ve always felt that reaching AGI and connecting models to everything in the world — but here&rsquo;s the thing: humans are crooked animals.</p>
+<p>I&rsquo;ve always felt that reaching AGI means connecting models to everything in the world. But that definitely doesn&rsquo;t mean simulating human behavioral patterns and adding constraints. If we treat models as living organisms, we&rsquo;d find they have almost no constraints or limits. Adding those constraints is a kind of dimensionality reduction.</p>]]></description>
+</item>
+<item>
+    <title>How Intimacy Is Priced</title>
+    <link>http://localhost:1313/posts/pricing-intimacy/</link>
+    <pubDate>Mon, 06 Apr 2026 12:00:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/posts/pricing-intimacy/</guid>
+    <description><![CDATA[<p>i honestly feel like i cant write this piece well which is why draft has been true this whole time
+recently i saw a video that was absolutely insane</p>
+<p>【300万日元买一场幻觉：拆解日本地偶的情感收割算法｜少女、応援、債務と推し活】 <a href="https://www.bilibili.com/video/BV1QuXqBxEo7/?share_source=copy_web&amp;vd_source=64bc3d4bcbdf9bb7d1fb779011d54b88" target="_blank" rel="noopener noreffer ">https://www.bilibili.com/video/BV1QuXqBxEo7/?share_source=copy_web&vd_source=64bc3d4bcbdf9bb7d1fb779011d54b88</a></p>]]></description>
+</item>
+<item>
+    <title>New Post</title>
+    <link>http://localhost:1313/posts/new-post/</link>
+    <pubDate>Fri, 03 Apr 2026 12:00:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/posts/new-post/</guid>
+    <description><![CDATA[<p>Write something here.</p>]]></description>
+</item>
+<item>
+    <title>Dynamic Context Management Infrastructure for LLMs</title>
+    <link>http://localhost:1313/posts/llm-context-management-infra/</link>
+    <pubDate>Thu, 02 Apr 2026 02:24:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/posts/llm-context-management-infra/</guid>
+    <description><![CDATA[<h1 id="dynamic-context-management-infrastructure-for-llms">Dynamic Context Management Infrastructure for LLMs</h1>
+<hr>
+<p>My original idea was extremely simple: optimize at the model layer by storing sparse feature vectors directly as the compressed representation, without restoring them into text. During downstream consumption, these feature vectors would be injected back into the corresponding layers of the same model, skipping token decoding and re-encoding. Alright, that was the model-layer approach. Obviously, what I&rsquo;m writing here isn&rsquo;t that, because I can&rsquo;t pull that off in less than a month. But I came up with a practical alternative that works now and is worth exploring. Below is an AI-generated summary of my chat records with alam.</p>]]></description>
+</item>
+<item>
+    <title>Fuck You Apple</title>
+    <link>http://localhost:1313/posts/goodbye-apple/</link>
+    <pubDate>Mon, 09 Feb 2026 03:08:00 &#43;0800</pubDate>
+    <author>Eira Hazel</author>
+    <guid>http://localhost:1313/posts/goodbye-apple/</guid>
+    <description><![CDATA[<p>Feb 8 is my birthday i&rsquo;ve been tortured by fucking phones since the 6th i feel like shit i hate iphone it has the most retarded back logic in the world and uncustomizable desktop arrogantly thinking what they give users is the best despite that i still felt the power of iphone ecosystem in 13mini and se3 experience the former was kicked because retarded oled screen doesn&rsquo;t make my eyes sick the latter because i&rsquo;m a 188cm human se3 is brain dead for me so i planned to kick se3 too now i realize the root cause of everything is because i bought apple watch i don&rsquo;t want to be anxious about this anymore i want to thoroughly permanently remove these problems perfect answer doesn&rsquo;t exist i don&rsquo;t need to find it i need to use my time on things that actually need it the attention i spent on this has become very uncontrollable compared to the attention liberation i&rsquo;d get after finding the perfect solution i hope to quickly resolve these and get back to life</p>]]></description>
+</item>
+<item>
     <title>Meetings</title>
-    <link>https://nothingness0db.github.io/posts/meetings/</link>
+    <link>http://localhost:1313/posts/meetings/</link>
     <pubDate>Mon, 08 Dec 2025 17:09:30 &#43;0800</pubDate>
     <author>Eira Hazel</author>
-    <guid>https://nothingness0db.github.io/posts/meetings/</guid>
+    <guid>http://localhost:1313/posts/meetings/</guid>
     <description><![CDATA[<p>Nothing in the world is more tedious than attending meetings. On a perfectly fine day, a crowd of people is forced to drop their urgent, important, and interesting tasks to gather under one roof. All this, just to listen to three or five people flex their rhetorical muscles, arguing over matters that are discussed without decision, decided without execution, or executed without success. It is truly the ultimate method of collective time-wasting.</p>]]></description>
 </item>
 <item>
     <title>Space Delivery Service</title>
-    <link>https://nothingness0db.github.io/posts/space-express/</link>
+    <link>http://localhost:1313/posts/space-express/</link>
     <pubDate>Fri, 15 Aug 2025 14:30:45 &#43;0800</pubDate>
     <author>Eira Hazel</author>
-    <guid>https://nothingness0db.github.io/posts/space-express/</guid>
+    <guid>http://localhost:1313/posts/space-express/</guid>
     <description><![CDATA[<p>Seeing people hyping up <strong>space delivery</strong> services is genuinely hard to take seriously. Do some Chinese people have a bizarre obsession with the title of &ldquo;Infrastructure Maniac&rdquo;? Anyone who thinks this can replace standard courier services like SF Express should seriously retake high school physics, or at least solve a couple of mechanics problems before asking such a ridiculous question.</p>
 <p>Just think about it: what kind of functionally <strong>low-IQ product manager</strong> would come up with this requirement? Raising the cost by tens of thousands of times just to shave off an hour or two? Doesn&rsquo;t physics deserve some respect? Do you understand <strong>G-force</strong>? The vibration during launch is so intense that if you shipped a MacBook, the screen would probably shatter into dust. Then you&rsquo;d have to wrap the package in three layers of aerospace-grade cushioning material. Isn&rsquo;t that the definition of <strong>flogging a dead horse</strong> (Chinese: 脱裤子放屁, literally: pulling down pants to fart)?</p>]]></description>
 </item>
 <item>
     <title>After Labels Fail</title>
-    <link>https://nothingness0db.github.io/posts/after-labels-fail/</link>
+    <link>http://localhost:1313/posts/after-labels-fail/</link>
     <pubDate>Fri, 01 Aug 2025 10:22:18 &#43;0800</pubDate>
     <author>Eira Hazel</author>
-    <guid>https://nothingness0db.github.io/posts/after-labels-fail/</guid>
+    <guid>http://localhost:1313/posts/after-labels-fail/</guid>
     <description><![CDATA[<p>People nowadays seem to have lost the ability to process &ldquo;high-fidelity information.&rdquo; The brain&rsquo;s GPU computing power simply isn&rsquo;t enough to run high-load processes like &ldquo;independent thinking.&rdquo;</p>
 <p>What the vast majority of typical Chinese people need is just a Tag, a compressed residue.</p>
 <p>For example: Huawei equals patriotism or an intelligence tax, Xiaomi equals losers, and Apple equals traitors.</p>
@@ -33,14 +78,15 @@
 </item>
 <item>
     <title>Deploying Hugo Blog to GitHub Pages</title>
-    <link>https://nothingness0db.github.io/posts/deploy-to-github-pages/</link>
+    <link>http://localhost:1313/posts/deploy-to-github-pages/</link>
     <pubDate>Tue, 11 Mar 2025 00:30:00 &#43;0800</pubDate>
     <author>Eira Hazel</author>
-    <guid>https://nothingness0db.github.io/posts/deploy-to-github-pages/</guid>
+    <guid>http://localhost:1313/posts/deploy-to-github-pages/</guid>
     <description><![CDATA[<h1 id="deploying-hugo-blog-to-github-pages">Deploying Hugo Blog to GitHub Pages</h1>
 <p>This guide explains how to deploy your Hugo blog to GitHub Pages for free hosting.</p>
 <blockquote>
-<p>Note: This is a placeholder for translation. The complete translation will be added later.</p></blockquote>
+<p>Note: This is a placeholder for translation. The complete translation will be added later.</p>
+</blockquote>
 <h2 id="setting-up-your-github-repository">Setting Up Your GitHub Repository</h2>
 <p>Create a repository named <code>yourusername.github.io</code> to host your blog.</p>
 <h2 id="configuring-github-actions">Configuring GitHub Actions</h2>
@@ -50,14 +96,15 @@
 </item>
 <item>
     <title>Hugo Blog CRUD Operations Guide</title>
-    <link>https://nothingness0db.github.io/posts/blog-crud-guide/</link>
+    <link>http://localhost:1313/posts/blog-crud-guide/</link>
     <pubDate>Tue, 11 Mar 2025 00:25:00 &#43;0800</pubDate>
     <author>Eira Hazel</author>
-    <guid>https://nothingness0db.github.io/posts/blog-crud-guide/</guid>
+    <guid>http://localhost:1313/posts/blog-crud-guide/</guid>
     <description><![CDATA[<h1 id="hugo-blog-crud-operations-guide">Hugo Blog CRUD Operations Guide</h1>
 <p>This guide covers the basic Create, Read, Update, and Delete operations for managing content on your Hugo blog.</p>
 <blockquote>
-<p>Note: This is a placeholder for translation. The complete translation will be added later.</p></blockquote>
+<p>Note: This is a placeholder for translation. The complete translation will be added later.</p>
+</blockquote>
 <h2 id="creating-new-content">Creating New Content</h2>
 <p>Hugo provides simple commands to create new content for your blog.</p>
 <h2 id="reading-content">Reading Content</h2>

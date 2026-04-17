@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Context Management on Eira Hazel</title>
+    <link>http://localhost:1313/tags/context-management/</link>
+    <description>Recent content in Context Management on Eira Hazel</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 02 Apr 2026 02:24:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/context-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dynamic Context Management Infrastructure for LLMs</title>
+      <link>http://localhost:1313/posts/llm-context-management-infra/</link>
+      <pubDate>Thu, 02 Apr 2026 02:24:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/llm-context-management-infra/</guid>
+      <description>&lt;h1 id=&#34;dynamic-context-management-infrastructure-for-llms&#34;&gt;Dynamic Context Management Infrastructure for LLMs&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;My original idea was extremely simple: optimize at the model layer by storing sparse feature vectors directly as the compressed representation, without restoring them into text. During downstream consumption, these feature vectors would be injected back into the corresponding layers of the same model, skipping token decoding and re-encoding. Alright, that was the model-layer approach. Obviously, what I&amp;rsquo;m writing here isn&amp;rsquo;t that, because I can&amp;rsquo;t pull that off in less than a month. But I came up with a practical alternative that works now and is worth exploring. Below is an AI-generated summary of my chat records with alam.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>随笔 on Eira Hazel</title>
+    <link>http://localhost:1313/zh-cn/tags/%E9%9A%8F%E7%AC%94/</link>
+    <description>Recent content in 随笔 on Eira Hazel</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 07 Apr 2026 00:30:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh-cn/tags/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>人类是歪了的动物</title>
+      <link>http://localhost:1313/zh-cn/posts/humans-are-crooked-animals/</link>
+      <pubDate>Tue, 07 Apr 2026 00:30:00 +0800</pubDate>
+      <guid>http://localhost:1313/zh-cn/posts/humans-are-crooked-animals/</guid>
+      <description>&lt;p&gt;我一直觉得达到agi和让模型和世界的一切交互产生联系但是人类是一种歪了的动物&lt;/p&gt;&#xA;&lt;p&gt;我一直觉得达到agi和让模型和世界的一切交互产生联系。，，但是肯定不是往人类的行为模式去模拟，加约束条件，如果我们把模型当生物看，我们会发现他们没什么约束和限制，把限制加上之后是某种降维，&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>亲密感是怎么被定价的</title>
+      <link>http://localhost:1313/zh-cn/posts/pricing-intimacy/</link>
+      <pubDate>Mon, 06 Apr 2026 12:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/zh-cn/posts/pricing-intimacy/</guid>
+      <description>&lt;p&gt;这篇妈的我是真觉得自己写不好，于是draft一直是true，最近看到个糖爆了的视频，写得一坨啊，不是事实不对,是那种看法不对,把一整个结构问题讲成了几个极端案例。&#xA;我直接自信心爆棚了所以我又回来写这篇了，对了现在事件是4/17&#xA;&lt;img&#xD;&#xA;        class=&#34;lazyload&#34;&#xD;&#xA;        src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xD;&#xA;        data-src=&#34;http://localhost:1313/images/PixPin_2026-04-17_09-38-44.png&#34;&#xD;&#xA;        data-srcset=&#34;http://localhost:1313/images/PixPin_2026-04-17_09-38-44.png, http://localhost:1313/images/PixPin_2026-04-17_09-38-44.png 1.5x, http://localhost:1313/images/PixPin_2026-04-17_09-38-44.png 2x&#34;&#xD;&#xA;        data-sizes=&#34;auto&#34;&#xD;&#xA;        alt=&#34;/images/PixPin_2026-04-17_09-38-44.png&#34;&#xD;&#xA;        title=&#34;我评论&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>新文章</title>
+      <link>http://localhost:1313/zh-cn/posts/new-post/</link>
+      <pubDate>Fri, 03 Apr 2026 12:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/zh-cn/posts/new-post/</guid>
+      <description>&lt;p&gt;关于skill和Anthropic的阴谋论&lt;/p&gt;&#xA;&lt;p&gt;skill是一个md，里面写&amp;quot;遇到 PDF 任务就用 pdfplumber，遇到 Word 就用 python-docx，输出扔到这个目录&amp;quot;。Claude读完之后，就知道怎么干活了&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on Eira Hazel</title>
+    <link>http://localhost:1313/categories/tech/</link>
+    <description>Recent content in Tech on Eira Hazel</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Apr 2026 00:30:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Humans Are Crooked Animals</title>
+      <link>http://localhost:1313/posts/humans-are-crooked-animals/</link>
+      <pubDate>Tue, 07 Apr 2026 00:30:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/humans-are-crooked-animals/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve always felt that reaching AGI and connecting models to everything in the world — but here&amp;rsquo;s the thing: humans are crooked animals.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve always felt that reaching AGI means connecting models to everything in the world. But that definitely doesn&amp;rsquo;t mean simulating human behavioral patterns and adding constraints. If we treat models as living organisms, we&amp;rsquo;d find they have almost no constraints or limits. Adding those constraints is a kind of dimensionality reduction.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dynamic Context Management Infrastructure for LLMs</title>
+      <link>http://localhost:1313/posts/llm-context-management-infra/</link>
+      <pubDate>Thu, 02 Apr 2026 02:24:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/llm-context-management-infra/</guid>
+      <description>&lt;h1 id=&#34;dynamic-context-management-infrastructure-for-llms&#34;&gt;Dynamic Context Management Infrastructure for LLMs&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;My original idea was extremely simple: optimize at the model layer by storing sparse feature vectors directly as the compressed representation, without restoring them into text. During downstream consumption, these feature vectors would be injected back into the corresponding layers of the same model, skipping token decoding and re-encoding. Alright, that was the model-layer approach. Obviously, what I&amp;rsquo;m writing here isn&amp;rsquo;t that, because I can&amp;rsquo;t pull that off in less than a month. But I came up with a practical alternative that works now and is worth exploring. Below is an AI-generated summary of my chat records with alam.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
