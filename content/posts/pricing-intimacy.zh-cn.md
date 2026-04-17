@@ -11,7 +11,7 @@ categories:
   - 生活
 ---
 这篇妈的我是真觉得自己写不好，于是draft一直是true，最近看到个糖爆了的视频，写得一坨啊，不是事实不对,是那种看法不对,把一整个结构问题讲成了几个极端案例。
-我直接自信心爆棚了所以我又回来写这篇了，
+我直接自信心爆棚了所以我又回来写这篇了，对了现在事件是4/17
 ![我评论](/images/PixPin_2026-04-17_09-38-44.png)
 
 【300万日元买一场幻觉：拆解日本地偶的情感收割算法｜少女、应援、债务和推し活】 https://www.bilibili.com/video/BV1QuXqBxEo7/?share_source=copy_web&vd_source=64bc3d4bcbdf9bb7d1fb779011d54b88
